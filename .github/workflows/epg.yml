@@ -49,14 +49,14 @@ jobs:
       # Fresh clone of the latest iptv-org/epg on EVERY run (runners are ephemeral,
       # ref=master = branch tip), so upstream channel/site changes are always included.
       - name: Checkout iptv-org/epg (latest master)
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           repository: iptv-org/epg
           ref: master
           fetch-depth: 1
 
       - name: Set up Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: 22
           cache: npm
@@ -93,7 +93,7 @@ jobs:
           ls -lh out/ 2>/dev/null || echo "(shard produced no files)"
 
       - name: Upload shard artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: guide-${{ matrix.shard }}
           path: out/
@@ -108,7 +108,7 @@ jobs:
     timeout-minutes: 30
     steps:
       - name: Download all shard artifacts
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           pattern: guide-*
           path: parts        # each artifact lands in parts/guide-<n>/<site>.xml
