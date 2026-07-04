@@ -12,17 +12,20 @@ research notes. A scheduled GitHub Action regenerates an XMLTV guide daily from
 Paste this into the app → **Settings → TV Guide**, then **Save & Refresh EPG**:
 
 ```
-https://raw.githubusercontent.com/MuhammadTalhaBaloch/iptv/gh-pages/guide.xml.gz
+https://github.com/MuhammadTalhaBaloch/iptv/releases/download/epg-latest/guide.xml.gz
 ```
 
-- It's the **gzip** (`.xml.gz`, ~a few–20 MB). The app decompresses and stream-parses it.
-- Only the `.gz` is published — the uncompressed guide can exceed **GitHub's 100 MB
-  per-file limit**.
+- It's the **gzip** (`.xml.gz`). The app decompresses and stream-parses it.
+- Published as a **GitHub Release asset**, not gh-pages: the all-sites guide is **~120 MB
+  gzipped** (157k channels, ~2.5M programmes), and gh-pages publishes via `git push` (hard
+  **100 MB** per-file limit). Release assets allow up to **2 GB** and the URL above is **stable**
+  (the asset is replaced in place each run under the fixed `epg-latest` tag).
 - Channel ids carry the iptv-org `@SD`/`@HD` feed suffix (`GeoNews.pk@SD`, `AajTak.in@SD`);
   the app normalizes ids (drops `@feed`, punctuation, case) so guide data attaches to your
   playlist channels automatically.
 
-Updated **daily (~01:30 UTC)**; the app's daily refresh keeps it current.
+Updated **daily (~01:30 UTC)**; the app's daily refresh keeps it current. Because it's the full
+all-sites guide, expect a **~120 MB download** and a large on-device EPG database.
 
 ---
 
@@ -40,19 +43,20 @@ sites OOMs (~7 GB at ~14%) **and** would exceed GitHub's 6-hour per-job limit. S
 2. **`merge`** — downloads every shard's artifact, stitches them into one `guide.xml`
    (deduping channels by id), **refuses to publish** if the result is empty or lost >50% of the
    currently-published guide's channels (so a partial failure can't clobber the good guide), then
-   gzips and publishes `guide.xml.gz` to **`gh-pages`**.
+   gzips and uploads `guide.xml.gz` as a **GitHub Release asset**.
 
 **Triggers:** daily cron `30 1 * * *` + manual **Run workflow** (Actions tab). Wall-clock ≈ the
 slowest shard (~2–3 h); shards run in parallel.
-**Publish:** [`peaceiris/actions-gh-pages`](https://github.com/peaceiris/actions-gh-pages)
-with `force_orphan` (keeps `gh-pages` a single clean commit — no history bloat).
+**Publish:** `gh release upload epg-latest guide.xml.gz --clobber` — a Release asset (≤ 2 GB),
+because the ~120 MB guide exceeds gh-pages' 100 MB `git push` limit. The URL stays stable across
+runs (fixed `epg-latest` tag, asset replaced in place).
 
 ### Requirements (one-time)
 
 | Requirement | Why |
 |---|---|
-| Repo is **public** | Free unlimited Actions **and** public `raw.githubusercontent.com` serving (private repos 404 on raw + have Action minute caps). |
-| Repo **secret `IPTVPAT`** | A Personal Access Token with **Contents: write** on this repo — used to push to `gh-pages`. Settings → Secrets and variables → Actions → Secrets. |
+| Repo is **public** | Free unlimited Actions **and** publicly-downloadable Release assets (no auth). |
+| **Nothing else** | Publishing uses the built-in `GITHUB_TOKEN` (the workflow's `permissions: contents: write` covers creating/updating releases) — no PAT needed. The old `IPTVPAT` secret is no longer used and can be deleted. |
 
 ---
 

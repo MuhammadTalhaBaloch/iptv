@@ -181,9 +181,18 @@ jobs:
           gzip -9 -c guide.xml > public/guide.xml.gz
           echo "sizes:"; ls -lh guide.xml public/guide.xml.gz
 
-      - name: Publish guide to gh-pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          personal_token: ${{ secrets.IPTVPAT }}   # PAT with Contents:write on this repo
-          publish_dir: ./public
-          force_orphan: true    # keep gh-pages a single clean commit (no history bloat)
+      # Publish to a GitHub RELEASE asset, not gh-pages: the all-sites guide.xml.gz is
+      # ~120+ MB, and gh-pages publishes via `git push` (hard 100 MB per-file limit).
+      # Release assets allow up to 2 GB, are free, and get a stable public URL. The
+      # asset is replaced in place (--clobber) under a fixed tag, so the URL never changes:
+      #   https://github.com/<owner>/<repo>/releases/download/epg-latest/guide.xml.gz
+      - name: Publish guide to a GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}   # GITHUB_TOKEN + `permissions: contents: write` covers releases
+        run: |
+          gh release view epg-latest --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1 \
+            || gh release create epg-latest --repo "$GITHUB_REPOSITORY" \
+                 --title "Latest EPG guide" \
+                 --notes "Auto-generated XMLTV guide from all iptv-org/epg sites. Rebuilt daily; the guide.xml.gz asset is replaced in place, so its download URL is stable."
+          gh release upload epg-latest public/guide.xml.gz --repo "$GITHUB_REPOSITORY" --clobber
+          echo "published: https://github.com/$GITHUB_REPOSITORY/releases/download/epg-latest/guide.xml.gz"

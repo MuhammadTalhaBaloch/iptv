@@ -2,26 +2,29 @@
 
 A scheduled GitHub Action ([`.github/workflows/epg.yml`](.github/workflows/epg.yml))
 regenerates an XMLTV guide daily from [iptv-org/epg](https://github.com/iptv-org/epg)
-and publishes it to the `gh-pages` branch. **Free** — GitHub Actions has no minute
+and publishes it as a **GitHub Release asset**. **Free** — GitHub Actions has no minute
 limit on public repositories.
 
 ## Guide URL (paste into the app → Settings → TV Guide)
 
 ```
-https://raw.githubusercontent.com/MuhammadTalhaBaloch/iptv/gh-pages/guide.xml.gz
+https://github.com/MuhammadTalhaBaloch/iptv/releases/download/epg-latest/guide.xml.gz
 ```
 
-The guide covers **all iptv-org/epg channels** (~13k). Only the **gzip** (`.xml.gz`,
-~20 MB) is published — the plain XML is >100 MB (GitHub's per-file limit). The app
-decompresses `.xml.gz` and stream-parses it. The channel ids (`GeoNews.pk@SD`,
-`AajTak.in@SD`, …) match the app's playlist tvg-ids, so programmes attach automatically.
+The guide covers **all iptv-org/epg sites** — ~157k channels / ~2.5M programmes, **~120 MB
+gzipped**. It's published as a **Release asset** (≤ 2 GB limit), not gh-pages, because a 120 MB
+file exceeds gh-pages' 100 MB `git push` limit. The URL is stable (fixed `epg-latest` tag, asset
+replaced in place each run). The app decompresses `.xml.gz` and stream-parses it. The channel ids
+(`GeoNews.pk@SD`, `AajTak.in@SD`, …) match the app's playlist tvg-ids, so programmes attach
+automatically. Note: it's a large download and produces a large on-device EPG database.
 
 ## First run
 
 1. Push this repo to GitHub (`git push`).
 2. GitHub → **Actions** tab → **Generate EPG** → **Run workflow** (or wait for the
    01:30 UTC schedule). Scheduled workflows only start once the file is on `main`.
-3. After it finishes, the URL above is live. No GitHub Pages configuration required.
+3. After it finishes (~2–3 h; it grabs all sites), the `epg-latest` release asset is live at the
+   URL above. No GitHub Pages configuration or secret required — publishing uses `GITHUB_TOKEN`.
 
 ## Coverage / scope
 
