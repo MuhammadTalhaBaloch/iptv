@@ -53,6 +53,6 @@ jobs:
       - name: Publish guide to gh-pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          personal_token: ${{ secrets.IPTVPAT }}   # PAT with Contents:write on this repo
           publish_dir: ./public
           force_orphan: true    # keep gh-pages a single clean commit (no history bloat)
