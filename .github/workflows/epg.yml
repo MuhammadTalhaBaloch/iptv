@@ -1,0 +1,58 @@
+name: Generate EPG
+
+# Regenerates the TV guide daily from iptv-org/epg and publishes it to the
+# gh-pages branch. No GitHub Pages setup needed — the file is served at:
+#   https://raw.githubusercontent.com/MuhammadTalhaBaloch/iptv/gh-pages/guide.xml
+#   (gzip: .../guide.xml.gz)
+# Free on public repos (GitHub Actions has no minute limit for public repos).
+
+on:
+  schedule:
+    - cron: '30 1 * * *'   # daily at 01:30 UTC
+  workflow_dispatch: {}     # manual "Run workflow" button
+
+permissions:
+  contents: write           # needed to publish to the gh-pages branch
+
+concurrency:
+  group: epg
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - name: Checkout iptv-org/epg
+        uses: actions/checkout@v4
+        with:
+          repository: iptv-org/epg
+          ref: master
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm install
+
+      # India (tataplay/dishtv/airtelxstream/zee5) + Pakistan/UK (epg.iptvx.one,
+      # mytelly, tvireland, sky) — scoped so runs stay fast and the guide stays small.
+      # Add/remove sites from https://github.com/iptv-org/epg/blob/master/SITES.md
+      - name: Grab guide
+        run: >
+          npm run grab ---
+          --sites=tataplay.com,dishtv.in,airtelxstream.in,zee5.com,epg.iptvx.one,mytelly.co.uk,tvireland.ie,sky.com
+          --maxConnections=10
+          --days=2
+          --output=public/guide.xml
+          --gzip
+
+      - name: Publish guide to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          force_orphan: true    # keep gh-pages a single clean commit (no history bloat)
