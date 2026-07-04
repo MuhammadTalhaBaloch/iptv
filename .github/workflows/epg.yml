@@ -23,11 +23,19 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 90
     steps:
-      - name: Checkout iptv-org/epg
+      # Fresh clone of the latest iptv-org/epg on EVERY run (runners are ephemeral,
+      # ref=master = branch tip), so upstream channel/site changes are always included.
+      - name: Checkout iptv-org/epg (latest master)
         uses: actions/checkout@v4
         with:
           repository: iptv-org/epg
           ref: master
+          fetch-depth: 1
+
+      - name: Show upstream version used this run
+        run: |
+          echo "iptv-org/epg commit: $(git rev-parse HEAD)"
+          echo "committed at:        $(git show -s --format=%ci HEAD)"
 
       - name: Set up Node
         uses: actions/setup-node@v4
