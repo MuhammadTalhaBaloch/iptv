@@ -1,9 +1,22 @@
 name: Generate EPG
 
 # Regenerates the TV guide daily from iptv-org/epg and publishes it to the
-# gh-pages branch. No GitHub Pages setup needed — the file is served at:
-#   https://raw.githubusercontent.com/MuhammadTalhaBaloch/iptv/gh-pages/guide.xml
-#   (gzip: .../guide.xml.gz)
+# gh-pages branch, served at:
+#   https://raw.githubusercontent.com/MuhammadTalhaBaloch/iptv/gh-pages/guide.xml.gz
+#
+# Why this is sharded + per-site:
+# The iptv-org/epg grabber BUFFERS the entire result in memory and writes the
+# output file only once, at the very end (no streaming/partial output). A single
+# process grabbing all ~248 sites OOMs (~7 GB at ~14% of ~180k channel-grabs,
+# exit 134) and would also blow GitHub's 6-hour per-JOB limit. So:
+#   * grab runs as 20 PARALLEL matrix shards (throughput + stays under 6h), and
+#   * within each shard we grab ONE SITE PER PROCESS. Each site's buffer is freed
+#     when its process exits, so peak memory is bounded by the single largest
+#     site (not the sum of a shard's sites). A site that still OOMs or errors only
+#     loses THAT site (logged), never the shard.
+# The merge job stitches every site file into one XMLTV guide and REFUSES to
+# publish if the result is empty/degraded, so a bad run can never overwrite the
+# last good guide (force_orphan wipes history, so this floor is the safety net).
 # Free on public repos (GitHub Actions has no minute limit for public repos).
 
 on:
@@ -19,9 +32,19 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build:
+  # ── Sharded grab (one site per process) ──────────────────────────────────────
+  # Sites are round-robined across shards by sorted position (NR % 20). This
+  # balances the NUMBER of sites per shard; memory is bounded per-SITE by grabbing
+  # each site in its own process, so an uneven channel distribution can't OOM a
+  # shard. Keep the matrix length and the awk modulus (n=20) in sync.
+  grab:
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 350      # heaviest shard (contains a giant site) still < 6h cap
+    strategy:
+      fail-fast: false        # one shard failing must not cancel the others
+      max-parallel: 20
+      matrix:
+        shard: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
     steps:
       # Fresh clone of the latest iptv-org/epg on EVERY run (runners are ephemeral,
       # ref=master = branch tip), so upstream channel/site changes are always included.
@@ -32,11 +55,6 @@ jobs:
           ref: master
           fetch-depth: 1
 
-      - name: Show upstream version used this run
-        run: |
-          echo "iptv-org/epg commit: $(git rev-parse HEAD)"
-          echo "committed at:        $(git show -s --format=%ci HEAD)"
-
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
@@ -46,19 +64,121 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      # Grab EVERY iptv-org/epg site (~13k channels across ~248 sites) for full coverage.
-      # Publish ONLY the gzip: the plain all-channels guide.xml is >100 MB (GitHub's per-file
-      # push limit), while the .gz is ~20 MB. The app decompresses .xml.gz. Note: some sites
-      # geo-block/anti-bot GitHub's US runners (403); the run still publishes what it grabbed.
-      - name: Grab guide (all sites)
+      - name: Grab shard ${{ matrix.shard }} of 20 (one site per process)
         env:
-          NODE_OPTIONS: --max-old-space-size=7168   # runner has ~16 GB; avoid heap-limit OOM
+          # Headroom for the single largest site (each site grabs in its own
+          # process, so this caps ONE site's buffer, not a whole shard's).
+          NODE_OPTIONS: --max-old-space-size=13312   # ~13 GB on the 16 GB runner
         run: |
-          SITES=$(ls sites | paste -sd, -)
-          echo "Grabbing $(ls sites | wc -l) sites…"
-          npm run grab --- --sites="$SITES" --maxConnections=20 --days=1 --timeout=20000 --output=guide.xml --gzip
+          mkdir -p out
+          # Round-robin the sorted site list into 20 shards (NR % 20 == this shard).
+          sites=$(ls sites | awk -v n=20 -v s=${{ matrix.shard }} 'NR % n == s')
+          echo "shard ${{ matrix.shard }} sites:"; echo "$sites"
+          ok=0; failed=0
+          for site in $sites; do
+            echo "::group::grab $site"
+            # Run inside an `if` so the default `set -e` does NOT abort the loop when
+            # a single site errors/OOMs. The grabber writes its file only on success,
+            # so a crash leaves no file — we detect that and skip just that site.
+            if npm run grab --- --sites="$site" --maxConnections=20 --days=1 --timeout=20000 --output="out/$site.xml" && [ -s "out/$site.xml" ]; then
+              n=$(grep -c '<programme' "out/$site.xml" 2>/dev/null || echo 0)
+              echo "$site: OK ($n programmes)"; ok=$((ok + 1))
+            else
+              echo "::warning::site '$site' produced no guide (error/OOM/empty) — skipping it"
+              rm -f "out/$site.xml"; failed=$((failed + 1))
+            fi
+            echo "::endgroup::"
+          done
+          echo "shard ${{ matrix.shard }} summary: ok=$ok failed=$failed"
+          ls -lh out/ 2>/dev/null || echo "(shard produced no files)"
+
+      - name: Upload shard artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: guide-${{ matrix.shard }}
+          path: out/
+          retention-days: 1
+          if-no-files-found: ignore    # a fully-failed shard uploads nothing; merge tolerates it
+
+  # ── Merge, validate, publish ─────────────────────────────────────────────────
+  merge:
+    needs: grab
+    if: ${{ !cancelled() }}   # run even if some shards failed (partial coverage still publishes)
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Download all shard artifacts
+        uses: actions/download-artifact@v4
+        with:
+          pattern: guide-*
+          path: parts        # each artifact lands in parts/guide-<n>/<site>.xml
+
+      - name: Merge shards, then refuse to publish an empty/degraded guide
+        run: |
+          python3 - <<'PY'
+          import xml.etree.ElementTree as ET, glob, gzip, sys, urllib.request
+
+          # Absolute floor: an all-sites guide yields many thousands of channels even
+          # after geo-blocking; fewer than this means catastrophic failure, not a guide.
+          ABS_FLOOR = 1000
+          # Relative floor: never replace the live guide with one that lost >50% of its
+          # channels (a partial shard failure) — force_orphan would wipe the good one.
+          REL_FLOOR = 0.5
+          GUIDE_URL = "https://raw.githubusercontent.com/MuhammadTalhaBaloch/iptv/gh-pages/guide.xml.gz"
+
+          parts = sorted(glob.glob('parts/**/*.xml', recursive=True))
+          print(f"merging {len(parts)} site file(s)")
+
+          seen = set()
+          n_ch = n_prog = 0
+          with open('guide.xml', 'wb') as out:
+              out.write(b'<?xml version="1.0" encoding="UTF-8"?>\n')
+              out.write(b'<tv generator-info-name="iptv-org/epg">\n')
+              for f in parts:
+                  try:
+                      ctx = ET.iterparse(f, events=('start', 'end'))
+                      _, root = next(ctx)            # <tv> root, for periodic clearing
+                      for ev, el in ctx:
+                          if ev != 'end':
+                              continue
+                          if el.tag == 'channel':
+                              cid = el.get('id')
+                              if cid and cid not in seen:
+                                  seen.add(cid)
+                                  # encoding='unicode' -> str, no per-element XML decl; UTF-8 keeps CJK/Cyrillic/Devanagari
+                                  out.write(ET.tostring(el, encoding='unicode').encode('utf-8'))
+                                  n_ch += 1
+                              el.clear(); root.clear()   # XMLTV is flat -> clearing root keeps memory flat
+                          elif el.tag == 'programme':
+                              out.write(ET.tostring(el, encoding='unicode').encode('utf-8'))
+                              n_prog += 1
+                              el.clear(); root.clear()
+                  except (ET.ParseError, StopIteration) as e:
+                      print(f"  WARN: bad shard file {f}: {e} (skipping remainder)")
+              out.write(b'</tv>\n')
+          print(f"merged: channels={n_ch} programmes={n_prog}")
+
+          # --- sanity floor: protect the last good guide ---
+          if n_ch < ABS_FLOOR:
+              print(f"::error::merged guide has only {n_ch} channels (< {ABS_FLOOR}); refusing to publish. Keeping the last good guide.")
+              sys.exit(1)
+          try:
+              old = gzip.decompress(urllib.request.urlopen(GUIDE_URL, timeout=60).read())
+              old_ch = old.count(b'<channel ')
+              print(f"currently-published channels: {old_ch}")
+              if old_ch and n_ch < REL_FLOOR * old_ch:
+                  print(f"::error::merged guide has {n_ch} channels, < {int(REL_FLOOR*100)}% of the {old_ch} currently published; refusing to publish (likely a partial shard failure).")
+                  sys.exit(1)
+          except Exception as e:
+              print(f"could not fetch/compare previous guide ({e}); proceeding on the absolute floor only")
+          print("sanity check passed — proceeding to publish")
+          PY
+          ls -lh guide.xml
+
+      - name: Gzip guide
+        run: |
           mkdir -p public
-          mv guide.xml.gz public/guide.xml.gz     # publish only the compressed guide (< 100 MB)
+          gzip -9 -c guide.xml > public/guide.xml.gz
           echo "sizes:"; ls -lh guide.xml public/guide.xml.gz
 
       - name: Publish guide to gh-pages

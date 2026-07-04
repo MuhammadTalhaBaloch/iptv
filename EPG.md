@@ -25,9 +25,12 @@ decompresses `.xml.gz` and stream-parses it. The channel ids (`GeoNews.pk@SD`,
 
 ## Coverage / scope
 
-Grabs **all ~248 iptv-org/epg sites (~13k channels)**. Actual coverage is whatever the
-sites return from GitHub's US-based runner — many geo-block/anti-bot non-local IPs (403),
-so regions like India come through well while others are partial. Pakistani EPG is thin at
-the source itself (~11 channels across all of iptv-org/epg). To trade coverage for a
-smaller/faster guide, replace the dynamic `$SITES` list in the workflow with a specific
-`--sites=` list (see [SITES.md](https://github.com/iptv-org/epg/blob/master/SITES.md)).
+Grabs **all ~248 iptv-org/epg sites**. The grab runs as **20 parallel shards, one site per
+process** (the grabber buffers everything in memory and a single all-sites process OOMs / blows
+the 6-hour job limit — see [README](README.md#️-how-it-works)); a `merge` job stitches the
+shards and refuses to publish an empty/degraded guide. Actual coverage is whatever the sites
+return from GitHub's US-based runner — many geo-block/anti-bot non-local IPs (403), so regions
+like India come through well while others are partial. Pakistani EPG is thin at the source itself
+(~11 channels across all of iptv-org/epg). To trade coverage for a smaller/faster guide, replace
+the round-robin `ls sites | awk …` in the grab step with a specific `--sites=` list (see
+[SITES.md](https://github.com/iptv-org/epg/blob/master/SITES.md)).

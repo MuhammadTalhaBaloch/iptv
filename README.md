@@ -28,14 +28,22 @@ Updated **daily (~01:30 UTC)**; the app's daily refresh keeps it current.
 
 ## ⚙️ How it works
 
-[`.github/workflows/epg.yml`](.github/workflows/epg.yml), on every run:
+[`.github/workflows/epg.yml`](.github/workflows/epg.yml) grabs **all ~248 sites**. Because the
+grabber buffers the whole guide in memory and writes it only at the end, one process doing all
+sites OOMs (~7 GB at ~14%) **and** would exceed GitHub's 6-hour per-job limit. So it's split:
 
-1. **Freshly clones the latest `iptv-org/epg` at `master`** (ephemeral runner → always the
-   newest tool + channel/site definitions; logs the exact upstream commit used).
-2. `npm install`, then **`npm run grab`** to download the guide.
-3. **Publishes** `guide.xml.gz` to the **`gh-pages`** branch (served at the raw URL above).
+1. **`grab`** — a **20-way parallel matrix**. Each shard freshly clones the latest
+   `iptv-org/epg` at `master`, then grabs its round-robin slice of the site list **one site per
+   process** (so peak memory is bounded by the single largest site, not the whole shard). A site
+   that errors/OOMs only loses that site (logged), never the shard. Each shard uploads its
+   per-site XMLTV files as an artifact.
+2. **`merge`** — downloads every shard's artifact, stitches them into one `guide.xml`
+   (deduping channels by id), **refuses to publish** if the result is empty or lost >50% of the
+   currently-published guide's channels (so a partial failure can't clobber the good guide), then
+   gzips and publishes `guide.xml.gz` to **`gh-pages`**.
 
-**Triggers:** daily cron `30 1 * * *` + manual **Run workflow** (Actions tab).
+**Triggers:** daily cron `30 1 * * *` + manual **Run workflow** (Actions tab). Wall-clock ≈ the
+slowest shard (~2–3 h); shards run in parallel.
 **Publish:** [`peaceiris/actions-gh-pages`](https://github.com/peaceiris/actions-gh-pages)
 with `force_orphan` (keeps `gh-pages` a single clean commit — no history bloat).
 
@@ -50,24 +58,28 @@ with `force_orphan` (keeps `gh-pages` a single clean commit — no history bloat
 
 ## 🔧 Configuration / customizing
 
-Everything is in the **`Grab guide`** step of [`.github/workflows/epg.yml`](.github/workflows/epg.yml):
+Everything is in [`.github/workflows/epg.yml`](.github/workflows/epg.yml):
 
-- **Which channels:** the `--sites=` list. Currently grabs **all sites** (`ls sites`). For a
-  faster, leaner, more reliable job, replace it with a specific list, e.g.
-  `--sites=tataplay.com,dishtv.in,airtelxstream.in,zee5.com` (India ≈ 1,800 channels, ~2-min run).
-  Site names: [SITES.md](https://github.com/iptv-org/epg/blob/master/SITES.md).
-- **How many days:** `--days=1` (today). More days = larger guide (watch the 100 MB `.gz`… and
-  the plain-file limit).
+- **Fewer/faster:** for a leaner, ~2-minute guide, replace the round-robin `ls sites | awk …`
+  in the grab step with a fixed `--sites=` list, e.g.
+  `--sites=tataplay.com,dishtv.in,airtelxstream.in,zee5.com` (India ≈ 1,800 channels). Site names:
+  [SITES.md](https://github.com/iptv-org/epg/blob/master/SITES.md).
+- **Shard count:** the `matrix.shard` list length **and** the awk modulus (`n=20`) must match. More
+  shards = more parallelism = faster wall-clock (free tier allows 20 concurrent jobs).
+- **How many days:** `--days=1` (today). More days = a larger guide.
+- **Memory:** `NODE_OPTIONS=--max-old-space-size` caps **one site's** buffer (each site is its own
+  process); raise it only if a single very large site OOMs.
+- **Publish safety floor:** `ABS_FLOOR` / `REL_FLOOR` in the merge step — tune how aggressively a
+  degraded run is blocked from overwriting the live guide.
 - **Schedule:** the `cron:` line.
-- **Memory:** `NODE_OPTIONS=--max-old-space-size` (raise if the grabber OOMs on large site sets).
 
 ### Coverage caveats
 
-Grabbing "all sites" is a **long job (30–60 min)** and many sites **geo-block / rate-limit
-GitHub's US-based runner (HTTP 403)**, so their channels return nothing — coverage is
-"everything the sites give a US IP." Regions like **India** come through well; **Pakistani**
-EPG is thin *at the source* (~11 channels exist across all of iptv-org/epg). A focused
-`--sites=` list is faster and just as useful for the channels you actually watch.
+Even grabbing all sites, many **geo-block / rate-limit GitHub's US-based runner (HTTP 403)**, so
+their channels return nothing — coverage is "everything the sites give a US IP." Regions like
+**India** come through well; **Pakistani** EPG is thin *at the source* (~11 channels exist across
+all of iptv-org/epg). A focused `--sites=` list is faster and just as useful for the channels you
+actually watch.
 
 ---
 
