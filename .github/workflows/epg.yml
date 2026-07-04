@@ -59,7 +59,7 @@ jobs:
           npm run grab ---
           --sites=tataplay.com,dishtv.in,airtelxstream.in,zee5.com
           --maxConnections=10
-          --days=2
+          --days=1
           --output=public/guide.xml
           --gzip
 
