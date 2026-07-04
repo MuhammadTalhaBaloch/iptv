@@ -46,22 +46,20 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      # India EPG sources (~1,829 channels). Big general sites (sky/mytelly/epg.iptvx.one)
-      # were dropped — together they pulled 14k+ channels and OOM'd the grabber, and they
-      # were the only carriers of the ~11 Pakistani channels (negligible; add back later
-      # via a custom --channels file if wanted). Note: some India sites geo-block GitHub's
-      # US runners (403); the run still publishes whatever it successfully grabbed.
-      # Add/remove sites from https://github.com/iptv-org/epg/blob/master/SITES.md
-      - name: Grab guide
+      # Grab EVERY iptv-org/epg site (~13k channels across ~248 sites) for full coverage.
+      # Publish ONLY the gzip: the plain all-channels guide.xml is >100 MB (GitHub's per-file
+      # push limit), while the .gz is ~20 MB. The app decompresses .xml.gz. Note: some sites
+      # geo-block/anti-bot GitHub's US runners (403); the run still publishes what it grabbed.
+      - name: Grab guide (all sites)
         env:
-          NODE_OPTIONS: --max-old-space-size=6144   # runner has ~16 GB; avoid heap-limit OOM
-        run: >
-          npm run grab ---
-          --sites=tataplay.com,dishtv.in,airtelxstream.in,zee5.com
-          --maxConnections=10
-          --days=1
-          --output=public/guide.xml
-          --gzip
+          NODE_OPTIONS: --max-old-space-size=7168   # runner has ~16 GB; avoid heap-limit OOM
+        run: |
+          SITES=$(ls sites | paste -sd, -)
+          echo "Grabbing $(ls sites | wc -l) sites…"
+          npm run grab --- --sites="$SITES" --maxConnections=20 --days=1 --timeout=20000 --output=guide.xml --gzip
+          mkdir -p public
+          mv guide.xml.gz public/guide.xml.gz     # publish only the compressed guide (< 100 MB)
+          echo "sizes:"; ls -lh guide.xml public/guide.xml.gz
 
       - name: Publish guide to gh-pages
         uses: peaceiris/actions-gh-pages@v4

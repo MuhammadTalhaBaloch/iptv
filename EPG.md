@@ -8,17 +8,13 @@ limit on public repositories.
 ## Guide URL (paste into the app → Settings → TV Guide)
 
 ```
-https://raw.githubusercontent.com/MuhammadTalhaBaloch/iptv/gh-pages/guide.xml
-```
-
-Gzip version (smaller; use once the app supports gzip EPG):
-
-```
 https://raw.githubusercontent.com/MuhammadTalhaBaloch/iptv/gh-pages/guide.xml.gz
 ```
 
-The channel ids in this guide (`GeoNews.pk@SD`, `AajTak.in@SD`, …) match the app's
-playlist tvg-ids, so programmes attach automatically.
+The guide covers **all iptv-org/epg channels** (~13k). Only the **gzip** (`.xml.gz`,
+~20 MB) is published — the plain XML is >100 MB (GitHub's per-file limit). The app
+decompresses `.xml.gz` and stream-parses it. The channel ids (`GeoNews.pk@SD`,
+`AajTak.in@SD`, …) match the app's playlist tvg-ids, so programmes attach automatically.
 
 ## First run
 
@@ -29,9 +25,9 @@ playlist tvg-ids, so programmes attach automatically.
 
 ## Coverage / scope
 
-Scoped to **India** (tataplay, dishtv, airtelxstream, zee5 ≈ 1,700+ channels) plus
-**Pakistan/UK** (epg.iptvx.one, mytelly, tvireland, sky). Pakistani EPG is thin at the
-source (~11 channels exist across all of iptv-org/epg). To broaden coverage, add site
-names to the `--sites=` list in the workflow (see
-[SITES.md](https://github.com/iptv-org/epg/blob/master/SITES.md)); more sites = longer
-runs and a larger file.
+Grabs **all ~248 iptv-org/epg sites (~13k channels)**. Actual coverage is whatever the
+sites return from GitHub's US-based runner — many geo-block/anti-bot non-local IPs (403),
+so regions like India come through well while others are partial. Pakistani EPG is thin at
+the source itself (~11 channels across all of iptv-org/epg). To trade coverage for a
+smaller/faster guide, replace the dynamic `$SITES` list in the workflow with a specific
+`--sites=` list (see [SITES.md](https://github.com/iptv-org/epg/blob/master/SITES.md)).
