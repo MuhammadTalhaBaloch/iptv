@@ -113,86 +113,125 @@ jobs:
           pattern: guide-*
           path: parts        # each artifact lands in parts/guide-<n>/<site>.xml
 
-      - name: Merge shards, then refuse to publish an empty/degraded guide
+      - name: Split-merge shards into per-country guides
         run: |
           python3 - <<'PY'
-          import xml.etree.ElementTree as ET, glob, gzip, sys, urllib.request
+          import xml.etree.ElementTree as ET, glob, gzip, json, os, sys, urllib.request
 
-          # Absolute floor: an all-sites guide yields many thousands of channels even
-          # after geo-blocking; fewer than this means catastrophic failure, not a guide.
+          # An all-sites guide yields many thousands of channels even after geo-blocking; fewer
+          # than ABS_FLOOR means catastrophic failure. And never replace the live guide with one
+          # that lost >REL_FLOOR of its channels (a partial shard failure) — that would clobber it.
           ABS_FLOOR = 1000
-          # Relative floor: never replace the live guide with one that lost >50% of its
-          # channels (a partial shard failure) — force_orphan would wipe the good one.
           REL_FLOOR = 0.5
-          GUIDE_URL = "https://raw.githubusercontent.com/MuhammadTalhaBaloch/iptv/gh-pages/guide.xml.gz"
+          INDEX_URL = "https://raw.githubusercontent.com/MuhammadTalhaBaloch/iptv/gh-pages/guide/index.json"
+          OUT = "public/guide"
+          os.makedirs(OUT, exist_ok=True)
 
-          parts = sorted(glob.glob('parts/**/*.xml', recursive=True))
+          def cc_of(cid):
+              # MUST match the app's epgCountryCode(): text after the last '.' (before any '@feed'),
+              # lowercased + alphanumerics only; no dotted suffix -> the 'other' bucket.
+              base = (cid or "").split("@", 1)[0]
+              if "." not in base:
+                  return "other"
+              cc = "".join(ch for ch in base.rsplit(".", 1)[-1].lower() if ch.isalnum())
+              return cc or "other"
+
+          parts = sorted(glob.glob("parts/**/*.xml", recursive=True))
           print(f"merging {len(parts)} site file(s)")
 
-          seen = set()
-          n_ch = n_prog = 0
-          with open('guide.xml', 'wb') as out:
-              out.write(b'<?xml version="1.0" encoding="UTF-8"?>\n')
-              out.write(b'<tv generator-info-name="iptv-org/epg">\n')
-              for f in parts:
-                  try:
-                      ctx = ET.iterparse(f, events=('start', 'end'))
-                      _, root = next(ctx)            # <tv> root, for periodic clearing
-                      for ev, el in ctx:
-                          if ev != 'end':
-                              continue
-                          if el.tag == 'channel':
-                              cid = el.get('id')
-                              if cid and cid not in seen:
-                                  seen.add(cid)
-                                  # encoding='unicode' -> str, no per-element XML decl; UTF-8 keeps CJK/Cyrillic/Devanagari
-                                  out.write(ET.tostring(el, encoding='unicode').encode('utf-8'))
-                                  n_ch += 1
-                              el.clear(); root.clear()   # XMLTV is flat -> clearing root keeps memory flat
-                          elif el.tag == 'programme':
-                              out.write(ET.tostring(el, encoding='unicode').encode('utf-8'))
-                              n_prog += 1
-                              el.clear(); root.clear()
-                  except (ET.ParseError, StopIteration) as e:
-                      print(f"  WARN: bad shard file {f}: {e} (skipping remainder)")
-              out.write(b'</tv>\n')
-          print(f"merged: channels={n_ch} programmes={n_prog}")
+          handles = {}   # cc -> open gzip text writer
+          counts = {}    # cc -> [channels, programmes]
+          seen = set()   # global channel-id dedup (a channel maps to exactly one country)
 
-          # --- sanity floor: protect the last good guide ---
-          if n_ch < ABS_FLOOR:
-              print(f"::error::merged guide has only {n_ch} channels (< {ABS_FLOOR}); refusing to publish. Keeping the last good guide.")
-              sys.exit(1)
+          def h(cc):
+              if cc not in handles:
+                  w = gzip.open(f"{OUT}/{cc}.xml.gz", "wt", encoding="utf-8")
+                  w.write('<?xml version="1.0" encoding="UTF-8"?>\n<tv generator-info-name="iptv-org/epg">\n')
+                  handles[cc] = w; counts[cc] = [0, 0]
+              return handles[cc]
+
+          for f in parts:
+              try:
+                  ctx = ET.iterparse(f, events=("start", "end"))
+                  _, root = next(ctx)
+                  for ev, el in ctx:
+                      if ev != "end":
+                          continue
+                      if el.tag == "channel":
+                          cid = el.get("id")
+                          if cid and cid not in seen:
+                              seen.add(cid); cc = cc_of(cid)
+                              # encoding='unicode' -> str, no per-element XML decl; UTF-8 keeps CJK/Cyrillic/Devanagari
+                              h(cc).write(ET.tostring(el, encoding="unicode")); counts[cc][0] += 1
+                          el.clear(); root.clear()   # XMLTV is flat -> clearing root keeps memory flat
+                      elif el.tag == "programme":
+                          cc = cc_of(el.get("channel"))
+                          h(cc).write(ET.tostring(el, encoding="unicode")); counts[cc][1] += 1
+                          el.clear(); root.clear()
+              except (ET.ParseError, StopIteration) as e:
+                  print(f"  WARN bad shard {f}: {e}")
+
+          for w in handles.values():
+              w.write("</tv>\n"); w.close()
+
+          # Fetch the previously-published index (for carry-forward + the relative floor).
+          BASE = INDEX_URL.rsplit("/", 1)[0]
+          old = None
           try:
-              old = gzip.decompress(urllib.request.urlopen(GUIDE_URL, timeout=60).read())
-              old_ch = old.count(b'<channel ')
-              print(f"currently-published channels: {old_ch}")
-              if old_ch and n_ch < REL_FLOOR * old_ch:
-                  print(f"::error::merged guide has {n_ch} channels, < {int(REL_FLOOR*100)}% of the {old_ch} currently published; refusing to publish (likely a partial shard failure).")
-                  sys.exit(1)
+              old = json.loads(urllib.request.urlopen(INDEX_URL, timeout=60).read())
           except Exception as e:
-              print(f"could not fetch/compare previous guide ({e}); proceeding on the absolute floor only")
+              print(f"no previous index: {e}")
+
+          # We publish with force_orphan (clean single commit), which replaces the WHOLE gh-pages
+          # branch. So a country a shard failed to produce THIS run would be deleted. Carry forward
+          # each such country's last-good file so a partial shard failure can't drop coverage.
+          if old:
+              for cc, meta in old.get("countries", {}).items():
+                  if cc not in counts and int(meta.get("channels", 0)) > 0:
+                      try:
+                          data = urllib.request.urlopen(f"{BASE}/{cc}.xml.gz", timeout=60).read()
+                          with open(f"{OUT}/{cc}.xml.gz", "wb") as cf:
+                              cf.write(data)
+                          counts[cc] = [int(meta.get("channels", 0)), int(meta.get("programmes", 0))]
+                          print(f"carried forward {cc} ({meta.get('channels')} ch) from last run")
+                      except Exception as e:
+                          print(f"could not carry forward {cc}: {e}")
+
+          total_ch = sum(v[0] for v in counts.values())
+          total_pr = sum(v[1] for v in counts.values())
+          print(f"countries={len(counts)} total_channels={total_ch} total_programmes={total_pr}")
+          top = sorted(counts.items(), key=lambda kv: -kv[1][0])[:8]
+          print("largest:", ", ".join(f"{cc}={v[0]}ch" for cc, v in top))
+
+          index = {
+              "totalChannels": total_ch,
+              "totalProgrammes": total_pr,
+              "countries": {cc: {"channels": v[0], "programmes": v[1], "file": f"{cc}.xml.gz"}
+                            for cc, v in sorted(counts.items())},
+          }
+          with open(f"{OUT}/index.json", "w", encoding="utf-8") as jf:
+              json.dump(index, jf)
+
+          # --- sanity floor: protect the last good guide (total_ch now includes carry-forward) ---
+          if total_ch < ABS_FLOOR:
+              print(f"::error::only {total_ch} channels (< {ABS_FLOOR}); refusing to publish, keeping the last good guide.")
+              sys.exit(1)
+          if old:
+              old_ch = int(old.get("totalChannels", 0))
+              print(f"previously-published total channels: {old_ch}")
+              if old_ch and total_ch < REL_FLOOR * old_ch:
+                  print(f"::error::{total_ch} channels < {int(REL_FLOOR*100)}% of previous {old_ch}; refusing (likely a partial shard failure).")
+                  sys.exit(1)
           print("sanity check passed — proceeding to publish")
           PY
-          ls -lh guide.xml
+          echo "per-country files:"; ls -lhS public/guide | head -15
 
-      - name: Gzip guide
-        run: |
-          mkdir -p public
-          gzip -9 -c guide.xml > public/guide.xml.gz
-          echo "sizes:"; ls -lh guide.xml public/guide.xml.gz
-
-      # Publish to a GitHub RELEASE asset, not gh-pages: the all-sites guide.xml.gz is
-      # ~120+ MB, and gh-pages publishes via `git push` (hard 100 MB per-file limit).
-      # Release assets allow up to 2 GB, are free, and get a stable public URL. The
-      # asset is replaced in place (--clobber) under a fixed tag, so the URL never changes:
-      #   https://github.com/<owner>/<repo>/releases/download/epg-latest/guide.xml.gz
-      - name: Publish guide to a GitHub Release
-        env:
-          GH_TOKEN: ${{ github.token }}   # GITHUB_TOKEN + `permissions: contents: write` covers releases
-        run: |
-          gh release view epg-latest --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1 \
-            || gh release create epg-latest --repo "$GITHUB_REPOSITORY" \
-                 --title "Latest EPG guide" \
-                 --notes "Auto-generated XMLTV guide from all iptv-org/epg sites. Rebuilt daily; the guide.xml.gz asset is replaced in place, so its download URL is stable."
-          gh release upload epg-latest public/guide.xml.gz --repo "$GITHUB_REPOSITORY" --clobber
-          echo "published: https://github.com/$GITHUB_REPOSITORY/releases/download/epg-latest/guide.xml.gz"
+      # Each per-country .gz is small (well under 100 MB), so gh-pages (git push) works again.
+      # Served at: https://raw.githubusercontent.com/<owner>/<repo>/gh-pages/guide/<cc>.xml.gz
+      # (+ guide/index.json). The app's EPG "base URL" is …/gh-pages/guide/.
+      - name: Publish per-country guides to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}   # + permissions: contents: write (no PAT needed)
+          publish_dir: ./public
+          force_orphan: true    # keep gh-pages a single clean commit (no history bloat)
