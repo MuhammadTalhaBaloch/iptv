@@ -1,0 +1,45 @@
+name: Refresh sources.json
+
+# Regenerates sources.json (the app's browse-menu registry: iptv-org countries / categories /
+# languages / regions / subdivisions / cities + index playlists) from iptv-org's current playlists
+# and API display names, and commits it to `main` when it changes. The app fetches this and falls
+# back to its bundled copy if it's missing/broken, so the menu stays current without an app update.
+# Fast (~1 min); independent of the multi-hour EPG guide build.
+
+on:
+  schedule:
+    - cron: '15 21 * * *'   # daily at 02:15 PKT (21:15 UTC), just after the EPG run
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sources
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      # Check out with the PAT (not GITHUB_TOKEN) so the commit counts as repo activity and keeps
+      # this scheduled workflow from being auto-disabled after 60 days.
+      - uses: actions/checkout@v7
+        with:
+          token: ${{ secrets.IPTVPAT }}
+
+      - name: Generate sources.json
+        run: python3 tools/gen-sources.py
+
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- sources.json; then
+            echo "sources.json unchanged — nothing to commit."
+          else
+            git config user.name "MuhammadTalhaBaloch"
+            git config user.email "MuhammadTalhaBaloch@users.noreply.github.com"
+            git add sources.json
+            git commit -m "chore: refresh sources.json (iptv-org browse registry)"
+            git push
+          fi

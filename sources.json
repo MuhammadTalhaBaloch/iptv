@@ -1,0 +1,7791 @@
+{
+ "baseUrl": "https://iptv-org.github.io/iptv",
+ "note": "Auto-generated from iptv-org playlists + API names. Do not edit by hand.",
+ "counts": {
+  "index": 4,
+  "category": 31,
+  "city": 476,
+  "country": 187,
+  "language": 203,
+  "region": 42,
+  "subdivision": 353
+ },
+ "sources": [
+  {
+   "type": "index",
+   "name": "All Channels Index",
+   "code": null,
+   "url": "https://iptv-org.github.io/iptv/index.m3u"
+  },
+  {
+   "type": "index",
+   "name": "Category Index",
+   "code": null,
+   "url": "https://iptv-org.github.io/iptv/index.category.m3u"
+  },
+  {
+   "type": "index",
+   "name": "Language Index",
+   "code": null,
+   "url": "https://iptv-org.github.io/iptv/index.language.m3u"
+  },
+  {
+   "type": "index",
+   "name": "Country Index",
+   "code": null,
+   "url": "https://iptv-org.github.io/iptv/index.country.m3u"
+  },
+  {
+   "type": "category",
+   "name": "Animation",
+   "code": "animation",
+   "url": "https://iptv-org.github.io/iptv/categories/animation.m3u"
+  },
+  {
+   "type": "category",
+   "name": "Auto",
+   "code": "auto",
+   "url": "https://iptv-org.github.io/iptv/categories/auto.m3u"
+  },
+  {
+   "type": "category",
+   "name": "Business",
+   "code": "business",
+   "url": "https://iptv-org.github.io/iptv/categories/business.m3u"
+  },
+  {
+   "type": "category",
+   "name": "Classic",
+   "code": "classic",
+   "url": "https://iptv-org.github.io/iptv/categories/classic.m3u"
+  },
+  {
+   "type": "category",
+   "name": "Comedy",
+   "code": "comedy",
+   "url": "https://iptv-org.github.io/iptv/categories/comedy.m3u"
+  },
+  {
+   "type": "category",
+   "name": "Cooking",
+   "code": "cooking",
+   "url": "https://iptv-org.github.io/iptv/categories/cooking.m3u"
+  },
+  {
+   "type": "category",
+   "name": "Culture",
+   "code": "culture",
+   "url": "https://iptv-org.github.io/iptv/categories/culture.m3u"
+  },
+  {
+   "type": "category",
+   "name": "Documentary",
+   "code": "documentary",
+   "url": "https://iptv-org.github.io/iptv/categories/documentary.m3u"
+  },
+  {
+   "type": "category",
+   "name": "Education",
+   "code": "education",
+   "url": "https://iptv-org.github.io/iptv/categories/education.m3u"
+  },
+  {
+   "type": "category",
+   "name": "Entertainment",
+   "code": "entertainment",
+   "url": "https://iptv-org.github.io/iptv/categories/entertainment.m3u"
+  },
+  {
+   "type": "category",
+   "name": "Family",
+   "code": "family",
+   "url": "https://iptv-org.github.io/iptv/categories/family.m3u"
+  },
+  {
+   "type": "category",
+   "name": "General",
+   "code": "general",
+   "url": "https://iptv-org.github.io/iptv/categories/general.m3u"
+  },
+  {
+   "type": "category",
+   "name": "Interactive",
+   "code": "interactive",
+   "url": "https://iptv-org.github.io/iptv/categories/interactive.m3u"
+  },
+  {
+   "type": "category",
+   "name": "Kids",
+   "code": "kids",
+   "url": "https://iptv-org.github.io/iptv/categories/kids.m3u"
+  },
+  {
+   "type": "category",
+   "name": "Legislative",
+   "code": "legislative",
+   "url": "https://iptv-org.github.io/iptv/categories/legislative.m3u"
+  },
+  {
+   "type": "category",
+   "name": "Lifestyle",
+   "code": "lifestyle",
+   "url": "https://iptv-org.github.io/iptv/categories/lifestyle.m3u"
+  },
+  {
+   "type": "category",
+   "name": "Movies",
+   "code": "movies",
+   "url": "https://iptv-org.github.io/iptv/categories/movies.m3u"
+  },
+  {
+   "type": "category",
+   "name": "Music",
+   "code": "music",
+   "url": "https://iptv-org.github.io/iptv/categories/music.m3u"
+  },
+  {
+   "type": "category",
+   "name": "News",
+   "code": "news",
+   "url": "https://iptv-org.github.io/iptv/categories/news.m3u"
+  },
+  {
+   "type": "category",
+   "name": "Outdoor",
+   "code": "outdoor",
+   "url": "https://iptv-org.github.io/iptv/categories/outdoor.m3u"
+  },
+  {
+   "type": "category",
+   "name": "Public",
+   "code": "public",
+   "url": "https://iptv-org.github.io/iptv/categories/public.m3u"
+  },
+  {
+   "type": "category",
+   "name": "Relax",
+   "code": "relax",
+   "url": "https://iptv-org.github.io/iptv/categories/relax.m3u"
+  },
+  {
+   "type": "category",
+   "name": "Religious",
+   "code": "religious",
+   "url": "https://iptv-org.github.io/iptv/categories/religious.m3u"
+  },
+  {
+   "type": "category",
+   "name": "Science",
+   "code": "science",
+   "url": "https://iptv-org.github.io/iptv/categories/science.m3u"
+  },
+  {
+   "type": "category",
+   "name": "Series",
+   "code": "series",
+   "url": "https://iptv-org.github.io/iptv/categories/series.m3u"
+  },
+  {
+   "type": "category",
+   "name": "Shop",
+   "code": "shop",
+   "url": "https://iptv-org.github.io/iptv/categories/shop.m3u"
+  },
+  {
+   "type": "category",
+   "name": "Sports",
+   "code": "sports",
+   "url": "https://iptv-org.github.io/iptv/categories/sports.m3u"
+  },
+  {
+   "type": "category",
+   "name": "Travel",
+   "code": "travel",
+   "url": "https://iptv-org.github.io/iptv/categories/travel.m3u"
+  },
+  {
+   "type": "category",
+   "name": "UNDEFINED",
+   "code": "undefined",
+   "url": "https://iptv-org.github.io/iptv/categories/undefined.m3u"
+  },
+  {
+   "type": "category",
+   "name": "Weather",
+   "code": "weather",
+   "url": "https://iptv-org.github.io/iptv/categories/weather.m3u"
+  },
+  {
+   "type": "category",
+   "name": "XXX",
+   "code": "xxx",
+   "url": "https://iptv-org.github.io/iptv/categories/xxx.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Buenos Aires",
+   "code": "arbue",
+   "url": "https://iptv-org.github.io/iptv/cities/arbue.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Corrientes",
+   "code": "arcnq",
+   "url": "https://iptv-org.github.io/iptv/cities/arcnq.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Formosa",
+   "code": "arfma",
+   "url": "https://iptv-org.github.io/iptv/cities/arfma.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Las Heras",
+   "code": "arlhs",
+   "url": "https://iptv-org.github.io/iptv/cities/arlhs.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Lanús",
+   "code": "arlns",
+   "url": "https://iptv-org.github.io/iptv/cities/arlns.m3u"
+  },
+  {
+   "type": "city",
+   "name": "La Plata",
+   "code": "arlpg",
+   "url": "https://iptv-org.github.io/iptv/cities/arlpg.m3u"
+  },
+  {
+   "type": "city",
+   "name": "San Luis",
+   "code": "arluq",
+   "url": "https://iptv-org.github.io/iptv/cities/arluq.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Mar del Plata",
+   "code": "armdq",
+   "url": "https://iptv-org.github.io/iptv/cities/armdq.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Neuquén",
+   "code": "arnqn",
+   "url": "https://iptv-org.github.io/iptv/cities/arnqn.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Tres Arroyos",
+   "code": "aroyo",
+   "url": "https://iptv-org.github.io/iptv/cities/aroyo.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Posadas",
+   "code": "arpss",
+   "url": "https://iptv-org.github.io/iptv/cities/arpss.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Pinamar",
+   "code": "arqpq",
+   "url": "https://iptv-org.github.io/iptv/cities/arqpq.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Trelew",
+   "code": "arrel",
+   "url": "https://iptv-org.github.io/iptv/cities/arrel.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Resistencia",
+   "code": "arres",
+   "url": "https://iptv-org.github.io/iptv/cities/arres.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Rosario",
+   "code": "arros",
+   "url": "https://iptv-org.github.io/iptv/cities/arros.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Santa Rosa",
+   "code": "arrsa",
+   "url": "https://iptv-org.github.io/iptv/cities/arrsa.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Santiago del Estero",
+   "code": "arsde",
+   "url": "https://iptv-org.github.io/iptv/cities/arsde.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Santa Fe",
+   "code": "arsfn",
+   "url": "https://iptv-org.github.io/iptv/cities/arsfn.m3u"
+  },
+  {
+   "type": "city",
+   "name": "San Fernando del Valle de Catamarca",
+   "code": "arsfv",
+   "url": "https://iptv-org.github.io/iptv/cities/arsfv.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Salta",
+   "code": "arsla",
+   "url": "https://iptv-org.github.io/iptv/cities/arsla.m3u"
+  },
+  {
+   "type": "city",
+   "name": "San Miguel de Tucumán",
+   "code": "arsmc",
+   "url": "https://iptv-org.github.io/iptv/cities/arsmc.m3u"
+  },
+  {
+   "type": "city",
+   "name": "San Miguel",
+   "code": "arsmg",
+   "url": "https://iptv-org.github.io/iptv/cities/arsmg.m3u"
+  },
+  {
+   "type": "city",
+   "name": "San Pedro",
+   "code": "arsnp",
+   "url": "https://iptv-org.github.io/iptv/cities/arsnp.m3u"
+  },
+  {
+   "type": "city",
+   "name": "San Salvador de Jujuy",
+   "code": "arssj",
+   "url": "https://iptv-org.github.io/iptv/cities/arssj.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Santa Teresita",
+   "code": "arsst",
+   "url": "https://iptv-org.github.io/iptv/cities/arsst.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Tandil",
+   "code": "artdl",
+   "url": "https://iptv-org.github.io/iptv/cities/artdl.m3u"
+  },
+  {
+   "type": "city",
+   "name": "San Juan",
+   "code": "aruaq",
+   "url": "https://iptv-org.github.io/iptv/cities/aruaq.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Villa María",
+   "code": "arvmr",
+   "url": "https://iptv-org.github.io/iptv/cities/arvmr.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Venado Tuerto",
+   "code": "arvnt",
+   "url": "https://iptv-org.github.io/iptv/cities/arvnt.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Graz",
+   "code": "atgrz",
+   "url": "https://iptv-org.github.io/iptv/cities/atgrz.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Klagenfurt",
+   "code": "atklu",
+   "url": "https://iptv-org.github.io/iptv/cities/atklu.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Sydney",
+   "code": "ausyd",
+   "url": "https://iptv-org.github.io/iptv/cities/ausyd.m3u"
+  },
+  {
+   "type": "city",
+   "name": "El Alto",
+   "code": "boalt",
+   "url": "https://iptv-org.github.io/iptv/cities/boalt.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Cochabamba",
+   "code": "bocbb",
+   "url": "https://iptv-org.github.io/iptv/cities/bocbb.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Copacabana",
+   "code": "bocpb",
+   "url": "https://iptv-org.github.io/iptv/cities/bocpb.m3u"
+  },
+  {
+   "type": "city",
+   "name": "La Paz",
+   "code": "bolpb",
+   "url": "https://iptv-org.github.io/iptv/cities/bolpb.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Oruro",
+   "code": "booru",
+   "url": "https://iptv-org.github.io/iptv/cities/booru.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Santa Cruz de la Sierra",
+   "code": "boscs",
+   "url": "https://iptv-org.github.io/iptv/cities/boscs.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Araçatuba",
+   "code": "braru",
+   "url": "https://iptv-org.github.io/iptv/cities/braru.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Araruna",
+   "code": "brarw",
+   "url": "https://iptv-org.github.io/iptv/cities/brarw.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Balneário Camboriú",
+   "code": "brbac",
+   "url": "https://iptv-org.github.io/iptv/cities/brbac.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Brasília",
+   "code": "brbsb",
+   "url": "https://iptv-org.github.io/iptv/cities/brbsb.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Castanhal",
+   "code": "brcas",
+   "url": "https://iptv-org.github.io/iptv/cities/brcas.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Cuiabá",
+   "code": "brcba",
+   "url": "https://iptv-org.github.io/iptv/cities/brcba.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Cachoeiro de Itapemirim",
+   "code": "brcdi",
+   "url": "https://iptv-org.github.io/iptv/cities/brcdi.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Cabo Frio",
+   "code": "brcfo",
+   "url": "https://iptv-org.github.io/iptv/cities/brcfo.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Colatina",
+   "code": "brctn",
+   "url": "https://iptv-org.github.io/iptv/cities/brctn.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Curitiba",
+   "code": "brcwb",
+   "url": "https://iptv-org.github.io/iptv/cities/brcwb.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Caxias",
+   "code": "brcxs",
+   "url": "https://iptv-org.github.io/iptv/cities/brcxs.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Fortaleza",
+   "code": "brfor",
+   "url": "https://iptv-org.github.io/iptv/cities/brfor.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Guarulhos",
+   "code": "brgus",
+   "url": "https://iptv-org.github.io/iptv/cities/brgus.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Itapetininga",
+   "code": "briig",
+   "url": "https://iptv-org.github.io/iptv/cities/briig.m3u"
+  },
+  {
+   "type": "city",
+   "name": "João Pessoa",
+   "code": "brjpa",
+   "url": "https://iptv-org.github.io/iptv/cities/brjpa.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Maricá",
+   "code": "brmrc",
+   "url": "https://iptv-org.github.io/iptv/cities/brmrc.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Mutum",
+   "code": "brmuu",
+   "url": "https://iptv-org.github.io/iptv/cities/brmuu.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Natal",
+   "code": "brnat",
+   "url": "https://iptv-org.github.io/iptv/cities/brnat.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Nova Friburgo",
+   "code": "brnfu",
+   "url": "https://iptv-org.github.io/iptv/cities/brnfu.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Passo Fundo",
+   "code": "brpfo",
+   "url": "https://iptv-org.github.io/iptv/cities/brpfo.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Patos de Minas",
+   "code": "brpmi",
+   "url": "https://iptv-org.github.io/iptv/cities/brpmi.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Porto Alegre",
+   "code": "brpoa",
+   "url": "https://iptv-org.github.io/iptv/cities/brpoa.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Paranã",
+   "code": "brprx",
+   "url": "https://iptv-org.github.io/iptv/cities/brprx.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Rio de Janeiro",
+   "code": "brrio",
+   "url": "https://iptv-org.github.io/iptv/cities/brrio.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Rondonópolis",
+   "code": "brroo",
+   "url": "https://iptv-org.github.io/iptv/cities/brroo.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Sao Paulo",
+   "code": "brsao",
+   "url": "https://iptv-org.github.io/iptv/cities/brsao.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Sinop",
+   "code": "brsin",
+   "url": "https://iptv-org.github.io/iptv/cities/brsin.m3u"
+  },
+  {
+   "type": "city",
+   "name": "São José",
+   "code": "brsje",
+   "url": "https://iptv-org.github.io/iptv/cities/brsje.m3u"
+  },
+  {
+   "type": "city",
+   "name": "São Mateus",
+   "code": "brsms",
+   "url": "https://iptv-org.github.io/iptv/cities/brsms.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Surubim",
+   "code": "brsrb",
+   "url": "https://iptv-org.github.io/iptv/cities/brsrb.m3u"
+  },
+  {
+   "type": "city",
+   "name": "São Sebastião do Paraíso",
+   "code": "brssp",
+   "url": "https://iptv-org.github.io/iptv/cities/brssp.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Sertãozinho",
+   "code": "brszo",
+   "url": "https://iptv-org.github.io/iptv/cities/brszo.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Uberlândia",
+   "code": "brudi",
+   "url": "https://iptv-org.github.io/iptv/cities/brudi.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Viçosa",
+   "code": "brvis",
+   "url": "https://iptv-org.github.io/iptv/cities/brvis.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Calgary",
+   "code": "cacal",
+   "url": "https://iptv-org.github.io/iptv/cities/cacal.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Charlottetown",
+   "code": "cacha",
+   "url": "https://iptv-org.github.io/iptv/cities/cacha.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Edmonton",
+   "code": "caedm",
+   "url": "https://iptv-org.github.io/iptv/cities/caedm.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Fredericton",
+   "code": "cafre",
+   "url": "https://iptv-org.github.io/iptv/cities/cafre.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Halifax",
+   "code": "cahal",
+   "url": "https://iptv-org.github.io/iptv/cities/cahal.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Hamilton",
+   "code": "caham",
+   "url": "https://iptv-org.github.io/iptv/cities/caham.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Iqaluit",
+   "code": "caiql",
+   "url": "https://iptv-org.github.io/iptv/cities/caiql.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Langley",
+   "code": "calng",
+   "url": "https://iptv-org.github.io/iptv/cities/calng.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Moncton",
+   "code": "camnt",
+   "url": "https://iptv-org.github.io/iptv/cities/camnt.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Montréal",
+   "code": "camtr",
+   "url": "https://iptv-org.github.io/iptv/cities/camtr.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Neepawa",
+   "code": "canee",
+   "url": "https://iptv-org.github.io/iptv/cities/canee.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Ottawa",
+   "code": "caott",
+   "url": "https://iptv-org.github.io/iptv/cities/caott.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Québec",
+   "code": "caque",
+   "url": "https://iptv-org.github.io/iptv/cities/caque.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Regina",
+   "code": "careg",
+   "url": "https://iptv-org.github.io/iptv/cities/careg.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Rimouski",
+   "code": "carim",
+   "url": "https://iptv-org.github.io/iptv/cities/carim.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Saguenay",
+   "code": "casag",
+   "url": "https://iptv-org.github.io/iptv/cities/casag.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Sherbrooke",
+   "code": "casbr",
+   "url": "https://iptv-org.github.io/iptv/cities/casbr.m3u"
+  },
+  {
+   "type": "city",
+   "name": "St. John's",
+   "code": "casjf",
+   "url": "https://iptv-org.github.io/iptv/cities/casjf.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Toronto",
+   "code": "cator",
+   "url": "https://iptv-org.github.io/iptv/cities/cator.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Trois-Rivières",
+   "code": "catrr",
+   "url": "https://iptv-org.github.io/iptv/cities/catrr.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Vancouver",
+   "code": "cavan",
+   "url": "https://iptv-org.github.io/iptv/cities/cavan.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Victoria",
+   "code": "cavic",
+   "url": "https://iptv-org.github.io/iptv/cities/cavic.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Windsor",
+   "code": "cawnd",
+   "url": "https://iptv-org.github.io/iptv/cities/cawnd.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Winnipeg",
+   "code": "cawnp",
+   "url": "https://iptv-org.github.io/iptv/cities/cawnp.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Yellowknife",
+   "code": "cayzf",
+   "url": "https://iptv-org.github.io/iptv/cities/cayzf.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Brazzaville",
+   "code": "cgbzv",
+   "url": "https://iptv-org.github.io/iptv/cities/cgbzv.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Caldera",
+   "code": "clcld",
+   "url": "https://iptv-org.github.io/iptv/cities/clcld.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Curicó",
+   "code": "clcur",
+   "url": "https://iptv-org.github.io/iptv/cities/clcur.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Pichilemu",
+   "code": "clplm",
+   "url": "https://iptv-org.github.io/iptv/cities/clplm.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Quillota",
+   "code": "clqta",
+   "url": "https://iptv-org.github.io/iptv/cities/clqta.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Yumbel",
+   "code": "clyum",
+   "url": "https://iptv-org.github.io/iptv/cities/clyum.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Temuco",
+   "code": "clzco",
+   "url": "https://iptv-org.github.io/iptv/cities/clzco.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Ibagué",
+   "code": "coibe",
+   "url": "https://iptv-org.github.io/iptv/cities/coibe.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Manizales",
+   "code": "comzl",
+   "url": "https://iptv-org.github.io/iptv/cities/comzl.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Neiva",
+   "code": "conva",
+   "url": "https://iptv-org.github.io/iptv/cities/conva.m3u"
+  },
+  {
+   "type": "city",
+   "name": "San Andrés",
+   "code": "cosac",
+   "url": "https://iptv-org.github.io/iptv/cities/cosac.m3u"
+  },
+  {
+   "type": "city",
+   "name": "San Jacinto",
+   "code": "cosjc",
+   "url": "https://iptv-org.github.io/iptv/cities/cosjc.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Tuluá",
+   "code": "coulq",
+   "url": "https://iptv-org.github.io/iptv/cities/coulq.m3u"
+  },
+  {
+   "type": "city",
+   "name": "San Marcos de Tarrazú",
+   "code": "crmtz",
+   "url": "https://iptv-org.github.io/iptv/cities/crmtz.m3u"
+  },
+  {
+   "type": "city",
+   "name": "San Vito",
+   "code": "crtoo",
+   "url": "https://iptv-org.github.io/iptv/cities/crtoo.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Aachen",
+   "code": "deaah",
+   "url": "https://iptv-org.github.io/iptv/cities/deaah.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Bielefeld",
+   "code": "debfe",
+   "url": "https://iptv-org.github.io/iptv/cities/debfe.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Bonn",
+   "code": "debon",
+   "url": "https://iptv-org.github.io/iptv/cities/debon.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Köln",
+   "code": "decgn",
+   "url": "https://iptv-org.github.io/iptv/cities/decgn.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Dortmund",
+   "code": "dedtm",
+   "url": "https://iptv-org.github.io/iptv/cities/dedtm.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Duisburg",
+   "code": "dedui",
+   "url": "https://iptv-org.github.io/iptv/cities/dedui.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Düsseldorf",
+   "code": "dedus",
+   "url": "https://iptv-org.github.io/iptv/cities/dedus.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Essen",
+   "code": "deess",
+   "url": "https://iptv-org.github.io/iptv/cities/deess.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Munster",
+   "code": "demun",
+   "url": "https://iptv-org.github.io/iptv/cities/demun.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Siegen",
+   "code": "desge",
+   "url": "https://iptv-org.github.io/iptv/cities/desge.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Wuppertal",
+   "code": "dewup",
+   "url": "https://iptv-org.github.io/iptv/cities/dewup.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Bonao",
+   "code": "dobno",
+   "url": "https://iptv-org.github.io/iptv/cities/dobno.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Higuey",
+   "code": "dohig",
+   "url": "https://iptv-org.github.io/iptv/cities/dohig.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Constanza",
+   "code": "dolvc",
+   "url": "https://iptv-org.github.io/iptv/cities/dolvc.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Puerto Plata",
+   "code": "dopop",
+   "url": "https://iptv-org.github.io/iptv/cities/dopop.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Santiago de los Caballeros",
+   "code": "dosti",
+   "url": "https://iptv-org.github.io/iptv/cities/dosti.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Cuenca",
+   "code": "eccue",
+   "url": "https://iptv-org.github.io/iptv/cities/eccue.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Loja",
+   "code": "ecloh",
+   "url": "https://iptv-org.github.io/iptv/cities/ecloh.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Algeciras",
+   "code": "esalg",
+   "url": "https://iptv-org.github.io/iptv/cities/esalg.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Alzira",
+   "code": "esazj",
+   "url": "https://iptv-org.github.io/iptv/cities/esazj.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Bilbao",
+   "code": "esbio",
+   "url": "https://iptv-org.github.io/iptv/cities/esbio.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Bocairente",
+   "code": "esboi",
+   "url": "https://iptv-org.github.io/iptv/cities/esboi.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Barbastro",
+   "code": "esbrb",
+   "url": "https://iptv-org.github.io/iptv/cities/esbrb.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Cabrils",
+   "code": "escbi",
+   "url": "https://iptv-org.github.io/iptv/cities/escbi.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Cardedeu",
+   "code": "escdd",
+   "url": "https://iptv-org.github.io/iptv/cities/escdd.m3u"
+  },
+  {
+   "type": "city",
+   "name": "El Vendrell",
+   "code": "esdre",
+   "url": "https://iptv-org.github.io/iptv/cities/esdre.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Fuengirola",
+   "code": "esfgl",
+   "url": "https://iptv-org.github.io/iptv/cities/esfgl.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Granada",
+   "code": "esgrx",
+   "url": "https://iptv-org.github.io/iptv/cities/esgrx.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Huelva",
+   "code": "eshuv",
+   "url": "https://iptv-org.github.io/iptv/cities/eshuv.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Jaén",
+   "code": "esjae",
+   "url": "https://iptv-org.github.io/iptv/cities/esjae.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Logroño",
+   "code": "eslgr",
+   "url": "https://iptv-org.github.io/iptv/cities/eslgr.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Lleida",
+   "code": "eslle",
+   "url": "https://iptv-org.github.io/iptv/cities/eslle.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Las Palmas",
+   "code": "eslpg",
+   "url": "https://iptv-org.github.io/iptv/cities/eslpg.m3u"
+  },
+  {
+   "type": "city",
+   "name": "La Seu d'Urgell",
+   "code": "eslsl",
+   "url": "https://iptv-org.github.io/iptv/cities/eslsl.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Marbella",
+   "code": "esmqe",
+   "url": "https://iptv-org.github.io/iptv/cities/esmqe.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Mataró",
+   "code": "esmto",
+   "url": "https://iptv-org.github.io/iptv/cities/esmto.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Córdoba",
+   "code": "esodb",
+   "url": "https://iptv-org.github.io/iptv/cities/esodb.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Olot",
+   "code": "esooe",
+   "url": "https://iptv-org.github.io/iptv/cities/esooe.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Palafrugell",
+   "code": "espfl",
+   "url": "https://iptv-org.github.io/iptv/cities/espfl.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Pamplona",
+   "code": "espna",
+   "url": "https://iptv-org.github.io/iptv/cities/espna.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Sabadell",
+   "code": "essbp",
+   "url": "https://iptv-org.github.io/iptv/cities/essbp.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Toledo",
+   "code": "estol",
+   "url": "https://iptv-org.github.io/iptv/cities/estol.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Vic",
+   "code": "esvic",
+   "url": "https://iptv-org.github.io/iptv/cities/esvic.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Kyyjärvi",
+   "code": "fikyy",
+   "url": "https://iptv-org.github.io/iptv/cities/fikyy.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Árta",
+   "code": "grart",
+   "url": "https://iptv-org.github.io/iptv/cities/grart.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Athens",
+   "code": "grath",
+   "url": "https://iptv-org.github.io/iptv/cities/grath.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Giannitsá",
+   "code": "grgak",
+   "url": "https://iptv-org.github.io/iptv/cities/grgak.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Ioánnina",
+   "code": "grioa",
+   "url": "https://iptv-org.github.io/iptv/cities/grioa.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Kozáni",
+   "code": "grkzi",
+   "url": "https://iptv-org.github.io/iptv/cities/grkzi.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Lamía",
+   "code": "grlam",
+   "url": "https://iptv-org.github.io/iptv/cities/grlam.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Lárisa",
+   "code": "grlra",
+   "url": "https://iptv-org.github.io/iptv/cities/grlra.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Thessaloníki",
+   "code": "grskg",
+   "url": "https://iptv-org.github.io/iptv/cities/grskg.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Barberena",
+   "code": "gtbab",
+   "url": "https://iptv-org.github.io/iptv/cities/gtbab.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Sololá",
+   "code": "gtsol",
+   "url": "https://iptv-org.github.io/iptv/cities/gtsol.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Pamekasan",
+   "code": "id5ss",
+   "url": "https://iptv-org.github.io/iptv/cities/id5ss.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Sumedang",
+   "code": "id5su",
+   "url": "https://iptv-org.github.io/iptv/cities/id5su.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Atambua",
+   "code": "idabu",
+   "url": "https://iptv-org.github.io/iptv/cities/idabu.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Banjarmasin",
+   "code": "idbdj",
+   "url": "https://iptv-org.github.io/iptv/cities/idbdj.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Balikpapan",
+   "code": "idbpn",
+   "url": "https://iptv-org.github.io/iptv/cities/idbpn.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Jakarta",
+   "code": "idjkt",
+   "url": "https://iptv-org.github.io/iptv/cities/idjkt.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Yogyakarta",
+   "code": "idjog",
+   "url": "https://iptv-org.github.io/iptv/cities/idjog.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Kediri",
+   "code": "idkdr",
+   "url": "https://iptv-org.github.io/iptv/cities/idkdr.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Makassar",
+   "code": "idmak",
+   "url": "https://iptv-org.github.io/iptv/cities/idmak.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Manado",
+   "code": "idmdc",
+   "url": "https://iptv-org.github.io/iptv/cities/idmdc.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Madiun",
+   "code": "idmdi",
+   "url": "https://iptv-org.github.io/iptv/cities/idmdi.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Malang",
+   "code": "idmlg",
+   "url": "https://iptv-org.github.io/iptv/cities/idmlg.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Padang",
+   "code": "idpdg",
+   "url": "https://iptv-org.github.io/iptv/cities/idpdg.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Purwokerto",
+   "code": "idpwl",
+   "url": "https://iptv-org.github.io/iptv/cities/idpwl.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Serang",
+   "code": "idser",
+   "url": "https://iptv-org.github.io/iptv/cities/idser.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Surakarta",
+   "code": "idskt",
+   "url": "https://iptv-org.github.io/iptv/cities/idskt.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Semarang",
+   "code": "idsrg",
+   "url": "https://iptv-org.github.io/iptv/cities/idsrg.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Surabaya",
+   "code": "idsub",
+   "url": "https://iptv-org.github.io/iptv/cities/idsub.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Bandar Lampung",
+   "code": "idtkg",
+   "url": "https://iptv-org.github.io/iptv/cities/idtkg.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Tulungagung",
+   "code": "idtlu",
+   "url": "https://iptv-org.github.io/iptv/cities/idtlu.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Tasikmalaya",
+   "code": "idtsy",
+   "url": "https://iptv-org.github.io/iptv/cities/idtsy.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Kozhikode",
+   "code": "inccj",
+   "url": "https://iptv-org.github.io/iptv/cities/inccj.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Coimbatore",
+   "code": "incjb",
+   "url": "https://iptv-org.github.io/iptv/cities/incjb.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Delhi",
+   "code": "indel",
+   "url": "https://iptv-org.github.io/iptv/cities/indel.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Dharmapuri",
+   "code": "indpi",
+   "url": "https://iptv-org.github.io/iptv/cities/indpi.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Karur",
+   "code": "inkar",
+   "url": "https://iptv-org.github.io/iptv/cities/inkar.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Kanchipuram",
+   "code": "inkcp",
+   "url": "https://iptv-org.github.io/iptv/cities/inkcp.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Kannur",
+   "code": "inknn",
+   "url": "https://iptv-org.github.io/iptv/cities/inknn.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Thanjavur",
+   "code": "intjv",
+   "url": "https://iptv-org.github.io/iptv/cities/intjv.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Tenkasi",
+   "code": "intks",
+   "url": "https://iptv-org.github.io/iptv/cities/intks.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Tiruchirappalli",
+   "code": "intri",
+   "url": "https://iptv-org.github.io/iptv/cities/intri.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Andong",
+   "code": "kradg",
+   "url": "https://iptv-org.github.io/iptv/cities/kradg.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Bucheon",
+   "code": "krbcn",
+   "url": "https://iptv-org.github.io/iptv/cities/krbcn.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Jeju",
+   "code": "krcha",
+   "url": "https://iptv-org.github.io/iptv/cities/krcha.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Chuncheon",
+   "code": "krchc",
+   "url": "https://iptv-org.github.io/iptv/cities/krchc.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Cheongju",
+   "code": "krcoj",
+   "url": "https://iptv-org.github.io/iptv/cities/krcoj.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Jeonju",
+   "code": "krjnj",
+   "url": "https://iptv-org.github.io/iptv/cities/krjnj.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Mokpo",
+   "code": "krmok",
+   "url": "https://iptv-org.github.io/iptv/cities/krmok.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Busan",
+   "code": "krpus",
+   "url": "https://iptv-org.github.io/iptv/cities/krpus.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Daegu",
+   "code": "krtae",
+   "url": "https://iptv-org.github.io/iptv/cities/krtae.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Daejeon",
+   "code": "krtjn",
+   "url": "https://iptv-org.github.io/iptv/cities/krtjn.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Ulsan",
+   "code": "krusn",
+   "url": "https://iptv-org.github.io/iptv/cities/krusn.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Yeosu",
+   "code": "kryos",
+   "url": "https://iptv-org.github.io/iptv/cities/kryos.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Ciudad Juárez",
+   "code": "mxcjs",
+   "url": "https://iptv-org.github.io/iptv/cities/mxcjs.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Cancún",
+   "code": "mxcun",
+   "url": "https://iptv-org.github.io/iptv/cities/mxcun.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Cuernavaca",
+   "code": "mxcvc",
+   "url": "https://iptv-org.github.io/iptv/cities/mxcvc.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Mérida",
+   "code": "mxmid",
+   "url": "https://iptv-org.github.io/iptv/cities/mxmid.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Sabinas",
+   "code": "mxsbn",
+   "url": "https://iptv-org.github.io/iptv/cities/mxsbn.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Santiago de Querétaro",
+   "code": "mxsqe",
+   "url": "https://iptv-org.github.io/iptv/cities/mxsqe.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Tijuana",
+   "code": "mxtij",
+   "url": "https://iptv-org.github.io/iptv/cities/mxtij.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Abancay",
+   "code": "peab4",
+   "url": "https://iptv-org.github.io/iptv/cities/peab4.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Arequipa",
+   "code": "peaqp",
+   "url": "https://iptv-org.github.io/iptv/cities/peaqp.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Bagua",
+   "code": "pebag",
+   "url": "https://iptv-org.github.io/iptv/cities/pebag.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Huanta",
+   "code": "pehnt",
+   "url": "https://iptv-org.github.io/iptv/cities/pehnt.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Huancayo",
+   "code": "pejhy",
+   "url": "https://iptv-org.github.io/iptv/cities/pejhy.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Lima",
+   "code": "pelim",
+   "url": "https://iptv-org.github.io/iptv/cities/pelim.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Pucallpa",
+   "code": "pepcl",
+   "url": "https://iptv-org.github.io/iptv/cities/pepcl.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Satipo",
+   "code": "pesip",
+   "url": "https://iptv-org.github.io/iptv/cities/pesip.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Yurimaguas",
+   "code": "peyms",
+   "url": "https://iptv-org.github.io/iptv/cities/peyms.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Islamabad",
+   "code": "pkisb",
+   "url": "https://iptv-org.github.io/iptv/cities/pkisb.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Coronel Oviedo",
+   "code": "pycoo",
+   "url": "https://iptv-org.github.io/iptv/cities/pycoo.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Encarnacion",
+   "code": "pyeno",
+   "url": "https://iptv-org.github.io/iptv/cities/pyeno.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Filadelfia",
+   "code": "pyflm",
+   "url": "https://iptv-org.github.io/iptv/cities/pyflm.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Târgu Jiu",
+   "code": "rotgu",
+   "url": "https://iptv-org.github.io/iptv/cities/rotgu.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Krasnodar",
+   "code": "rukrr",
+   "url": "https://iptv-org.github.io/iptv/cities/rukrr.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Vladivostok",
+   "code": "ruvms",
+   "url": "https://iptv-org.github.io/iptv/cities/ruvms.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Bloomfield",
+   "code": "usaac",
+   "url": "https://iptv-org.github.io/iptv/cities/usaac.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Albuquerque",
+   "code": "usabq",
+   "url": "https://iptv-org.github.io/iptv/cities/usabq.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Waco",
+   "code": "usact",
+   "url": "https://iptv-org.github.io/iptv/cities/usact.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Asheville",
+   "code": "usaev",
+   "url": "https://iptv-org.github.io/iptv/cities/usaev.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Athens",
+   "code": "usahn",
+   "url": "https://iptv-org.github.io/iptv/cities/usahn.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Albany",
+   "code": "usalb",
+   "url": "https://iptv-org.github.io/iptv/cities/usalb.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Annapolis",
+   "code": "usanp",
+   "url": "https://iptv-org.github.io/iptv/cities/usanp.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Naples",
+   "code": "usapf",
+   "url": "https://iptv-org.github.io/iptv/cities/usapf.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Nashua",
+   "code": "usash",
+   "url": "https://iptv-org.github.io/iptv/cities/usash.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Ashland",
+   "code": "usasi",
+   "url": "https://iptv-org.github.io/iptv/cities/usasi.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Atlanta",
+   "code": "usatl",
+   "url": "https://iptv-org.github.io/iptv/cities/usatl.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Aurora",
+   "code": "usauc",
+   "url": "https://iptv-org.github.io/iptv/cities/usauc.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Austin",
+   "code": "usaum",
+   "url": "https://iptv-org.github.io/iptv/cities/usaum.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Austin",
+   "code": "usaus",
+   "url": "https://iptv-org.github.io/iptv/cities/usaus.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Kalamazoo",
+   "code": "usazo",
+   "url": "https://iptv-org.github.io/iptv/cities/usazo.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Baltimore",
+   "code": "usbal",
+   "url": "https://iptv-org.github.io/iptv/cities/usbal.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Bradenton",
+   "code": "usbbi",
+   "url": "https://iptv-org.github.io/iptv/cities/usbbi.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Bridgeport",
+   "code": "usbdr",
+   "url": "https://iptv-org.github.io/iptv/cities/usbdr.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Bakersfield",
+   "code": "usbfl",
+   "url": "https://iptv-org.github.io/iptv/cities/usbfl.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Brighton",
+   "code": "usbgk",
+   "url": "https://iptv-org.github.io/iptv/cities/usbgk.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Bolton",
+   "code": "usbl8",
+   "url": "https://iptv-org.github.io/iptv/cities/usbl8.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Brookline",
+   "code": "usbma",
+   "url": "https://iptv-org.github.io/iptv/cities/usbma.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Boston",
+   "code": "usbos",
+   "url": "https://iptv-org.github.io/iptv/cities/usbos.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Battle Creek",
+   "code": "usbtl",
+   "url": "https://iptv-org.github.io/iptv/cities/usbtl.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Baton Rouge",
+   "code": "usbtr",
+   "url": "https://iptv-org.github.io/iptv/cities/usbtr.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Buena Park",
+   "code": "usbun",
+   "url": "https://iptv-org.github.io/iptv/cities/usbun.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Burbank",
+   "code": "usbur",
+   "url": "https://iptv-org.github.io/iptv/cities/usbur.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Beverly Hills",
+   "code": "usbvh",
+   "url": "https://iptv-org.github.io/iptv/cities/usbvh.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Cape Coral",
+   "code": "uscc2",
+   "url": "https://iptv-org.github.io/iptv/cities/uscc2.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Concord",
+   "code": "usccr",
+   "url": "https://iptv-org.github.io/iptv/cities/usccr.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Cerritos",
+   "code": "uscek",
+   "url": "https://iptv-org.github.io/iptv/cities/uscek.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Coral Gables",
+   "code": "uscgb",
+   "url": "https://iptv-org.github.io/iptv/cities/uscgb.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Cape Girardeau",
+   "code": "uscgi",
+   "url": "https://iptv-org.github.io/iptv/cities/uscgi.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Chino Hills",
+   "code": "usch3",
+   "url": "https://iptv-org.github.io/iptv/cities/usch3.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Chattanooga",
+   "code": "uscha",
+   "url": "https://iptv-org.github.io/iptv/cities/uscha.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Chicago",
+   "code": "uschi",
+   "url": "https://iptv-org.github.io/iptv/cities/uschi.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Charleston",
+   "code": "uschs",
+   "url": "https://iptv-org.github.io/iptv/cities/uschs.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Clinton",
+   "code": "usclb",
+   "url": "https://iptv-org.github.io/iptv/cities/usclb.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Carlsbad",
+   "code": "uscld",
+   "url": "https://iptv-org.github.io/iptv/cities/uscld.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Cleveland",
+   "code": "uscle",
+   "url": "https://iptv-org.github.io/iptv/cities/uscle.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Charlotte",
+   "code": "usclt",
+   "url": "https://iptv-org.github.io/iptv/cities/usclt.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Columbus",
+   "code": "uscmh",
+   "url": "https://iptv-org.github.io/iptv/cities/uscmh.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Champaign",
+   "code": "uscmi",
+   "url": "https://iptv-org.github.io/iptv/cities/uscmi.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Cleveland",
+   "code": "uscqv",
+   "url": "https://iptv-org.github.io/iptv/cities/uscqv.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Corpus Christi",
+   "code": "uscrp",
+   "url": "https://iptv-org.github.io/iptv/cities/uscrp.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Ceres",
+   "code": "uscrz",
+   "url": "https://iptv-org.github.io/iptv/cities/uscrz.m3u"
+  },
+  {
+   "type": "city",
+   "name": "San Luis Obispo",
+   "code": "uscsl",
+   "url": "https://iptv-org.github.io/iptv/cities/uscsl.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Cupertino",
+   "code": "uscuo",
+   "url": "https://iptv-org.github.io/iptv/cities/uscuo.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Cincinnati",
+   "code": "uscvg",
+   "url": "https://iptv-org.github.io/iptv/cities/uscvg.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Cloverdale",
+   "code": "uscyi",
+   "url": "https://iptv-org.github.io/iptv/cities/uscyi.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Cypress",
+   "code": "uscyq",
+   "url": "https://iptv-org.github.io/iptv/cities/uscyq.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Costa Mesa",
+   "code": "usczm",
+   "url": "https://iptv-org.github.io/iptv/cities/usczm.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Dagsboro",
+   "code": "usd5w",
+   "url": "https://iptv-org.github.io/iptv/cities/usd5w.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Daytona Beach",
+   "code": "usdab",
+   "url": "https://iptv-org.github.io/iptv/cities/usdab.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Dallas",
+   "code": "usdal",
+   "url": "https://iptv-org.github.io/iptv/cities/usdal.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Dayton",
+   "code": "usday",
+   "url": "https://iptv-org.github.io/iptv/cities/usday.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Denver",
+   "code": "usden",
+   "url": "https://iptv-org.github.io/iptv/cities/usden.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Detroit",
+   "code": "usdet",
+   "url": "https://iptv-org.github.io/iptv/cities/usdet.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Duluth",
+   "code": "usdlh",
+   "url": "https://iptv-org.github.io/iptv/cities/usdlh.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Del Mar",
+   "code": "usdma",
+   "url": "https://iptv-org.github.io/iptv/cities/usdma.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Sedalia",
+   "code": "usdmo",
+   "url": "https://iptv-org.github.io/iptv/cities/usdmo.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Derry",
+   "code": "usdnp",
+   "url": "https://iptv-org.github.io/iptv/cities/usdnp.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Des Moines",
+   "code": "usdsm",
+   "url": "https://iptv-org.github.io/iptv/cities/usdsm.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Eureka",
+   "code": "useka",
+   "url": "https://iptv-org.github.io/iptv/cities/useka.m3u"
+  },
+  {
+   "type": "city",
+   "name": "El Paso",
+   "code": "uselp",
+   "url": "https://iptv-org.github.io/iptv/cities/uselp.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Newark",
+   "code": "usewr",
+   "url": "https://iptv-org.github.io/iptv/cities/usewr.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Key West",
+   "code": "useyw",
+   "url": "https://iptv-org.github.io/iptv/cities/useyw.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Fresno",
+   "code": "usfat",
+   "url": "https://iptv-org.github.io/iptv/cities/usfat.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Fernandina Beach",
+   "code": "usfeb",
+   "url": "https://iptv-org.github.io/iptv/cities/usfeb.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Framingham",
+   "code": "usfhm",
+   "url": "https://iptv-org.github.io/iptv/cities/usfhm.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Florence",
+   "code": "usflo",
+   "url": "https://iptv-org.github.io/iptv/cities/usflo.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Fort Myers",
+   "code": "usfmy",
+   "url": "https://iptv-org.github.io/iptv/cities/usfmy.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Fort Collins",
+   "code": "usfnl",
+   "url": "https://iptv-org.github.io/iptv/cities/usfnl.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Fort Pierce",
+   "code": "usfpr",
+   "url": "https://iptv-org.github.io/iptv/cities/usfpr.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Fort Worth",
+   "code": "usfwt",
+   "url": "https://iptv-org.github.io/iptv/cities/usfwt.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Fredericksburg",
+   "code": "usfxg",
+   "url": "https://iptv-org.github.io/iptv/cities/usfxg.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Gillette",
+   "code": "usgcc",
+   "url": "https://iptv-org.github.io/iptv/cities/usgcc.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Glendale",
+   "code": "usgda",
+   "url": "https://iptv-org.github.io/iptv/cities/usgda.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Gilroy",
+   "code": "usgir",
+   "url": "https://iptv-org.github.io/iptv/cities/usgir.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Galveston",
+   "code": "usgls",
+   "url": "https://iptv-org.github.io/iptv/cities/usgls.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Gainesville",
+   "code": "usgnv",
+   "url": "https://iptv-org.github.io/iptv/cities/usgnv.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Golden",
+   "code": "usgoe",
+   "url": "https://iptv-org.github.io/iptv/cities/usgoe.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Gulfport",
+   "code": "usgpt",
+   "url": "https://iptv-org.github.io/iptv/cities/usgpt.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Green Bay",
+   "code": "usgrb",
+   "url": "https://iptv-org.github.io/iptv/cities/usgrb.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Garland",
+   "code": "usgrx",
+   "url": "https://iptv-org.github.io/iptv/cities/usgrx.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Greenville",
+   "code": "usgv9",
+   "url": "https://iptv-org.github.io/iptv/cities/usgv9.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Harrisburg",
+   "code": "ushar",
+   "url": "https://iptv-org.github.io/iptv/cities/ushar.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Hudson",
+   "code": "ushdu",
+   "url": "https://iptv-org.github.io/iptv/cities/ushdu.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Higganum",
+   "code": "ushig",
+   "url": "https://iptv-org.github.io/iptv/cities/ushig.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Honolulu",
+   "code": "ushnl",
+   "url": "https://iptv-org.github.io/iptv/cities/ushnl.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Houston",
+   "code": "ushou",
+   "url": "https://iptv-org.github.io/iptv/cities/ushou.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Huntington Beach",
+   "code": "ushtd",
+   "url": "https://iptv-org.github.io/iptv/cities/ushtd.m3u"
+  },
+  {
+   "type": "city",
+   "name": "New Haven",
+   "code": "ushvn",
+   "url": "https://iptv-org.github.io/iptv/cities/ushvn.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Wichita",
+   "code": "usict",
+   "url": "https://iptv-org.github.io/iptv/cities/usict.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Bullhead City",
+   "code": "usifp",
+   "url": "https://iptv-org.github.io/iptv/cities/usifp.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Wilmington",
+   "code": "usilg",
+   "url": "https://iptv-org.github.io/iptv/cities/usilg.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Wilmington",
+   "code": "usilm",
+   "url": "https://iptv-org.github.io/iptv/cities/usilm.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Indianapolis",
+   "code": "usind",
+   "url": "https://iptv-org.github.io/iptv/cities/usind.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Winston-Salem",
+   "code": "usint",
+   "url": "https://iptv-org.github.io/iptv/cities/usint.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Miami Beach",
+   "code": "usiyh",
+   "url": "https://iptv-org.github.io/iptv/cities/usiyh.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Jacksonville",
+   "code": "usjax",
+   "url": "https://iptv-org.github.io/iptv/cities/usjax.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Belmont",
+   "code": "usjgt",
+   "url": "https://iptv-org.github.io/iptv/cities/usjgt.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Glendale",
+   "code": "usjgx",
+   "url": "https://iptv-org.github.io/iptv/cities/usjgx.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Newport Beach",
+   "code": "usjnp",
+   "url": "https://iptv-org.github.io/iptv/cities/usjnp.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Juneau",
+   "code": "usjnu",
+   "url": "https://iptv-org.github.io/iptv/cities/usjnu.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Johnstown",
+   "code": "usjst",
+   "url": "https://iptv-org.github.io/iptv/cities/usjst.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Kansas City",
+   "code": "uskck",
+   "url": "https://iptv-org.github.io/iptv/cities/uskck.m3u"
+  },
+  {
+   "type": "city",
+   "name": "West Frankfort",
+   "code": "uskft",
+   "url": "https://iptv-org.github.io/iptv/cities/uskft.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Kingsland",
+   "code": "usknl",
+   "url": "https://iptv-org.github.io/iptv/cities/usknl.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Las Vegas",
+   "code": "uslas",
+   "url": "https://iptv-org.github.io/iptv/cities/uslas.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Los Angeles",
+   "code": "uslax",
+   "url": "https://iptv-org.github.io/iptv/cities/uslax.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Calabasas",
+   "code": "uslbj",
+   "url": "https://iptv-org.github.io/iptv/cities/uslbj.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Lucerne Valley",
+   "code": "uslcb",
+   "url": "https://iptv-org.github.io/iptv/cities/uslcb.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Leesburg",
+   "code": "uslee",
+   "url": "https://iptv-org.github.io/iptv/cities/uslee.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Lexington",
+   "code": "uslex",
+   "url": "https://iptv-org.github.io/iptv/cities/uslex.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Lafayette",
+   "code": "uslft",
+   "url": "https://iptv-org.github.io/iptv/cities/uslft.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Long Beach",
+   "code": "uslgb",
+   "url": "https://iptv-org.github.io/iptv/cities/uslgb.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Lima",
+   "code": "uslia",
+   "url": "https://iptv-org.github.io/iptv/cities/uslia.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Little Rock",
+   "code": "uslit",
+   "url": "https://iptv-org.github.io/iptv/cities/uslit.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Lakewood",
+   "code": "usljk",
+   "url": "https://iptv-org.github.io/iptv/cities/usljk.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Leominster",
+   "code": "uslmr",
+   "url": "https://iptv-org.github.io/iptv/cities/uslmr.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Lincoln",
+   "code": "uslnk",
+   "url": "https://iptv-org.github.io/iptv/cities/uslnk.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Lancaster",
+   "code": "uslns",
+   "url": "https://iptv-org.github.io/iptv/cities/uslns.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Loveland",
+   "code": "uslov",
+   "url": "https://iptv-org.github.io/iptv/cities/uslov.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Lompoc",
+   "code": "uslpc",
+   "url": "https://iptv-org.github.io/iptv/cities/uslpc.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Lakewood",
+   "code": "uslqq",
+   "url": "https://iptv-org.github.io/iptv/cities/uslqq.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Littleton",
+   "code": "uslto",
+   "url": "https://iptv-org.github.io/iptv/cities/uslto.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Louisville",
+   "code": "uslui",
+   "url": "https://iptv-org.github.io/iptv/cities/uslui.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Lawndale",
+   "code": "uslwj",
+   "url": "https://iptv-org.github.io/iptv/cities/uslwj.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Lexington",
+   "code": "uslxi",
+   "url": "https://iptv-org.github.io/iptv/cities/uslxi.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Los Gatos",
+   "code": "uslxx",
+   "url": "https://iptv-org.github.io/iptv/cities/uslxx.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Millbrae",
+   "code": "usmba",
+   "url": "https://iptv-org.github.io/iptv/cities/usmba.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Macon",
+   "code": "usmcn",
+   "url": "https://iptv-org.github.io/iptv/cities/usmcn.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Memphis",
+   "code": "usmem",
+   "url": "https://iptv-org.github.io/iptv/cities/usmem.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Minneapolis",
+   "code": "usmes",
+   "url": "https://iptv-org.github.io/iptv/cities/usmes.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Manchester",
+   "code": "usmht",
+   "url": "https://iptv-org.github.io/iptv/cities/usmht.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Miami",
+   "code": "usmia",
+   "url": "https://iptv-org.github.io/iptv/cities/usmia.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Morro Bay",
+   "code": "usmjk",
+   "url": "https://iptv-org.github.io/iptv/cities/usmjk.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Kansas City",
+   "code": "usmkc",
+   "url": "https://iptv-org.github.io/iptv/cities/usmkc.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Milwaukee",
+   "code": "usmke",
+   "url": "https://iptv-org.github.io/iptv/cities/usmke.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Jackson",
+   "code": "usmkl",
+   "url": "https://iptv-org.github.io/iptv/cities/usmkl.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Mobile",
+   "code": "usmob",
+   "url": "https://iptv-org.github.io/iptv/cities/usmob.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Monroe",
+   "code": "usmoi",
+   "url": "https://iptv-org.github.io/iptv/cities/usmoi.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Moorpark",
+   "code": "usmqk",
+   "url": "https://iptv-org.github.io/iptv/cities/usmqk.m3u"
+  },
+  {
+   "type": "city",
+   "name": "New Orleans",
+   "code": "usmsy",
+   "url": "https://iptv-org.github.io/iptv/cities/usmsy.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Monterey",
+   "code": "usmy3",
+   "url": "https://iptv-org.github.io/iptv/cities/usmy3.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Natick",
+   "code": "usnak",
+   "url": "https://iptv-org.github.io/iptv/cities/usnak.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Steele",
+   "code": "usndz",
+   "url": "https://iptv-org.github.io/iptv/cities/usndz.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Nevada City",
+   "code": "usnfc",
+   "url": "https://iptv-org.github.io/iptv/cities/usnfc.m3u"
+  },
+  {
+   "type": "city",
+   "name": "New Port Richey",
+   "code": "usnrh",
+   "url": "https://iptv-org.github.io/iptv/cities/usnrh.m3u"
+  },
+  {
+   "type": "city",
+   "name": "New Canaan",
+   "code": "usnwc",
+   "url": "https://iptv-org.github.io/iptv/cities/usnwc.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Newton",
+   "code": "usnwn",
+   "url": "https://iptv-org.github.io/iptv/cities/usnwn.m3u"
+  },
+  {
+   "type": "city",
+   "name": "New Britain",
+   "code": "usnwt",
+   "url": "https://iptv-org.github.io/iptv/cities/usnwt.m3u"
+  },
+  {
+   "type": "city",
+   "name": "New York City",
+   "code": "usnyc",
+   "url": "https://iptv-org.github.io/iptv/cities/usnyc.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Jacksonville",
+   "code": "usoaj",
+   "url": "https://iptv-org.github.io/iptv/cities/usoaj.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Oakland",
+   "code": "usoak",
+   "url": "https://iptv-org.github.io/iptv/cities/usoak.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Oceanside",
+   "code": "usocn",
+   "url": "https://iptv-org.github.io/iptv/cities/usocn.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Kahului",
+   "code": "usogg",
+   "url": "https://iptv-org.github.io/iptv/cities/usogg.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Oklahoma City",
+   "code": "usokc",
+   "url": "https://iptv-org.github.io/iptv/cities/usokc.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Omaha",
+   "code": "usoma",
+   "url": "https://iptv-org.github.io/iptv/cities/usoma.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Ontario",
+   "code": "usont",
+   "url": "https://iptv-org.github.io/iptv/cities/usont.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Orange",
+   "code": "usorb",
+   "url": "https://iptv-org.github.io/iptv/cities/usorb.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Worcester",
+   "code": "usorh",
+   "url": "https://iptv-org.github.io/iptv/cities/usorh.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Orlando",
+   "code": "usorl",
+   "url": "https://iptv-org.github.io/iptv/cities/usorl.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Pinole",
+   "code": "usp2c",
+   "url": "https://iptv-org.github.io/iptv/cities/usp2c.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Palo Alto",
+   "code": "uspao",
+   "url": "https://iptv-org.github.io/iptv/cities/uspao.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Paterson",
+   "code": "uspat",
+   "url": "https://iptv-org.github.io/iptv/cities/uspat.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Pine Bluff",
+   "code": "uspbf",
+   "url": "https://iptv-org.github.io/iptv/cities/uspbf.m3u"
+  },
+  {
+   "type": "city",
+   "name": "West Palm Beach",
+   "code": "uspbi",
+   "url": "https://iptv-org.github.io/iptv/cities/uspbi.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Portland",
+   "code": "uspdx",
+   "url": "https://iptv-org.github.io/iptv/cities/uspdx.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Pacifica",
+   "code": "uspfq",
+   "url": "https://iptv-org.github.io/iptv/cities/uspfq.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Philadelphia",
+   "code": "usphl",
+   "url": "https://iptv-org.github.io/iptv/cities/usphl.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Phoenix",
+   "code": "usphx",
+   "url": "https://iptv-org.github.io/iptv/cities/usphx.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Pittsburgh",
+   "code": "uspit",
+   "url": "https://iptv-org.github.io/iptv/cities/uspit.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Pompano Beach",
+   "code": "usppm",
+   "url": "https://iptv-org.github.io/iptv/cities/usppm.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Pomona",
+   "code": "uspqc",
+   "url": "https://iptv-org.github.io/iptv/cities/uspqc.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Providence",
+   "code": "uspvd",
+   "url": "https://iptv-org.github.io/iptv/cities/uspvd.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Port Saint Lucie",
+   "code": "uspzl",
+   "url": "https://iptv-org.github.io/iptv/cities/uspzl.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Riverside",
+   "code": "usral",
+   "url": "https://iptv-org.github.io/iptv/cities/usral.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Rancho Cucamonga",
+   "code": "usrcu",
+   "url": "https://iptv-org.github.io/iptv/cities/usrcu.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Reading",
+   "code": "usrdg",
+   "url": "https://iptv-org.github.io/iptv/cities/usrdg.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Richmond",
+   "code": "usric",
+   "url": "https://iptv-org.github.io/iptv/cities/usric.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Rifle",
+   "code": "usril",
+   "url": "https://iptv-org.github.io/iptv/cities/usril.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Rockville",
+   "code": "usrkv",
+   "url": "https://iptv-org.github.io/iptv/cities/usrkv.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Rochester",
+   "code": "usroc",
+   "url": "https://iptv-org.github.io/iptv/cities/usroc.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Rocky Hill",
+   "code": "usrok",
+   "url": "https://iptv-org.github.io/iptv/cities/usrok.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Sacramento",
+   "code": "ussac",
+   "url": "https://iptv-org.github.io/iptv/cities/ussac.m3u"
+  },
+  {
+   "type": "city",
+   "name": "San Diego",
+   "code": "ussan",
+   "url": "https://iptv-org.github.io/iptv/cities/ussan.m3u"
+  },
+  {
+   "type": "city",
+   "name": "San Antonio",
+   "code": "ussat",
+   "url": "https://iptv-org.github.io/iptv/cities/ussat.m3u"
+  },
+  {
+   "type": "city",
+   "name": "South Bend",
+   "code": "ussbn",
+   "url": "https://iptv-org.github.io/iptv/cities/ussbn.m3u"
+  },
+  {
+   "type": "city",
+   "name": "San Bernardino",
+   "code": "ussbt",
+   "url": "https://iptv-org.github.io/iptv/cities/ussbt.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Salisbury",
+   "code": "ussby",
+   "url": "https://iptv-org.github.io/iptv/cities/ussby.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Stockton",
+   "code": "ussck",
+   "url": "https://iptv-org.github.io/iptv/cities/ussck.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Santa Clara",
+   "code": "usscz",
+   "url": "https://iptv-org.github.io/iptv/cities/usscz.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Seattle",
+   "code": "ussea",
+   "url": "https://iptv-org.github.io/iptv/cities/ussea.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Sanford",
+   "code": "ussfb",
+   "url": "https://iptv-org.github.io/iptv/cities/ussfb.m3u"
+  },
+  {
+   "type": "city",
+   "name": "San Francisco",
+   "code": "ussfo",
+   "url": "https://iptv-org.github.io/iptv/cities/ussfo.m3u"
+  },
+  {
+   "type": "city",
+   "name": "San Jose",
+   "code": "ussjc",
+   "url": "https://iptv-org.github.io/iptv/cities/ussjc.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Sherman Oaks",
+   "code": "ussjj",
+   "url": "https://iptv-org.github.io/iptv/cities/ussjj.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Salt Lake City",
+   "code": "usslc",
+   "url": "https://iptv-org.github.io/iptv/cities/usslc.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Santa Monica",
+   "code": "ussmo",
+   "url": "https://iptv-org.github.io/iptv/cities/ussmo.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Santa Maria",
+   "code": "ussmx",
+   "url": "https://iptv-org.github.io/iptv/cities/ussmx.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Snyder",
+   "code": "ussnk",
+   "url": "https://iptv-org.github.io/iptv/cities/ussnk.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Salinas",
+   "code": "ussns",
+   "url": "https://iptv-org.github.io/iptv/cities/ussns.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Sonora",
+   "code": "ussor",
+   "url": "https://iptv-org.github.io/iptv/cities/ussor.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Springfield",
+   "code": "usspi",
+   "url": "https://iptv-org.github.io/iptv/cities/usspi.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Santa Cruz",
+   "code": "ussru",
+   "url": "https://iptv-org.github.io/iptv/cities/ussru.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Southampton",
+   "code": "usssk",
+   "url": "https://iptv-org.github.io/iptv/cities/usssk.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Saint Paul",
+   "code": "usstp",
+   "url": "https://iptv-org.github.io/iptv/cities/usstp.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Scottsdale",
+   "code": "usstz",
+   "url": "https://iptv-org.github.io/iptv/cities/usstz.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Fairfield",
+   "code": "ussuu",
+   "url": "https://iptv-org.github.io/iptv/cities/ussuu.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Sebastian",
+   "code": "usszg",
+   "url": "https://iptv-org.github.io/iptv/cities/usszg.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Thornton",
+   "code": "ustht",
+   "url": "https://iptv-org.github.io/iptv/cities/ustht.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Tacoma",
+   "code": "ustiw",
+   "url": "https://iptv-org.github.io/iptv/cities/ustiw.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Tallahassee",
+   "code": "ustlh",
+   "url": "https://iptv-org.github.io/iptv/cities/ustlh.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Temecula",
+   "code": "ustmc",
+   "url": "https://iptv-org.github.io/iptv/cities/ustmc.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Torrance",
+   "code": "ustoa",
+   "url": "https://iptv-org.github.io/iptv/cities/ustoa.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Toledo",
+   "code": "ustol",
+   "url": "https://iptv-org.github.io/iptv/cities/ustol.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Tampa",
+   "code": "ustpa",
+   "url": "https://iptv-org.github.io/iptv/cities/ustpa.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Trenton",
+   "code": "usttn",
+   "url": "https://iptv-org.github.io/iptv/cities/usttn.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Tulsa",
+   "code": "ustul",
+   "url": "https://iptv-org.github.io/iptv/cities/ustul.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Tucson",
+   "code": "ustuz",
+   "url": "https://iptv-org.github.io/iptv/cities/ustuz.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Traverse City",
+   "code": "ustvc",
+   "url": "https://iptv-org.github.io/iptv/cities/ustvc.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Columbus",
+   "code": "usubs",
+   "url": "https://iptv-org.github.io/iptv/cities/usubs.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Steubenville",
+   "code": "usuyj",
+   "url": "https://iptv-org.github.io/iptv/cities/usuyj.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Secaucus",
+   "code": "usuyk",
+   "url": "https://iptv-org.github.io/iptv/cities/usuyk.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Barre",
+   "code": "usvbr",
+   "url": "https://iptv-org.github.io/iptv/cities/usvbr.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Visalia",
+   "code": "usvis",
+   "url": "https://iptv-org.github.io/iptv/cities/usvis.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Vallejo",
+   "code": "usvlo",
+   "url": "https://iptv-org.github.io/iptv/cities/usvlo.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Waitsfield",
+   "code": "uswai",
+   "url": "https://iptv-org.github.io/iptv/cities/uswai.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Washington",
+   "code": "uswas",
+   "url": "https://iptv-org.github.io/iptv/cities/uswas.m3u"
+  },
+  {
+   "type": "city",
+   "name": "West Chester",
+   "code": "uswct",
+   "url": "https://iptv-org.github.io/iptv/cities/uswct.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Whittier",
+   "code": "uswhr",
+   "url": "https://iptv-org.github.io/iptv/cities/uswhr.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Weslaco",
+   "code": "uswko",
+   "url": "https://iptv-org.github.io/iptv/cities/uswko.m3u"
+  },
+  {
+   "type": "city",
+   "name": "West Monroe",
+   "code": "uswmx",
+   "url": "https://iptv-org.github.io/iptv/cities/uswmx.m3u"
+  },
+  {
+   "type": "city",
+   "name": "West Hollywood",
+   "code": "uswwu",
+   "url": "https://iptv-org.github.io/iptv/cities/uswwu.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Fontana",
+   "code": "usxfr",
+   "url": "https://iptv-org.github.io/iptv/cities/usxfr.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Grants Pass",
+   "code": "usxfx",
+   "url": "https://iptv-org.github.io/iptv/cities/usxfx.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Seaside",
+   "code": "usxlu",
+   "url": "https://iptv-org.github.io/iptv/cities/usxlu.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Maple Grove",
+   "code": "usxmg",
+   "url": "https://iptv-org.github.io/iptv/cities/usxmg.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Wolcott",
+   "code": "usxwo",
+   "url": "https://iptv-org.github.io/iptv/cities/usxwo.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Yuma",
+   "code": "usyum",
+   "url": "https://iptv-org.github.io/iptv/cities/usyum.m3u"
+  },
+  {
+   "type": "city",
+   "name": "North Miami Beach",
+   "code": "uszgv",
+   "url": "https://iptv-org.github.io/iptv/cities/uszgv.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Maracay",
+   "code": "vemyc",
+   "url": "https://iptv-org.github.io/iptv/cities/vemyc.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Andorra",
+   "code": "ad",
+   "url": "https://iptv-org.github.io/iptv/countries/ad.m3u"
+  },
+  {
+   "type": "country",
+   "name": "United Arab Emirates",
+   "code": "ae",
+   "url": "https://iptv-org.github.io/iptv/countries/ae.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Afghanistan",
+   "code": "af",
+   "url": "https://iptv-org.github.io/iptv/countries/af.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Antigua and Barbuda",
+   "code": "ag",
+   "url": "https://iptv-org.github.io/iptv/countries/ag.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Albania",
+   "code": "al",
+   "url": "https://iptv-org.github.io/iptv/countries/al.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Armenia",
+   "code": "am",
+   "url": "https://iptv-org.github.io/iptv/countries/am.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Angola",
+   "code": "ao",
+   "url": "https://iptv-org.github.io/iptv/countries/ao.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Argentina",
+   "code": "ar",
+   "url": "https://iptv-org.github.io/iptv/countries/ar.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Austria",
+   "code": "at",
+   "url": "https://iptv-org.github.io/iptv/countries/at.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Australia",
+   "code": "au",
+   "url": "https://iptv-org.github.io/iptv/countries/au.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Aruba",
+   "code": "aw",
+   "url": "https://iptv-org.github.io/iptv/countries/aw.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Azerbaijan",
+   "code": "az",
+   "url": "https://iptv-org.github.io/iptv/countries/az.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Bosnia and Herzegovina",
+   "code": "ba",
+   "url": "https://iptv-org.github.io/iptv/countries/ba.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Barbados",
+   "code": "bb",
+   "url": "https://iptv-org.github.io/iptv/countries/bb.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Bangladesh",
+   "code": "bd",
+   "url": "https://iptv-org.github.io/iptv/countries/bd.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Belgium",
+   "code": "be",
+   "url": "https://iptv-org.github.io/iptv/countries/be.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Burkina Faso",
+   "code": "bf",
+   "url": "https://iptv-org.github.io/iptv/countries/bf.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Bulgaria",
+   "code": "bg",
+   "url": "https://iptv-org.github.io/iptv/countries/bg.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Bahrain",
+   "code": "bh",
+   "url": "https://iptv-org.github.io/iptv/countries/bh.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Benin",
+   "code": "bj",
+   "url": "https://iptv-org.github.io/iptv/countries/bj.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Brunei",
+   "code": "bn",
+   "url": "https://iptv-org.github.io/iptv/countries/bn.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Bolivia",
+   "code": "bo",
+   "url": "https://iptv-org.github.io/iptv/countries/bo.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Bonaire",
+   "code": "bq",
+   "url": "https://iptv-org.github.io/iptv/countries/bq.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Brazil",
+   "code": "br",
+   "url": "https://iptv-org.github.io/iptv/countries/br.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Bahamas",
+   "code": "bs",
+   "url": "https://iptv-org.github.io/iptv/countries/bs.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Belarus",
+   "code": "by",
+   "url": "https://iptv-org.github.io/iptv/countries/by.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Belize",
+   "code": "bz",
+   "url": "https://iptv-org.github.io/iptv/countries/bz.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Canada",
+   "code": "ca",
+   "url": "https://iptv-org.github.io/iptv/countries/ca.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Democratic Republic of the Congo",
+   "code": "cd",
+   "url": "https://iptv-org.github.io/iptv/countries/cd.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Republic of the Congo",
+   "code": "cg",
+   "url": "https://iptv-org.github.io/iptv/countries/cg.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Switzerland",
+   "code": "ch",
+   "url": "https://iptv-org.github.io/iptv/countries/ch.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Ivory Coast",
+   "code": "ci",
+   "url": "https://iptv-org.github.io/iptv/countries/ci.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Chile",
+   "code": "cl",
+   "url": "https://iptv-org.github.io/iptv/countries/cl.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Cameroon",
+   "code": "cm",
+   "url": "https://iptv-org.github.io/iptv/countries/cm.m3u"
+  },
+  {
+   "type": "country",
+   "name": "China",
+   "code": "cn",
+   "url": "https://iptv-org.github.io/iptv/countries/cn.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Colombia",
+   "code": "co",
+   "url": "https://iptv-org.github.io/iptv/countries/co.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Costa Rica",
+   "code": "cr",
+   "url": "https://iptv-org.github.io/iptv/countries/cr.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Cuba",
+   "code": "cu",
+   "url": "https://iptv-org.github.io/iptv/countries/cu.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Cape Verde",
+   "code": "cv",
+   "url": "https://iptv-org.github.io/iptv/countries/cv.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Curacao",
+   "code": "cw",
+   "url": "https://iptv-org.github.io/iptv/countries/cw.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Cyprus",
+   "code": "cy",
+   "url": "https://iptv-org.github.io/iptv/countries/cy.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Czech Republic",
+   "code": "cz",
+   "url": "https://iptv-org.github.io/iptv/countries/cz.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Germany",
+   "code": "de",
+   "url": "https://iptv-org.github.io/iptv/countries/de.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Denmark",
+   "code": "dk",
+   "url": "https://iptv-org.github.io/iptv/countries/dk.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Dominican Republic",
+   "code": "do",
+   "url": "https://iptv-org.github.io/iptv/countries/do.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Algeria",
+   "code": "dz",
+   "url": "https://iptv-org.github.io/iptv/countries/dz.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Ecuador",
+   "code": "ec",
+   "url": "https://iptv-org.github.io/iptv/countries/ec.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Estonia",
+   "code": "ee",
+   "url": "https://iptv-org.github.io/iptv/countries/ee.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Egypt",
+   "code": "eg",
+   "url": "https://iptv-org.github.io/iptv/countries/eg.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Western Sahara",
+   "code": "eh",
+   "url": "https://iptv-org.github.io/iptv/countries/eh.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Eritrea",
+   "code": "er",
+   "url": "https://iptv-org.github.io/iptv/countries/er.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Spain",
+   "code": "es",
+   "url": "https://iptv-org.github.io/iptv/countries/es.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Ethiopia",
+   "code": "et",
+   "url": "https://iptv-org.github.io/iptv/countries/et.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Finland",
+   "code": "fi",
+   "url": "https://iptv-org.github.io/iptv/countries/fi.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Faroe Islands",
+   "code": "fo",
+   "url": "https://iptv-org.github.io/iptv/countries/fo.m3u"
+  },
+  {
+   "type": "country",
+   "name": "France",
+   "code": "fr",
+   "url": "https://iptv-org.github.io/iptv/countries/fr.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Georgia",
+   "code": "ge",
+   "url": "https://iptv-org.github.io/iptv/countries/ge.m3u"
+  },
+  {
+   "type": "country",
+   "name": "French Guiana",
+   "code": "gf",
+   "url": "https://iptv-org.github.io/iptv/countries/gf.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Guernsey",
+   "code": "gg",
+   "url": "https://iptv-org.github.io/iptv/countries/gg.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Ghana",
+   "code": "gh",
+   "url": "https://iptv-org.github.io/iptv/countries/gh.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Gambia",
+   "code": "gm",
+   "url": "https://iptv-org.github.io/iptv/countries/gm.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Guinea",
+   "code": "gn",
+   "url": "https://iptv-org.github.io/iptv/countries/gn.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Guadeloupe",
+   "code": "gp",
+   "url": "https://iptv-org.github.io/iptv/countries/gp.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Equatorial Guinea",
+   "code": "gq",
+   "url": "https://iptv-org.github.io/iptv/countries/gq.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Greece",
+   "code": "gr",
+   "url": "https://iptv-org.github.io/iptv/countries/gr.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Guatemala",
+   "code": "gt",
+   "url": "https://iptv-org.github.io/iptv/countries/gt.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Guam",
+   "code": "gu",
+   "url": "https://iptv-org.github.io/iptv/countries/gu.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Guyana",
+   "code": "gy",
+   "url": "https://iptv-org.github.io/iptv/countries/gy.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Hong Kong",
+   "code": "hk",
+   "url": "https://iptv-org.github.io/iptv/countries/hk.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Honduras",
+   "code": "hn",
+   "url": "https://iptv-org.github.io/iptv/countries/hn.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Croatia",
+   "code": "hr",
+   "url": "https://iptv-org.github.io/iptv/countries/hr.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Haiti",
+   "code": "ht",
+   "url": "https://iptv-org.github.io/iptv/countries/ht.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Hungary",
+   "code": "hu",
+   "url": "https://iptv-org.github.io/iptv/countries/hu.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Indonesia",
+   "code": "id",
+   "url": "https://iptv-org.github.io/iptv/countries/id.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Ireland",
+   "code": "ie",
+   "url": "https://iptv-org.github.io/iptv/countries/ie.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Israel",
+   "code": "il",
+   "url": "https://iptv-org.github.io/iptv/countries/il.m3u"
+  },
+  {
+   "type": "country",
+   "name": "India",
+   "code": "in",
+   "url": "https://iptv-org.github.io/iptv/countries/in.m3u"
+  },
+  {
+   "type": "country",
+   "name": "INT",
+   "code": "int",
+   "url": "https://iptv-org.github.io/iptv/countries/int.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Iraq",
+   "code": "iq",
+   "url": "https://iptv-org.github.io/iptv/countries/iq.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Iran",
+   "code": "ir",
+   "url": "https://iptv-org.github.io/iptv/countries/ir.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Iceland",
+   "code": "is",
+   "url": "https://iptv-org.github.io/iptv/countries/is.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Italy",
+   "code": "it",
+   "url": "https://iptv-org.github.io/iptv/countries/it.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Jamaica",
+   "code": "jm",
+   "url": "https://iptv-org.github.io/iptv/countries/jm.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Jordan",
+   "code": "jo",
+   "url": "https://iptv-org.github.io/iptv/countries/jo.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Japan",
+   "code": "jp",
+   "url": "https://iptv-org.github.io/iptv/countries/jp.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Kenya",
+   "code": "ke",
+   "url": "https://iptv-org.github.io/iptv/countries/ke.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Kyrgyzstan",
+   "code": "kg",
+   "url": "https://iptv-org.github.io/iptv/countries/kg.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Cambodia",
+   "code": "kh",
+   "url": "https://iptv-org.github.io/iptv/countries/kh.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Comoros",
+   "code": "km",
+   "url": "https://iptv-org.github.io/iptv/countries/km.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Saint Kitts and Nevis",
+   "code": "kn",
+   "url": "https://iptv-org.github.io/iptv/countries/kn.m3u"
+  },
+  {
+   "type": "country",
+   "name": "North Korea",
+   "code": "kp",
+   "url": "https://iptv-org.github.io/iptv/countries/kp.m3u"
+  },
+  {
+   "type": "country",
+   "name": "South Korea",
+   "code": "kr",
+   "url": "https://iptv-org.github.io/iptv/countries/kr.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Kuwait",
+   "code": "kw",
+   "url": "https://iptv-org.github.io/iptv/countries/kw.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Kazakhstan",
+   "code": "kz",
+   "url": "https://iptv-org.github.io/iptv/countries/kz.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Laos",
+   "code": "la",
+   "url": "https://iptv-org.github.io/iptv/countries/la.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Lebanon",
+   "code": "lb",
+   "url": "https://iptv-org.github.io/iptv/countries/lb.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Saint Lucia",
+   "code": "lc",
+   "url": "https://iptv-org.github.io/iptv/countries/lc.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Liechtenstein",
+   "code": "li",
+   "url": "https://iptv-org.github.io/iptv/countries/li.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Sri Lanka",
+   "code": "lk",
+   "url": "https://iptv-org.github.io/iptv/countries/lk.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Lithuania",
+   "code": "lt",
+   "url": "https://iptv-org.github.io/iptv/countries/lt.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Luxembourg",
+   "code": "lu",
+   "url": "https://iptv-org.github.io/iptv/countries/lu.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Latvia",
+   "code": "lv",
+   "url": "https://iptv-org.github.io/iptv/countries/lv.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Libya",
+   "code": "ly",
+   "url": "https://iptv-org.github.io/iptv/countries/ly.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Morocco",
+   "code": "ma",
+   "url": "https://iptv-org.github.io/iptv/countries/ma.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Monaco",
+   "code": "mc",
+   "url": "https://iptv-org.github.io/iptv/countries/mc.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Moldova",
+   "code": "md",
+   "url": "https://iptv-org.github.io/iptv/countries/md.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Montenegro",
+   "code": "me",
+   "url": "https://iptv-org.github.io/iptv/countries/me.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Madagascar",
+   "code": "mg",
+   "url": "https://iptv-org.github.io/iptv/countries/mg.m3u"
+  },
+  {
+   "type": "country",
+   "name": "North Macedonia",
+   "code": "mk",
+   "url": "https://iptv-org.github.io/iptv/countries/mk.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Mali",
+   "code": "ml",
+   "url": "https://iptv-org.github.io/iptv/countries/ml.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Myanmar",
+   "code": "mm",
+   "url": "https://iptv-org.github.io/iptv/countries/mm.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Mongolia",
+   "code": "mn",
+   "url": "https://iptv-org.github.io/iptv/countries/mn.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Macao",
+   "code": "mo",
+   "url": "https://iptv-org.github.io/iptv/countries/mo.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Martinique",
+   "code": "mq",
+   "url": "https://iptv-org.github.io/iptv/countries/mq.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Mauritania",
+   "code": "mr",
+   "url": "https://iptv-org.github.io/iptv/countries/mr.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Malta",
+   "code": "mt",
+   "url": "https://iptv-org.github.io/iptv/countries/mt.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Mauritius",
+   "code": "mu",
+   "url": "https://iptv-org.github.io/iptv/countries/mu.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Maldives",
+   "code": "mv",
+   "url": "https://iptv-org.github.io/iptv/countries/mv.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Mexico",
+   "code": "mx",
+   "url": "https://iptv-org.github.io/iptv/countries/mx.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Malaysia",
+   "code": "my",
+   "url": "https://iptv-org.github.io/iptv/countries/my.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Mozambique",
+   "code": "mz",
+   "url": "https://iptv-org.github.io/iptv/countries/mz.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Namibia",
+   "code": "na",
+   "url": "https://iptv-org.github.io/iptv/countries/na.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Niger",
+   "code": "ne",
+   "url": "https://iptv-org.github.io/iptv/countries/ne.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Nigeria",
+   "code": "ng",
+   "url": "https://iptv-org.github.io/iptv/countries/ng.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Nicaragua",
+   "code": "ni",
+   "url": "https://iptv-org.github.io/iptv/countries/ni.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Netherlands",
+   "code": "nl",
+   "url": "https://iptv-org.github.io/iptv/countries/nl.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Norway",
+   "code": "no",
+   "url": "https://iptv-org.github.io/iptv/countries/no.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Nepal",
+   "code": "np",
+   "url": "https://iptv-org.github.io/iptv/countries/np.m3u"
+  },
+  {
+   "type": "country",
+   "name": "New Zealand",
+   "code": "nz",
+   "url": "https://iptv-org.github.io/iptv/countries/nz.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Oman",
+   "code": "om",
+   "url": "https://iptv-org.github.io/iptv/countries/om.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Panama",
+   "code": "pa",
+   "url": "https://iptv-org.github.io/iptv/countries/pa.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Peru",
+   "code": "pe",
+   "url": "https://iptv-org.github.io/iptv/countries/pe.m3u"
+  },
+  {
+   "type": "country",
+   "name": "French Polynesia",
+   "code": "pf",
+   "url": "https://iptv-org.github.io/iptv/countries/pf.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Papua New Guinea",
+   "code": "pg",
+   "url": "https://iptv-org.github.io/iptv/countries/pg.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Philippines",
+   "code": "ph",
+   "url": "https://iptv-org.github.io/iptv/countries/ph.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Pakistan",
+   "code": "pk",
+   "url": "https://iptv-org.github.io/iptv/countries/pk.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Poland",
+   "code": "pl",
+   "url": "https://iptv-org.github.io/iptv/countries/pl.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Puerto Rico",
+   "code": "pr",
+   "url": "https://iptv-org.github.io/iptv/countries/pr.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Palestine",
+   "code": "ps",
+   "url": "https://iptv-org.github.io/iptv/countries/ps.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Portugal",
+   "code": "pt",
+   "url": "https://iptv-org.github.io/iptv/countries/pt.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Paraguay",
+   "code": "py",
+   "url": "https://iptv-org.github.io/iptv/countries/py.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Qatar",
+   "code": "qa",
+   "url": "https://iptv-org.github.io/iptv/countries/qa.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Reunion",
+   "code": "re",
+   "url": "https://iptv-org.github.io/iptv/countries/re.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Romania",
+   "code": "ro",
+   "url": "https://iptv-org.github.io/iptv/countries/ro.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Serbia",
+   "code": "rs",
+   "url": "https://iptv-org.github.io/iptv/countries/rs.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Russia",
+   "code": "ru",
+   "url": "https://iptv-org.github.io/iptv/countries/ru.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Rwanda",
+   "code": "rw",
+   "url": "https://iptv-org.github.io/iptv/countries/rw.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Saudi Arabia",
+   "code": "sa",
+   "url": "https://iptv-org.github.io/iptv/countries/sa.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Sudan",
+   "code": "sd",
+   "url": "https://iptv-org.github.io/iptv/countries/sd.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Sweden",
+   "code": "se",
+   "url": "https://iptv-org.github.io/iptv/countries/se.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Singapore",
+   "code": "sg",
+   "url": "https://iptv-org.github.io/iptv/countries/sg.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Slovenia",
+   "code": "si",
+   "url": "https://iptv-org.github.io/iptv/countries/si.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Slovakia",
+   "code": "sk",
+   "url": "https://iptv-org.github.io/iptv/countries/sk.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Sierra Leone",
+   "code": "sl",
+   "url": "https://iptv-org.github.io/iptv/countries/sl.m3u"
+  },
+  {
+   "type": "country",
+   "name": "San Marino",
+   "code": "sm",
+   "url": "https://iptv-org.github.io/iptv/countries/sm.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Senegal",
+   "code": "sn",
+   "url": "https://iptv-org.github.io/iptv/countries/sn.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Somalia",
+   "code": "so",
+   "url": "https://iptv-org.github.io/iptv/countries/so.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Suriname",
+   "code": "sr",
+   "url": "https://iptv-org.github.io/iptv/countries/sr.m3u"
+  },
+  {
+   "type": "country",
+   "name": "El Salvador",
+   "code": "sv",
+   "url": "https://iptv-org.github.io/iptv/countries/sv.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Sint Maarten",
+   "code": "sx",
+   "url": "https://iptv-org.github.io/iptv/countries/sx.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Syria",
+   "code": "sy",
+   "url": "https://iptv-org.github.io/iptv/countries/sy.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Chad",
+   "code": "td",
+   "url": "https://iptv-org.github.io/iptv/countries/td.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Togo",
+   "code": "tg",
+   "url": "https://iptv-org.github.io/iptv/countries/tg.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Thailand",
+   "code": "th",
+   "url": "https://iptv-org.github.io/iptv/countries/th.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Tajikistan",
+   "code": "tj",
+   "url": "https://iptv-org.github.io/iptv/countries/tj.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Turkmenistan",
+   "code": "tm",
+   "url": "https://iptv-org.github.io/iptv/countries/tm.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Tunisia",
+   "code": "tn",
+   "url": "https://iptv-org.github.io/iptv/countries/tn.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Turkiye",
+   "code": "tr",
+   "url": "https://iptv-org.github.io/iptv/countries/tr.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Trinidad and Tobago",
+   "code": "tt",
+   "url": "https://iptv-org.github.io/iptv/countries/tt.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Taiwan",
+   "code": "tw",
+   "url": "https://iptv-org.github.io/iptv/countries/tw.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Tanzania",
+   "code": "tz",
+   "url": "https://iptv-org.github.io/iptv/countries/tz.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Ukraine",
+   "code": "ua",
+   "url": "https://iptv-org.github.io/iptv/countries/ua.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Uganda",
+   "code": "ug",
+   "url": "https://iptv-org.github.io/iptv/countries/ug.m3u"
+  },
+  {
+   "type": "country",
+   "name": "United Kingdom",
+   "code": "uk",
+   "url": "https://iptv-org.github.io/iptv/countries/uk.m3u"
+  },
+  {
+   "type": "country",
+   "name": "UNDEFINED",
+   "code": "undefined",
+   "url": "https://iptv-org.github.io/iptv/countries/undefined.m3u"
+  },
+  {
+   "type": "country",
+   "name": "United States",
+   "code": "us",
+   "url": "https://iptv-org.github.io/iptv/countries/us.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Uruguay",
+   "code": "uy",
+   "url": "https://iptv-org.github.io/iptv/countries/uy.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Uzbekistan",
+   "code": "uz",
+   "url": "https://iptv-org.github.io/iptv/countries/uz.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Vatican City",
+   "code": "va",
+   "url": "https://iptv-org.github.io/iptv/countries/va.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Venezuela",
+   "code": "ve",
+   "url": "https://iptv-org.github.io/iptv/countries/ve.m3u"
+  },
+  {
+   "type": "country",
+   "name": "British Virgin Islands",
+   "code": "vg",
+   "url": "https://iptv-org.github.io/iptv/countries/vg.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Vietnam",
+   "code": "vn",
+   "url": "https://iptv-org.github.io/iptv/countries/vn.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Samoa",
+   "code": "ws",
+   "url": "https://iptv-org.github.io/iptv/countries/ws.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Kosovo",
+   "code": "xk",
+   "url": "https://iptv-org.github.io/iptv/countries/xk.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Yemen",
+   "code": "ye",
+   "url": "https://iptv-org.github.io/iptv/countries/ye.m3u"
+  },
+  {
+   "type": "country",
+   "name": "South Africa",
+   "code": "za",
+   "url": "https://iptv-org.github.io/iptv/countries/za.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Zimbabwe",
+   "code": "zw",
+   "url": "https://iptv-org.github.io/iptv/countries/zw.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Abkhazian",
+   "code": "abk",
+   "url": "https://iptv-org.github.io/iptv/languages/abk.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Saint Lucian Creole French",
+   "code": "acf",
+   "url": "https://iptv-org.github.io/iptv/languages/acf.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Acoli",
+   "code": "ach",
+   "url": "https://iptv-org.github.io/iptv/languages/ach.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Adhola",
+   "code": "adh",
+   "url": "https://iptv-org.github.io/iptv/languages/adh.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Afrikaans",
+   "code": "afr",
+   "url": "https://iptv-org.github.io/iptv/languages/afr.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Ahom",
+   "code": "aho",
+   "url": "https://iptv-org.github.io/iptv/languages/aho.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Assyrian Neo-Aramaic",
+   "code": "aii",
+   "url": "https://iptv-org.github.io/iptv/languages/aii.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Alur",
+   "code": "alz",
+   "url": "https://iptv-org.github.io/iptv/languages/alz.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Amharic",
+   "code": "amh",
+   "url": "https://iptv-org.github.io/iptv/languages/amh.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Arabic",
+   "code": "ara",
+   "url": "https://iptv-org.github.io/iptv/languages/ara.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Standard Arabic",
+   "code": "arb",
+   "url": "https://iptv-org.github.io/iptv/languages/arb.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Egyptian Arabic",
+   "code": "arz",
+   "url": "https://iptv-org.github.io/iptv/languages/arz.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Assamese",
+   "code": "asm",
+   "url": "https://iptv-org.github.io/iptv/languages/asm.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Algerian Sign Language",
+   "code": "asp",
+   "url": "https://iptv-org.github.io/iptv/languages/asp.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Ayizo Gbe",
+   "code": "ayb",
+   "url": "https://iptv-org.github.io/iptv/languages/ayb.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Aymara",
+   "code": "aym",
+   "url": "https://iptv-org.github.io/iptv/languages/aym.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Azerbaijani",
+   "code": "aze",
+   "url": "https://iptv-org.github.io/iptv/languages/aze.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Bashkir",
+   "code": "bak",
+   "url": "https://iptv-org.github.io/iptv/languages/bak.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Bambara",
+   "code": "bam",
+   "url": "https://iptv-org.github.io/iptv/languages/bam.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Baatonum",
+   "code": "bba",
+   "url": "https://iptv-org.github.io/iptv/languages/bba.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Konabéré",
+   "code": "bbo",
+   "url": "https://iptv-org.github.io/iptv/languages/bbo.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Belarusian",
+   "code": "bel",
+   "url": "https://iptv-org.github.io/iptv/languages/bel.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Bengali",
+   "code": "ben",
+   "url": "https://iptv-org.github.io/iptv/languages/ben.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Haryanvi",
+   "code": "bgc",
+   "url": "https://iptv-org.github.io/iptv/languages/bgc.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Bhojpuri",
+   "code": "bho",
+   "url": "https://iptv-org.github.io/iptv/languages/bho.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Bisa",
+   "code": "bib",
+   "url": "https://iptv-org.github.io/iptv/languages/bib.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Tibetan",
+   "code": "bod",
+   "url": "https://iptv-org.github.io/iptv/languages/bod.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Bosnian",
+   "code": "bos",
+   "url": "https://iptv-org.github.io/iptv/languages/bos.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Buamu",
+   "code": "box",
+   "url": "https://iptv-org.github.io/iptv/languages/box.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Bulgarian",
+   "code": "bul",
+   "url": "https://iptv-org.github.io/iptv/languages/bul.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Catalan",
+   "code": "cat",
+   "url": "https://iptv-org.github.io/iptv/languages/cat.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Cebuano",
+   "code": "ceb",
+   "url": "https://iptv-org.github.io/iptv/languages/ceb.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Czech",
+   "code": "ces",
+   "url": "https://iptv-org.github.io/iptv/languages/ces.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Chiga",
+   "code": "cgg",
+   "url": "https://iptv-org.github.io/iptv/languages/cgg.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Mandarin Chinese",
+   "code": "cmn",
+   "url": "https://iptv-org.github.io/iptv/languages/cmn.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Welsh",
+   "code": "cym",
+   "url": "https://iptv-org.github.io/iptv/languages/cym.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Huizhou Chinese",
+   "code": "czh",
+   "url": "https://iptv-org.github.io/iptv/languages/czh.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Danish",
+   "code": "dan",
+   "url": "https://iptv-org.github.io/iptv/languages/dan.m3u"
+  },
+  {
+   "type": "language",
+   "name": "German",
+   "code": "deu",
+   "url": "https://iptv-org.github.io/iptv/languages/deu.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Northern Dagara",
+   "code": "dgi",
+   "url": "https://iptv-org.github.io/iptv/languages/dgi.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Dhivehi",
+   "code": "div",
+   "url": "https://iptv-org.github.io/iptv/languages/div.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Zarma",
+   "code": "dje",
+   "url": "https://iptv-org.github.io/iptv/languages/dje.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Dyula",
+   "code": "dyu",
+   "url": "https://iptv-org.github.io/iptv/languages/dyu.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Greek",
+   "code": "ell",
+   "url": "https://iptv-org.github.io/iptv/languages/ell.m3u"
+  },
+  {
+   "type": "language",
+   "name": "English",
+   "code": "eng",
+   "url": "https://iptv-org.github.io/iptv/languages/eng.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Estonian",
+   "code": "est",
+   "url": "https://iptv-org.github.io/iptv/languages/est.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Basque",
+   "code": "eus",
+   "url": "https://iptv-org.github.io/iptv/languages/eus.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Ewe",
+   "code": "ewe",
+   "url": "https://iptv-org.github.io/iptv/languages/ewe.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Faroese",
+   "code": "fao",
+   "url": "https://iptv-org.github.io/iptv/languages/fao.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Fataleka",
+   "code": "far",
+   "url": "https://iptv-org.github.io/iptv/languages/far.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Persian",
+   "code": "fas",
+   "url": "https://iptv-org.github.io/iptv/languages/fas.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Filipino",
+   "code": "fil",
+   "url": "https://iptv-org.github.io/iptv/languages/fil.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Finnish",
+   "code": "fin",
+   "url": "https://iptv-org.github.io/iptv/languages/fin.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Fon",
+   "code": "fon",
+   "url": "https://iptv-org.github.io/iptv/languages/fon.m3u"
+  },
+  {
+   "type": "language",
+   "name": "French",
+   "code": "fra",
+   "url": "https://iptv-org.github.io/iptv/languages/fra.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Western Frisian",
+   "code": "fry",
+   "url": "https://iptv-org.github.io/iptv/languages/fry.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Pulaar",
+   "code": "fuc",
+   "url": "https://iptv-org.github.io/iptv/languages/fuc.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Fulah",
+   "code": "ful",
+   "url": "https://iptv-org.github.io/iptv/languages/ful.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Guadeloupean Creole French",
+   "code": "gcf",
+   "url": "https://iptv-org.github.io/iptv/languages/gcf.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Gen",
+   "code": "gej",
+   "url": "https://iptv-org.github.io/iptv/languages/gej.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Gaelic",
+   "code": "gla",
+   "url": "https://iptv-org.github.io/iptv/languages/gla.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Irish",
+   "code": "gle",
+   "url": "https://iptv-org.github.io/iptv/languages/gle.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Galician",
+   "code": "glg",
+   "url": "https://iptv-org.github.io/iptv/languages/glg.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Goan Konkani",
+   "code": "gom",
+   "url": "https://iptv-org.github.io/iptv/languages/gom.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Guarani",
+   "code": "grn",
+   "url": "https://iptv-org.github.io/iptv/languages/grn.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Alemannic",
+   "code": "gsw",
+   "url": "https://iptv-org.github.io/iptv/languages/gsw.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Paraguayan Guaraní",
+   "code": "gug",
+   "url": "https://iptv-org.github.io/iptv/languages/gug.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Gujarati",
+   "code": "guj",
+   "url": "https://iptv-org.github.io/iptv/languages/guj.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Gun",
+   "code": "guw",
+   "url": "https://iptv-org.github.io/iptv/languages/guw.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Gourmanchéma",
+   "code": "gux",
+   "url": "https://iptv-org.github.io/iptv/languages/gux.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Haitian",
+   "code": "hat",
+   "url": "https://iptv-org.github.io/iptv/languages/hat.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Hausa",
+   "code": "hau",
+   "url": "https://iptv-org.github.io/iptv/languages/hau.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Hebrew",
+   "code": "heb",
+   "url": "https://iptv-org.github.io/iptv/languages/heb.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Hindi",
+   "code": "hin",
+   "url": "https://iptv-org.github.io/iptv/languages/hin.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Hmong",
+   "code": "hmn",
+   "url": "https://iptv-org.github.io/iptv/languages/hmn.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Chhattisgarhi",
+   "code": "hne",
+   "url": "https://iptv-org.github.io/iptv/languages/hne.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Croatian",
+   "code": "hrv",
+   "url": "https://iptv-org.github.io/iptv/languages/hrv.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Hungarian",
+   "code": "hun",
+   "url": "https://iptv-org.github.io/iptv/languages/hun.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Armenian",
+   "code": "hye",
+   "url": "https://iptv-org.github.io/iptv/languages/hye.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Islander Creole English",
+   "code": "icr",
+   "url": "https://iptv-org.github.io/iptv/languages/icr.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Inuktitut",
+   "code": "iku",
+   "url": "https://iptv-org.github.io/iptv/languages/iku.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Indonesian",
+   "code": "ind",
+   "url": "https://iptv-org.github.io/iptv/languages/ind.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Icelandic",
+   "code": "isl",
+   "url": "https://iptv-org.github.io/iptv/languages/isl.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Italian",
+   "code": "ita",
+   "url": "https://iptv-org.github.io/iptv/languages/ita.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Isekiri",
+   "code": "its",
+   "url": "https://iptv-org.github.io/iptv/languages/its.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Javanese",
+   "code": "jav",
+   "url": "https://iptv-org.github.io/iptv/languages/jav.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Japanese",
+   "code": "jpn",
+   "url": "https://iptv-org.github.io/iptv/languages/jpn.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Kabyle",
+   "code": "kab",
+   "url": "https://iptv-org.github.io/iptv/languages/kab.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Kannada",
+   "code": "kan",
+   "url": "https://iptv-org.github.io/iptv/languages/kan.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Georgian",
+   "code": "kat",
+   "url": "https://iptv-org.github.io/iptv/languages/kat.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Kazakh",
+   "code": "kaz",
+   "url": "https://iptv-org.github.io/iptv/languages/kaz.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Kabiyè",
+   "code": "kbp",
+   "url": "https://iptv-org.github.io/iptv/languages/kbp.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Kumam",
+   "code": "kdi",
+   "url": "https://iptv-org.github.io/iptv/languages/kdi.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Khmer",
+   "code": "khm",
+   "url": "https://iptv-org.github.io/iptv/languages/khm.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Gikuyu",
+   "code": "kik",
+   "url": "https://iptv-org.github.io/iptv/languages/kik.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Kinyarwanda",
+   "code": "kin",
+   "url": "https://iptv-org.github.io/iptv/languages/kin.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Kirghiz",
+   "code": "kir",
+   "url": "https://iptv-org.github.io/iptv/languages/kir.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Khorasani Turkish",
+   "code": "kmz",
+   "url": "https://iptv-org.github.io/iptv/languages/kmz.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Konkani (macrolanguage)",
+   "code": "kok",
+   "url": "https://iptv-org.github.io/iptv/languages/kok.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Kongo",
+   "code": "kon",
+   "url": "https://iptv-org.github.io/iptv/languages/kon.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Korean",
+   "code": "kor",
+   "url": "https://iptv-org.github.io/iptv/languages/kor.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Kurdish",
+   "code": "kur",
+   "url": "https://iptv-org.github.io/iptv/languages/kur.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Lahnda",
+   "code": "lah",
+   "url": "https://iptv-org.github.io/iptv/languages/lah.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Lango (Uganda)",
+   "code": "laj",
+   "url": "https://iptv-org.github.io/iptv/languages/laj.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Lao",
+   "code": "lao",
+   "url": "https://iptv-org.github.io/iptv/languages/lao.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Latin",
+   "code": "lat",
+   "url": "https://iptv-org.github.io/iptv/languages/lat.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Latvian",
+   "code": "lav",
+   "url": "https://iptv-org.github.io/iptv/languages/lav.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Lyélé",
+   "code": "lee",
+   "url": "https://iptv-org.github.io/iptv/languages/lee.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Lingala",
+   "code": "lin",
+   "url": "https://iptv-org.github.io/iptv/languages/lin.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Lithuanian",
+   "code": "lit",
+   "url": "https://iptv-org.github.io/iptv/languages/lit.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Lobi",
+   "code": "lob",
+   "url": "https://iptv-org.github.io/iptv/languages/lob.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Letzeburgesch",
+   "code": "ltz",
+   "url": "https://iptv-org.github.io/iptv/languages/ltz.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Luba-Lulua",
+   "code": "lua",
+   "url": "https://iptv-org.github.io/iptv/languages/lua.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Ganda",
+   "code": "lug",
+   "url": "https://iptv-org.github.io/iptv/languages/lug.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Dholuo",
+   "code": "luo",
+   "url": "https://iptv-org.github.io/iptv/languages/luo.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Lushai",
+   "code": "lus",
+   "url": "https://iptv-org.github.io/iptv/languages/lus.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Maithili",
+   "code": "mai",
+   "url": "https://iptv-org.github.io/iptv/languages/mai.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Malayalam",
+   "code": "mal",
+   "url": "https://iptv-org.github.io/iptv/languages/mal.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Marathi",
+   "code": "mar",
+   "url": "https://iptv-org.github.io/iptv/languages/mar.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Macedonian",
+   "code": "mkd",
+   "url": "https://iptv-org.github.io/iptv/languages/mkd.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Kituba (Congo)",
+   "code": "mkw",
+   "url": "https://iptv-org.github.io/iptv/languages/mkw.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Maltese",
+   "code": "mlt",
+   "url": "https://iptv-org.github.io/iptv/languages/mlt.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Mandinka",
+   "code": "mnk",
+   "url": "https://iptv-org.github.io/iptv/languages/mnk.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Mongolian",
+   "code": "mon",
+   "url": "https://iptv-org.github.io/iptv/languages/mon.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Mossi",
+   "code": "mos",
+   "url": "https://iptv-org.github.io/iptv/languages/mos.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Maori",
+   "code": "mri",
+   "url": "https://iptv-org.github.io/iptv/languages/mri.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Malay",
+   "code": "msa",
+   "url": "https://iptv-org.github.io/iptv/languages/msa.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Burmese",
+   "code": "mya",
+   "url": "https://iptv-org.github.io/iptv/languages/mya.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Min Nan Chinese",
+   "code": "nan",
+   "url": "https://iptv-org.github.io/iptv/languages/nan.m3u"
+  },
+  {
+   "type": "language",
+   "name": "South Ndebele",
+   "code": "nbl",
+   "url": "https://iptv-org.github.io/iptv/languages/nbl.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Nepali",
+   "code": "nep",
+   "url": "https://iptv-org.github.io/iptv/languages/nep.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Dutch",
+   "code": "nld",
+   "url": "https://iptv-org.github.io/iptv/languages/nld.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Norwegian",
+   "code": "nor",
+   "url": "https://iptv-org.github.io/iptv/languages/nor.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Nyankole",
+   "code": "nyn",
+   "url": "https://iptv-org.github.io/iptv/languages/nyn.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Nyoro",
+   "code": "nyo",
+   "url": "https://iptv-org.github.io/iptv/languages/nyo.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Oriya (macrolanguage)",
+   "code": "ori",
+   "url": "https://iptv-org.github.io/iptv/languages/ori.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Kapampangan",
+   "code": "pam",
+   "url": "https://iptv-org.github.io/iptv/languages/pam.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Panjabi",
+   "code": "pan",
+   "url": "https://iptv-org.github.io/iptv/languages/pan.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Papiamento",
+   "code": "pap",
+   "url": "https://iptv-org.github.io/iptv/languages/pap.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Polish",
+   "code": "pol",
+   "url": "https://iptv-org.github.io/iptv/languages/pol.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Portuguese",
+   "code": "por",
+   "url": "https://iptv-org.github.io/iptv/languages/por.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Dari (Parsi)",
+   "code": "prd",
+   "url": "https://iptv-org.github.io/iptv/languages/prd.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Pashto",
+   "code": "pus",
+   "url": "https://iptv-org.github.io/iptv/languages/pus.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Quechua",
+   "code": "que",
+   "url": "https://iptv-org.github.io/iptv/languages/que.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Tarifit",
+   "code": "rif",
+   "url": "https://iptv-org.github.io/iptv/languages/rif.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Marka",
+   "code": "rkm",
+   "url": "https://iptv-org.github.io/iptv/languages/rkm.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Romany",
+   "code": "rom",
+   "url": "https://iptv-org.github.io/iptv/languages/rom.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Romanian",
+   "code": "ron",
+   "url": "https://iptv-org.github.io/iptv/languages/ron.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Russian",
+   "code": "rus",
+   "url": "https://iptv-org.github.io/iptv/languages/rus.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Yakut",
+   "code": "sah",
+   "url": "https://iptv-org.github.io/iptv/languages/sah.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Santali",
+   "code": "sat",
+   "url": "https://iptv-org.github.io/iptv/languages/sat.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Southern Samo",
+   "code": "sbd",
+   "url": "https://iptv-org.github.io/iptv/languages/sbd.m3u"
+  },
+  {
+   "type": "language",
+   "name": "South African Sign Language",
+   "code": "sfs",
+   "url": "https://iptv-org.github.io/iptv/languages/sfs.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Tachelhit",
+   "code": "shi",
+   "url": "https://iptv-org.github.io/iptv/languages/shi.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Tachawit",
+   "code": "shy",
+   "url": "https://iptv-org.github.io/iptv/languages/shy.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Sinhala",
+   "code": "sin",
+   "url": "https://iptv-org.github.io/iptv/languages/sin.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Slovak",
+   "code": "slk",
+   "url": "https://iptv-org.github.io/iptv/languages/slk.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Slovenian",
+   "code": "slv",
+   "url": "https://iptv-org.github.io/iptv/languages/slv.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Samoan",
+   "code": "smo",
+   "url": "https://iptv-org.github.io/iptv/languages/smo.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Sindhi",
+   "code": "snd",
+   "url": "https://iptv-org.github.io/iptv/languages/snd.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Somali",
+   "code": "som",
+   "url": "https://iptv-org.github.io/iptv/languages/som.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Spanish",
+   "code": "spa",
+   "url": "https://iptv-org.github.io/iptv/languages/spa.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Albanian",
+   "code": "sqi",
+   "url": "https://iptv-org.github.io/iptv/languages/sqi.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Serbian",
+   "code": "srp",
+   "url": "https://iptv-org.github.io/iptv/languages/srp.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Spanish Sign Language",
+   "code": "ssp",
+   "url": "https://iptv-org.github.io/iptv/languages/ssp.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Swati",
+   "code": "ssw",
+   "url": "https://iptv-org.github.io/iptv/languages/ssw.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Matya Samo",
+   "code": "stj",
+   "url": "https://iptv-org.github.io/iptv/languages/stj.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Sundanese",
+   "code": "sun",
+   "url": "https://iptv-org.github.io/iptv/languages/sun.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Swahili",
+   "code": "swa",
+   "url": "https://iptv-org.github.io/iptv/languages/swa.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Swedish",
+   "code": "swe",
+   "url": "https://iptv-org.github.io/iptv/languages/swe.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Maya Samo",
+   "code": "sym",
+   "url": "https://iptv-org.github.io/iptv/languages/sym.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Tahitian",
+   "code": "tah",
+   "url": "https://iptv-org.github.io/iptv/languages/tah.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Tamil",
+   "code": "tam",
+   "url": "https://iptv-org.github.io/iptv/languages/tam.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Tamasheq",
+   "code": "taq",
+   "url": "https://iptv-org.github.io/iptv/languages/taq.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Tatar",
+   "code": "tat",
+   "url": "https://iptv-org.github.io/iptv/languages/tat.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Telugu",
+   "code": "tel",
+   "url": "https://iptv-org.github.io/iptv/languages/tel.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Tajik",
+   "code": "tgk",
+   "url": "https://iptv-org.github.io/iptv/languages/tgk.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Tagalog",
+   "code": "tgl",
+   "url": "https://iptv-org.github.io/iptv/languages/tgl.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Thai",
+   "code": "tha",
+   "url": "https://iptv-org.github.io/iptv/languages/tha.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Tigre",
+   "code": "tig",
+   "url": "https://iptv-org.github.io/iptv/languages/tig.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Tigrinya",
+   "code": "tir",
+   "url": "https://iptv-org.github.io/iptv/languages/tir.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Tamashek",
+   "code": "tmh",
+   "url": "https://iptv-org.github.io/iptv/languages/tmh.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Tsonga",
+   "code": "tso",
+   "url": "https://iptv-org.github.io/iptv/languages/tso.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Tooro",
+   "code": "ttj",
+   "url": "https://iptv-org.github.io/iptv/languages/ttj.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Turkmen",
+   "code": "tuk",
+   "url": "https://iptv-org.github.io/iptv/languages/tuk.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Turkish",
+   "code": "tur",
+   "url": "https://iptv-org.github.io/iptv/languages/tur.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Central Atlas Tamazight",
+   "code": "tzm",
+   "url": "https://iptv-org.github.io/iptv/languages/tzm.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Uighur",
+   "code": "uig",
+   "url": "https://iptv-org.github.io/iptv/languages/uig.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Ukrainian",
+   "code": "ukr",
+   "url": "https://iptv-org.github.io/iptv/languages/ukr.m3u"
+  },
+  {
+   "type": "language",
+   "name": "UNDEFINED",
+   "code": "undefined",
+   "url": "https://iptv-org.github.io/iptv/languages/undefined.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Urdu",
+   "code": "urd",
+   "url": "https://iptv-org.github.io/iptv/languages/urd.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Uzbek",
+   "code": "uzb",
+   "url": "https://iptv-org.github.io/iptv/languages/uzb.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Venda",
+   "code": "ven",
+   "url": "https://iptv-org.github.io/iptv/languages/ven.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Vietnamese",
+   "code": "vie",
+   "url": "https://iptv-org.github.io/iptv/languages/vie.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Wolof",
+   "code": "wol",
+   "url": "https://iptv-org.github.io/iptv/languages/wol.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Xhosa",
+   "code": "xho",
+   "url": "https://iptv-org.github.io/iptv/languages/xho.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Moroccan Sign Language",
+   "code": "xms",
+   "url": "https://iptv-org.github.io/iptv/languages/xms.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Yoruba",
+   "code": "yor",
+   "url": "https://iptv-org.github.io/iptv/languages/yor.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Yucatec Maya",
+   "code": "yua",
+   "url": "https://iptv-org.github.io/iptv/languages/yua.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Yue Chinese",
+   "code": "yue",
+   "url": "https://iptv-org.github.io/iptv/languages/yue.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Chinese",
+   "code": "zho",
+   "url": "https://iptv-org.github.io/iptv/languages/zho.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Zulu",
+   "code": "zul",
+   "url": "https://iptv-org.github.io/iptv/languages/zul.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Dimili",
+   "code": "zza",
+   "url": "https://iptv-org.github.io/iptv/languages/zza.m3u"
+  },
+  {
+   "type": "region",
+   "name": "Africa",
+   "code": "afr",
+   "url": "https://iptv-org.github.io/iptv/regions/afr.m3u"
+  },
+  {
+   "type": "region",
+   "name": "Americas",
+   "code": "amer",
+   "url": "https://iptv-org.github.io/iptv/regions/amer.m3u"
+  },
+  {
+   "type": "region",
+   "name": "Asia-Pacific",
+   "code": "apac",
+   "url": "https://iptv-org.github.io/iptv/regions/apac.m3u"
+  },
+  {
+   "type": "region",
+   "name": "Arab world",
+   "code": "arab",
+   "url": "https://iptv-org.github.io/iptv/regions/arab.m3u"
+  },
+  {
+   "type": "region",
+   "name": "Association of Southeast Asian Nations",
+   "code": "asean",
+   "url": "https://iptv-org.github.io/iptv/regions/asean.m3u"
+  },
+  {
+   "type": "region",
+   "name": "Asia",
+   "code": "asia",
+   "url": "https://iptv-org.github.io/iptv/regions/asia.m3u"
+  },
+  {
+   "type": "region",
+   "name": "Balkan",
+   "code": "balkan",
+   "url": "https://iptv-org.github.io/iptv/regions/balkan.m3u"
+  },
+  {
+   "type": "region",
+   "name": "Benelux",
+   "code": "benelux",
+   "url": "https://iptv-org.github.io/iptv/regions/benelux.m3u"
+  },
+  {
+   "type": "region",
+   "name": "Caribbean",
+   "code": "carib",
+   "url": "https://iptv-org.github.io/iptv/regions/carib.m3u"
+  },
+  {
+   "type": "region",
+   "name": "Central Asia",
+   "code": "cas",
+   "url": "https://iptv-org.github.io/iptv/regions/cas.m3u"
+  },
+  {
+   "type": "region",
+   "name": "Central and Eastern Europe",
+   "code": "cee",
+   "url": "https://iptv-org.github.io/iptv/regions/cee.m3u"
+  },
+  {
+   "type": "region",
+   "name": "Central America",
+   "code": "cenamer",
+   "url": "https://iptv-org.github.io/iptv/regions/cenamer.m3u"
+  },
+  {
+   "type": "region",
+   "name": "Central Europe",
+   "code": "ceu",
+   "url": "https://iptv-org.github.io/iptv/regions/ceu.m3u"
+  },
+  {
+   "type": "region",
+   "name": "Commonwealth of Independent States",
+   "code": "cis",
+   "url": "https://iptv-org.github.io/iptv/regions/cis.m3u"
+  },
+  {
+   "type": "region",
+   "name": "East Africa",
+   "code": "eaf",
+   "url": "https://iptv-org.github.io/iptv/regions/eaf.m3u"
+  },
+  {
+   "type": "region",
+   "name": "East Asia",
+   "code": "eas",
+   "url": "https://iptv-org.github.io/iptv/regions/eas.m3u"
+  },
+  {
+   "type": "region",
+   "name": "Europe, the Middle East and Africa",
+   "code": "emea",
+   "url": "https://iptv-org.github.io/iptv/regions/emea.m3u"
+  },
+  {
+   "type": "region",
+   "name": "European Union",
+   "code": "eu",
+   "url": "https://iptv-org.github.io/iptv/regions/eu.m3u"
+  },
+  {
+   "type": "region",
+   "name": "Europe",
+   "code": "eur",
+   "url": "https://iptv-org.github.io/iptv/regions/eur.m3u"
+  },
+  {
+   "type": "region",
+   "name": "Gulf Cooperation Council",
+   "code": "gcc",
+   "url": "https://iptv-org.github.io/iptv/regions/gcc.m3u"
+  },
+  {
+   "type": "region",
+   "name": "Hispanic America",
+   "code": "hispam",
+   "url": "https://iptv-org.github.io/iptv/regions/hispam.m3u"
+  },
+  {
+   "type": "region",
+   "name": "Latin America and the Caribbean",
+   "code": "lac",
+   "url": "https://iptv-org.github.io/iptv/regions/lac.m3u"
+  },
+  {
+   "type": "region",
+   "name": "Latin America",
+   "code": "latam",
+   "url": "https://iptv-org.github.io/iptv/regions/latam.m3u"
+  },
+  {
+   "type": "region",
+   "name": "Maghreb",
+   "code": "maghreb",
+   "url": "https://iptv-org.github.io/iptv/regions/maghreb.m3u"
+  },
+  {
+   "type": "region",
+   "name": "Middle East and North Africa",
+   "code": "mena",
+   "url": "https://iptv-org.github.io/iptv/regions/mena.m3u"
+  },
+  {
+   "type": "region",
+   "name": "Middle East",
+   "code": "mideast",
+   "url": "https://iptv-org.github.io/iptv/regions/mideast.m3u"
+  },
+  {
+   "type": "region",
+   "name": "Northern America",
+   "code": "nam",
+   "url": "https://iptv-org.github.io/iptv/regions/nam.m3u"
+  },
+  {
+   "type": "region",
+   "name": "Northern Europe",
+   "code": "neu",
+   "url": "https://iptv-org.github.io/iptv/regions/neu.m3u"
+  },
+  {
+   "type": "region",
+   "name": "North America",
+   "code": "noram",
+   "url": "https://iptv-org.github.io/iptv/regions/noram.m3u"
+  },
+  {
+   "type": "region",
+   "name": "Nordics",
+   "code": "nord",
+   "url": "https://iptv-org.github.io/iptv/regions/nord.m3u"
+  },
+  {
+   "type": "region",
+   "name": "Oceania",
+   "code": "oce",
+   "url": "https://iptv-org.github.io/iptv/regions/oce.m3u"
+  },
+  {
+   "type": "region",
+   "name": "Southern Africa",
+   "code": "saf",
+   "url": "https://iptv-org.github.io/iptv/regions/saf.m3u"
+  },
+  {
+   "type": "region",
+   "name": "South Asia",
+   "code": "sas",
+   "url": "https://iptv-org.github.io/iptv/regions/sas.m3u"
+  },
+  {
+   "type": "region",
+   "name": "Southeast Asia",
+   "code": "sea",
+   "url": "https://iptv-org.github.io/iptv/regions/sea.m3u"
+  },
+  {
+   "type": "region",
+   "name": "Southern Europe",
+   "code": "ser",
+   "url": "https://iptv-org.github.io/iptv/regions/ser.m3u"
+  },
+  {
+   "type": "region",
+   "name": "South America",
+   "code": "southam",
+   "url": "https://iptv-org.github.io/iptv/regions/southam.m3u"
+  },
+  {
+   "type": "region",
+   "name": "Sub-Saharan Africa",
+   "code": "ssa",
+   "url": "https://iptv-org.github.io/iptv/regions/ssa.m3u"
+  },
+  {
+   "type": "region",
+   "name": "United Nations",
+   "code": "un",
+   "url": "https://iptv-org.github.io/iptv/regions/un.m3u"
+  },
+  {
+   "type": "region",
+   "name": "West Africa",
+   "code": "waf",
+   "url": "https://iptv-org.github.io/iptv/regions/waf.m3u"
+  },
+  {
+   "type": "region",
+   "name": "West Asia",
+   "code": "was",
+   "url": "https://iptv-org.github.io/iptv/regions/was.m3u"
+  },
+  {
+   "type": "region",
+   "name": "Western Europe",
+   "code": "wer",
+   "url": "https://iptv-org.github.io/iptv/regions/wer.m3u"
+  },
+  {
+   "type": "region",
+   "name": "Worldwide",
+   "code": "ww",
+   "url": "https://iptv-org.github.io/iptv/regions/ww.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Salta",
+   "code": "ar-a",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ar-a.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Buenos Aires",
+   "code": "ar-b",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ar-b.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Ciudad Autonoma de Buenos Aires",
+   "code": "ar-c",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ar-c.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "San Luis",
+   "code": "ar-d",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ar-d.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Entre Rios",
+   "code": "ar-e",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ar-e.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "La Rioja",
+   "code": "ar-f",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ar-f.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Santiago del Estero",
+   "code": "ar-g",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ar-g.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Chaco",
+   "code": "ar-h",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ar-h.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "San Juan",
+   "code": "ar-j",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ar-j.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Catamarca",
+   "code": "ar-k",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ar-k.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "La Pampa",
+   "code": "ar-l",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ar-l.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Misiones",
+   "code": "ar-n",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ar-n.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Formosa",
+   "code": "ar-p",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ar-p.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Neuquén",
+   "code": "ar-q",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ar-q.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Santa Fe",
+   "code": "ar-s",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ar-s.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Tucuman",
+   "code": "ar-t",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ar-t.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Chubut",
+   "code": "ar-u",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ar-u.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Corrientes",
+   "code": "ar-w",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ar-w.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Cordoba",
+   "code": "ar-x",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ar-x.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Jujuy",
+   "code": "ar-y",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ar-y.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Santa Cruz",
+   "code": "ar-z",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ar-z.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Kärnten",
+   "code": "at-2",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/at-2.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Steiermark",
+   "code": "at-6",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/at-6.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Australian Capital Territory",
+   "code": "au-act",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/au-act.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "New South Wales",
+   "code": "au-nsw",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/au-nsw.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Northern Territory",
+   "code": "au-nt",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/au-nt.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Queensland",
+   "code": "au-qld",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/au-qld.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "South Australia",
+   "code": "au-sa",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/au-sa.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Tasmania",
+   "code": "au-tas",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/au-tas.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Victoria",
+   "code": "au-vic",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/au-vic.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Western Australia",
+   "code": "au-wa",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/au-wa.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Antwerpen",
+   "code": "be-van",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/be-van.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Vlaams Gewest",
+   "code": "be-vlg",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/be-vlg.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Cochabamba",
+   "code": "bo-c",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/bo-c.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "La Paz",
+   "code": "bo-l",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/bo-l.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Oruro",
+   "code": "bo-o",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/bo-o.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Santa Cruz",
+   "code": "bo-s",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/bo-s.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Amazonas",
+   "code": "br-am",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/br-am.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Bahia",
+   "code": "br-ba",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/br-ba.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Ceara",
+   "code": "br-ce",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/br-ce.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Distrito Federal",
+   "code": "br-df",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/br-df.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Espirito Santo",
+   "code": "br-es",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/br-es.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Maranhao",
+   "code": "br-ma",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/br-ma.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Minas Gerais",
+   "code": "br-mg",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/br-mg.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Mato Grosso",
+   "code": "br-mt",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/br-mt.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Para",
+   "code": "br-pa",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/br-pa.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Paraiba",
+   "code": "br-pb",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/br-pb.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Pernambuco",
+   "code": "br-pe",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/br-pe.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Parana",
+   "code": "br-pr",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/br-pr.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Rio de Janeiro",
+   "code": "br-rj",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/br-rj.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Rio Grande do Norte",
+   "code": "br-rn",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/br-rn.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Rondonia",
+   "code": "br-ro",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/br-ro.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Rio Grande do Sul",
+   "code": "br-rs",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/br-rs.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Santa Catarina",
+   "code": "br-sc",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/br-sc.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Sao Paulo",
+   "code": "br-sp",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/br-sp.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Tocantins",
+   "code": "br-to",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/br-to.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Alberta",
+   "code": "ca-ab",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ca-ab.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "British Columbia",
+   "code": "ca-bc",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ca-bc.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Manitoba",
+   "code": "ca-mb",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ca-mb.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "New Brunswick",
+   "code": "ca-nb",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ca-nb.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Newfoundland and Labrador",
+   "code": "ca-nl",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ca-nl.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Nova Scotia",
+   "code": "ca-ns",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ca-ns.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Northwest Territories",
+   "code": "ca-nt",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ca-nt.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Nunavut",
+   "code": "ca-nu",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ca-nu.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Ontario",
+   "code": "ca-on",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ca-on.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Prince Edward Island",
+   "code": "ca-pe",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ca-pe.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Quebec",
+   "code": "ca-qc",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ca-qc.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Saskatchewan",
+   "code": "ca-sk",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ca-sk.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Brazzaville",
+   "code": "cg-bzv",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/cg-bzv.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "La Araucania",
+   "code": "cl-ar",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/cl-ar.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Atacama",
+   "code": "cl-at",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/cl-at.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Biobio",
+   "code": "cl-bi",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/cl-bi.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Libertador General Bernardo O'Higgins",
+   "code": "cl-li",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/cl-li.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Maule",
+   "code": "cl-ml",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/cl-ml.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Valparaiso",
+   "code": "cl-vs",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/cl-vs.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Bolivar",
+   "code": "co-bol",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/co-bol.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Caldas",
+   "code": "co-cal",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/co-cal.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Cauca",
+   "code": "co-cau",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/co-cau.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Choco",
+   "code": "co-cho",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/co-cho.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Huila",
+   "code": "co-hui",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/co-hui.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Narino",
+   "code": "co-nar",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/co-nar.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "San Andres",
+   "code": "co-sap",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/co-sap.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Tolima",
+   "code": "co-tol",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/co-tol.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Valle del Cauca",
+   "code": "co-vac",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/co-vac.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Cartago",
+   "code": "cr-c",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/cr-c.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Puntarenas",
+   "code": "cr-p",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/cr-p.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "San Jose",
+   "code": "cr-sj",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/cr-sj.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Brandenburg",
+   "code": "de-bb",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/de-bb.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Berlin",
+   "code": "de-be",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/de-be.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Bayern",
+   "code": "de-by",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/de-by.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Hamburg",
+   "code": "de-hh",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/de-hh.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Mecklenburg-Vorpommern",
+   "code": "de-mv",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/de-mv.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Niedersachsen",
+   "code": "de-ni",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/de-ni.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Nordrhein-Westfalen",
+   "code": "de-nw",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/de-nw.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Schleswig-Holstein",
+   "code": "de-sh",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/de-sh.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Sachsen",
+   "code": "de-sn",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/de-sn.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Sachsen-Anhalt",
+   "code": "de-st",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/de-st.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Thüringen",
+   "code": "de-th",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/de-th.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Distrito Nacional",
+   "code": "do-01",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/do-01.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "El Seibo",
+   "code": "do-08",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/do-08.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "La Altagracia",
+   "code": "do-11",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/do-11.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "La Vega",
+   "code": "do-13",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/do-13.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Puerto Plata",
+   "code": "do-18",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/do-18.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "San Juan",
+   "code": "do-22",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/do-22.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Santiago",
+   "code": "do-25",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/do-25.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Valverde",
+   "code": "do-27",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/do-27.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Monseñor Nouel",
+   "code": "do-28",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/do-28.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Cibao Noroeste",
+   "code": "do-34",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/do-34.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Cibao Norte",
+   "code": "do-35",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/do-35.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Cibao Sur",
+   "code": "do-36",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/do-36.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "El Valle",
+   "code": "do-37",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/do-37.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Ozama",
+   "code": "do-40",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/do-40.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Yuma",
+   "code": "do-42",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/do-42.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Azuay",
+   "code": "ec-a",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ec-a.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Orellana",
+   "code": "ec-d",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ec-d.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Loja",
+   "code": "ec-l",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ec-l.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Andalucía",
+   "code": "es-an",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/es-an.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Aragón",
+   "code": "es-ar",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/es-ar.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Barcelona",
+   "code": "es-b",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/es-b.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Bizkaia",
+   "code": "es-bi",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/es-bi.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Cádiz",
+   "code": "es-ca",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/es-ca.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Castilla-La Mancha",
+   "code": "es-cm",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/es-cm.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Canarias",
+   "code": "es-cn",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/es-cn.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Córdoba",
+   "code": "es-co",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/es-co.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Catalunya",
+   "code": "es-ct",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/es-ct.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Galicia",
+   "code": "es-ga",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/es-ga.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Girona",
+   "code": "es-gi",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/es-gi.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Granada",
+   "code": "es-gr",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/es-gr.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Huelva",
+   "code": "es-h",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/es-h.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Huesca",
+   "code": "es-hu",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/es-hu.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Illes Balears",
+   "code": "es-ib",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/es-ib.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Jaén",
+   "code": "es-j",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/es-j.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Lleida",
+   "code": "es-l",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/es-l.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Málaga",
+   "code": "es-ma",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/es-ma.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Murcia",
+   "code": "es-mc",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/es-mc.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Madrid",
+   "code": "es-md",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/es-md.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Navarra",
+   "code": "es-na",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/es-na.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Navarra",
+   "code": "es-nc",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/es-nc.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "País Vasco",
+   "code": "es-pv",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/es-pv.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "La Rioja",
+   "code": "es-ri",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/es-ri.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Tarragona",
+   "code": "es-t",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/es-t.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Santa Cruz de Tenerife",
+   "code": "es-tf",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/es-tf.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Toledo",
+   "code": "es-to",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/es-to.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Valencia",
+   "code": "es-v",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/es-v.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Valenciana",
+   "code": "es-vc",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/es-vc.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Keski-Suomi",
+   "code": "fi-08",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/fi-08.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Pohjanmaa",
+   "code": "fi-12",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/fi-12.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Alsace",
+   "code": "fr-6ae",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/fr-6ae.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Grand-Est",
+   "code": "fr-ges",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/fr-ges.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Wales",
+   "code": "gb-wls",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/gb-wls.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Abkhazia",
+   "code": "ge-ab",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ge-ab.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Kentriki Makedonia",
+   "code": "gr-b",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/gr-b.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Dytiki Makedonia",
+   "code": "gr-c",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/gr-c.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Ipeiros",
+   "code": "gr-d",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/gr-d.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Thessalia",
+   "code": "gr-e",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/gr-e.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Ionia Nisia",
+   "code": "gr-f",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/gr-f.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Dytiki Ellada",
+   "code": "gr-g",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/gr-g.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Sterea Ellada",
+   "code": "gr-h",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/gr-h.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Attiki",
+   "code": "gr-i",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/gr-i.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Notio Aigaio",
+   "code": "gr-l",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/gr-l.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Escuintla",
+   "code": "gt-05",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/gt-05.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Santa Rosa",
+   "code": "gt-06",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/gt-06.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Solola",
+   "code": "gt-07",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/gt-07.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Totonicapan",
+   "code": "gt-08",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/gt-08.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "San Marcos",
+   "code": "gt-12",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/gt-12.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Quiche",
+   "code": "gt-14",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/gt-14.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Aceh",
+   "code": "id-ac",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/id-ac.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Bali",
+   "code": "id-ba",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/id-ba.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Kepulauan Bangka Belitung",
+   "code": "id-bb",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/id-bb.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Bengkulu",
+   "code": "id-be",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/id-be.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Bengkulu",
+   "code": "id-bt",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/id-bt.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Gorontalo",
+   "code": "id-go",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/id-go.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Jambi",
+   "code": "id-ja",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/id-ja.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Jawa Barat",
+   "code": "id-jb",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/id-jb.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Jawa Timur",
+   "code": "id-ji",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/id-ji.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Jakarta Raya",
+   "code": "id-jk",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/id-jk.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Jawa Tengah",
+   "code": "id-jt",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/id-jt.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Jawa",
+   "code": "id-jw",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/id-jw.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Kalimantan",
+   "code": "id-ka",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/id-ka.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Kalimantan Barat",
+   "code": "id-kb",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/id-kb.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Kalimantan Timur",
+   "code": "id-ki",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/id-ki.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Kalimantan Selatan",
+   "code": "id-ks",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/id-ks.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Kalimantan Tengah",
+   "code": "id-kt",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/id-kt.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Lampung",
+   "code": "id-la",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/id-la.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Maluku",
+   "code": "id-ml",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/id-ml.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Maluku Utara",
+   "code": "id-mu",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/id-mu.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Nusa Tenggara Barat",
+   "code": "id-nb",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/id-nb.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Nusa Tenggara Timur",
+   "code": "id-nt",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/id-nt.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Nusa Tenggara",
+   "code": "id-nu",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/id-nu.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Papua Barat",
+   "code": "id-pb",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/id-pb.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Papua",
+   "code": "id-pp",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/id-pp.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Riau",
+   "code": "id-ri",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/id-ri.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Sulawesi Utara",
+   "code": "id-sa",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/id-sa.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Sumatera Barat",
+   "code": "id-sb",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/id-sb.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Sulawesi Tenggara",
+   "code": "id-sg",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/id-sg.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Sulawesi",
+   "code": "id-sl",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/id-sl.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Sumatera",
+   "code": "id-sm",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/id-sm.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Sulawesi Selatan",
+   "code": "id-sn",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/id-sn.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Sulawesi Barat",
+   "code": "id-sr",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/id-sr.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Sumatera Selatan",
+   "code": "id-ss",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/id-ss.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Sulawesi Tengah",
+   "code": "id-st",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/id-st.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Sumatera Utara",
+   "code": "id-su",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/id-su.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Yogyakarta",
+   "code": "id-yo",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/id-yo.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Andhra Pradesh",
+   "code": "in-ap",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/in-ap.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Delhi",
+   "code": "in-dl",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/in-dl.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Karnataka",
+   "code": "in-ka",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/in-ka.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Kerala",
+   "code": "in-kl",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/in-kl.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Maharashtra",
+   "code": "in-mh",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/in-mh.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Tamil Nadu",
+   "code": "in-tn",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/in-tn.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Trentino-Alto Adige",
+   "code": "it-32",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/it-32.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Calabria",
+   "code": "it-78",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/it-78.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Seoul-teukbyeolsi",
+   "code": "kr-11",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/kr-11.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Busan-gwangyeoksi",
+   "code": "kr-26",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/kr-26.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Daegu-gwangyeoksi",
+   "code": "kr-27",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/kr-27.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Daejeon-gwangyeoksi",
+   "code": "kr-30",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/kr-30.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Ulsan-gwangyeoksi",
+   "code": "kr-31",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/kr-31.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Gyeonggi-do",
+   "code": "kr-41",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/kr-41.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Gangwon-do",
+   "code": "kr-42",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/kr-42.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Chungcheongbuk-do",
+   "code": "kr-43",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/kr-43.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Jeollabuk-do",
+   "code": "kr-45",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/kr-45.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Jeollanam-do",
+   "code": "kr-46",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/kr-46.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Gyeongsangbuk-do",
+   "code": "kr-47",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/kr-47.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Gyeongsangnam-do",
+   "code": "kr-48",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/kr-48.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Jeju-teukbyeoljachido",
+   "code": "kr-49",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/kr-49.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Baja California",
+   "code": "mx-bcn",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/mx-bcn.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Chihuahua",
+   "code": "mx-chh",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/mx-chh.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Coahuila de Zaragoza",
+   "code": "mx-coa",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/mx-coa.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Durango",
+   "code": "mx-dur",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/mx-dur.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Morelos",
+   "code": "mx-mor",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/mx-mor.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Nuevo Leon",
+   "code": "mx-nle",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/mx-nle.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Puebla",
+   "code": "mx-pue",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/mx-pue.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Queretaro",
+   "code": "mx-que",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/mx-que.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Quintana Roo",
+   "code": "mx-roo",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/mx-roo.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "San Luis Potosi",
+   "code": "mx-slp",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/mx-slp.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Yucatan",
+   "code": "mx-yuc",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/mx-yuc.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Amazonas",
+   "code": "pe-ama",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/pe-ama.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Apurimac",
+   "code": "pe-apu",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/pe-apu.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Arequipa",
+   "code": "pe-are",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/pe-are.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Ayacucho",
+   "code": "pe-aya",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/pe-aya.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Junin",
+   "code": "pe-jun",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/pe-jun.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Lima",
+   "code": "pe-lim",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/pe-lim.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Loreto",
+   "code": "pe-lor",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/pe-lor.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "San Martin",
+   "code": "pe-sam",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/pe-sam.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Ucayali",
+   "code": "pe-uca",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/pe-uca.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Islamabad",
+   "code": "pk-is",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/pk-is.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Boqueron",
+   "code": "py-19",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/py-19.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Caaguazu",
+   "code": "py-5",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/py-5.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Itapua",
+   "code": "py-7",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/py-7.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Gorj",
+   "code": "ro-gj",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ro-gj.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Adygeya, Respublika",
+   "code": "ru-ad",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ru-ad.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Altay, Respublika",
+   "code": "ru-al",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ru-al.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Altayskiy kray",
+   "code": "ru-alt",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ru-alt.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Arkhangel'skaya oblast'",
+   "code": "ru-ark",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ru-ark.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Astrakhanskaya oblast'",
+   "code": "ru-ast",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ru-ast.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Bashkortostan, Respublika",
+   "code": "ru-ba",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ru-ba.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Belgorodskaya oblast'",
+   "code": "ru-bel",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ru-bel.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Chechenskaya Respublika",
+   "code": "ru-ce",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ru-ce.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Chelyabinskaya oblast'",
+   "code": "ru-che",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ru-che.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Dagestan, Respublika",
+   "code": "ru-da",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ru-da.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Ingushetiya, Respublika",
+   "code": "ru-in",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ru-in.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Irkutskaya oblast'",
+   "code": "ru-irk",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ru-irk.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Kabardino-Balkarskaya Respublika",
+   "code": "ru-kb",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ru-kb.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Karachayevo-Cherkesskaya Respublika",
+   "code": "ru-kc",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ru-kc.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Krasnodarskiy kray",
+   "code": "ru-kda",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ru-kda.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Kemerovskaya oblast'",
+   "code": "ru-kem",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ru-kem.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Kaliningradskaya oblast'",
+   "code": "ru-kgd",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ru-kgd.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Kurganskaya oblast'",
+   "code": "ru-kgn",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ru-kgn.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Khabarovskiy kray",
+   "code": "ru-kha",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ru-kha.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Khanty-Mansiyskiy avtonomnyy okrug",
+   "code": "ru-khm",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ru-khm.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Khakasiya, Respublika",
+   "code": "ru-kk",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ru-kk.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Kaluzhskaya oblast'",
+   "code": "ru-klu",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ru-klu.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Krasnoyarskiy kray",
+   "code": "ru-kya",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ru-kya.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Leningradskaya oblast'",
+   "code": "ru-len",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ru-len.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Mordoviya, Respublika",
+   "code": "ru-mo",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ru-mo.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Moskovskaya oblast'",
+   "code": "ru-mos",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ru-mos.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Moskva",
+   "code": "ru-mow",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ru-mow.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Nenetskiy avtonomnyy okrug",
+   "code": "ru-nen",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ru-nen.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Novgorodskaya oblast'",
+   "code": "ru-ngr",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ru-ngr.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Nizhegorodskaya oblast'",
+   "code": "ru-niz",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ru-niz.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Novosibirskaya oblast'",
+   "code": "ru-nvs",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ru-nvs.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Omskaya oblast'",
+   "code": "ru-oms",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ru-oms.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Orenburgskaya oblast'",
+   "code": "ru-ore",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ru-ore.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Permskiy kray",
+   "code": "ru-per",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ru-per.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Primorskiy kray",
+   "code": "ru-pri",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ru-pri.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Rostovskaya oblast'",
+   "code": "ru-ros",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ru-ros.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Ryazanskaya oblast'",
+   "code": "ru-rya",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ru-rya.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Saha, Respublika",
+   "code": "ru-sa",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ru-sa.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Samarskaya oblast'",
+   "code": "ru-sam",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ru-sam.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Severnaya Osetiya, Respublika",
+   "code": "ru-se",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ru-se.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Sankt-Peterburg",
+   "code": "ru-spe",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ru-spe.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Stavropol'skiy kray",
+   "code": "ru-sta",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ru-sta.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Sverdlovskaya oblast'",
+   "code": "ru-sve",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ru-sve.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Tatarstan, Respublika",
+   "code": "ru-ta",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ru-ta.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Tambovskaya oblast'",
+   "code": "ru-tam",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ru-tam.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Tomskaya oblast'",
+   "code": "ru-tom",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ru-tom.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Tyva, Respublika",
+   "code": "ru-ty",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ru-ty.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Tyumenskaya oblast'",
+   "code": "ru-tyu",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ru-tyu.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Volgogradskaya oblast'",
+   "code": "ru-vgg",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ru-vgg.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Yamalo-Nenetskiy avtonomnyy okrug",
+   "code": "ru-yan",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ru-yan.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Yaroslavskaya oblast'",
+   "code": "ru-yar",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ru-yar.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Yevreyskaya avtonomnaya oblast'",
+   "code": "ru-yev",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ru-yev.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Donetska oblast",
+   "code": "ua-14",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ua-14.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Zaporizka oblast",
+   "code": "ua-23",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ua-23.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Avtonomna Respublika Krym",
+   "code": "ua-43",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ua-43.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Khersonska oblast",
+   "code": "ua-65",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ua-65.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Alaska",
+   "code": "us-ak",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/us-ak.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Alabama",
+   "code": "us-al",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/us-al.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Arkansas",
+   "code": "us-ar",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/us-ar.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Arizona",
+   "code": "us-az",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/us-az.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "California",
+   "code": "us-ca",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/us-ca.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Colorado",
+   "code": "us-co",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/us-co.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Connecticut",
+   "code": "us-ct",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/us-ct.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "District of Columbia",
+   "code": "us-dc",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/us-dc.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Delaware",
+   "code": "us-de",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/us-de.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Florida",
+   "code": "us-fl",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/us-fl.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Georgia",
+   "code": "us-ga",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/us-ga.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Hawaii",
+   "code": "us-hi",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/us-hi.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Iowa",
+   "code": "us-ia",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/us-ia.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Illinois",
+   "code": "us-il",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/us-il.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Indiana",
+   "code": "us-in",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/us-in.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Kansas",
+   "code": "us-ks",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/us-ks.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Kentucky",
+   "code": "us-ky",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/us-ky.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Louisiana",
+   "code": "us-la",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/us-la.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Massachusetts",
+   "code": "us-ma",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/us-ma.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Maryland",
+   "code": "us-md",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/us-md.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Michigan",
+   "code": "us-mi",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/us-mi.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Minnesota",
+   "code": "us-mn",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/us-mn.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Missouri",
+   "code": "us-mo",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/us-mo.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Mississippi",
+   "code": "us-ms",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/us-ms.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "North Carolina",
+   "code": "us-nc",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/us-nc.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "North Dakota",
+   "code": "us-nd",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/us-nd.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Nebraska",
+   "code": "us-ne",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/us-ne.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "New Hampshire",
+   "code": "us-nh",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/us-nh.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "New Jersey",
+   "code": "us-nj",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/us-nj.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "New Mexico",
+   "code": "us-nm",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/us-nm.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Nevada",
+   "code": "us-nv",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/us-nv.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "New York",
+   "code": "us-ny",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/us-ny.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Ohio",
+   "code": "us-oh",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/us-oh.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Oklahoma",
+   "code": "us-ok",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/us-ok.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Oregon",
+   "code": "us-or",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/us-or.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Pennsylvania",
+   "code": "us-pa",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/us-pa.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Rhode Island",
+   "code": "us-ri",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/us-ri.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "South Carolina",
+   "code": "us-sc",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/us-sc.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Tennessee",
+   "code": "us-tn",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/us-tn.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Texas",
+   "code": "us-tx",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/us-tx.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Utah",
+   "code": "us-ut",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/us-ut.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Virginia",
+   "code": "us-va",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/us-va.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Vermont",
+   "code": "us-vt",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/us-vt.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Washington",
+   "code": "us-wa",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/us-wa.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Wisconsin",
+   "code": "us-wi",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/us-wi.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Wyoming",
+   "code": "us-wy",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/us-wy.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Aragua",
+   "code": "ve-d",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ve-d.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Lara",
+   "code": "ve-k",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ve-k.m3u"
+  }
+ ]
+}
