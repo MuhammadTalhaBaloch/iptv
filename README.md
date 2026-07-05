@@ -55,8 +55,8 @@ runs (fixed `epg-latest` tag, asset replaced in place).
 
 | Requirement | Why |
 |---|---|
-| Repo is **public** | Free unlimited Actions **and** publicly-downloadable Release assets (no auth). |
-| **Nothing else** | Publishing uses the built-in `GITHUB_TOKEN` (the workflow's `permissions: contents: write` covers creating/updating releases) — no PAT needed. The old `IPTVPAT` secret is no longer used and can be deleted. |
+| Repo is **public** | Free unlimited Actions **and** publicly-downloadable `raw.githubusercontent.com` serving. |
+| Repo **secret `IPTVPAT`** | A Personal Access Token with **Contents: write** on this repo, used to publish to `gh-pages`. Deliberately a PAT, not the built-in `GITHUB_TOKEN`: pushes by `GITHUB_TOKEN` don't count as repo activity, so GitHub would auto-disable this scheduled workflow after 60 days — a PAT push counts, keeping the daily schedule alive. **Note:** if the PAT expires, regenerate it and update the secret. |
 
 ---
 

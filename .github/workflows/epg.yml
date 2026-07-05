@@ -232,6 +232,10 @@ jobs:
       - name: Publish per-country guides to gh-pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}   # + permissions: contents: write (no PAT needed)
+          # Use a PAT, NOT GITHUB_TOKEN: commits pushed by GITHUB_TOKEN do NOT count as repository
+          # activity, so GitHub would auto-disable this scheduled workflow after 60 days of no other
+          # activity. A PAT-authenticated push counts as activity, so the daily run keeps the
+          # scheduler alive indefinitely (a real user consents to the self-sustaining loop).
+          personal_token: ${{ secrets.IPTVPAT }}
           publish_dir: ./public
           force_orphan: true    # keep gh-pages a single clean commit (no history bloat)
