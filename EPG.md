@@ -22,7 +22,7 @@ automatically. Note: it's a large download and produces a large on-device EPG da
 
 1. Push this repo to GitHub (`git push`).
 2. GitHub → **Actions** tab → **Generate EPG** → **Run workflow** (or wait for the
-   01:30 UTC schedule). Scheduled workflows only start once the file is on `main`.
+   02:00 PKT / 21:00 UTC schedule). Scheduled workflows only start once the file is on `main`.
 3. After it finishes (~2–3 h; it grabs all sites), the `epg-latest` release asset is live at the
    URL above. No GitHub Pages configuration or secret required — publishing uses `GITHUB_TOKEN`.
 

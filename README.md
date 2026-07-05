@@ -24,7 +24,7 @@ https://github.com/MuhammadTalhaBaloch/iptv/releases/download/epg-latest/guide.x
   the app normalizes ids (drops `@feed`, punctuation, case) so guide data attaches to your
   playlist channels automatically.
 
-Updated **daily (~01:30 UTC)**; the app's daily refresh keeps it current. Because it's the full
+Updated **daily (02:00 PKT / 21:00 UTC)**; the app's daily refresh keeps it current. Because it's the full
 all-sites guide, expect a **~120 MB download** and a large on-device EPG database.
 
 ---
@@ -45,7 +45,7 @@ sites OOMs (~7 GB at ~14%) **and** would exceed GitHub's 6-hour per-job limit. S
    currently-published guide's channels (so a partial failure can't clobber the good guide), then
    gzips and uploads `guide.xml.gz` as a **GitHub Release asset**.
 
-**Triggers:** daily cron `30 1 * * *` + manual **Run workflow** (Actions tab). Wall-clock ≈ the
+**Triggers:** daily cron `0 21 * * *` (02:00 PKT / 21:00 UTC) + manual **Run workflow** (Actions tab). Wall-clock ≈ the
 slowest shard (~2–3 h); shards run in parallel.
 **Publish:** `gh release upload epg-latest guide.xml.gz --clobber` — a Release asset (≤ 2 GB),
 because the ~120 MB guide exceeds gh-pages' 100 MB `git push` limit. The URL stays stable across

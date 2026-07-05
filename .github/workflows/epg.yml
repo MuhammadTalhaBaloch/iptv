@@ -21,7 +21,7 @@ name: Generate EPG
 
 on:
   schedule:
-    - cron: '30 1 * * *'   # daily at 01:30 UTC
+    - cron: '0 21 * * *'   # daily at 02:00 PKT (21:00 UTC)
   workflow_dispatch: {}     # manual "Run workflow" button
 
 permissions:
