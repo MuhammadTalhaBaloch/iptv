@@ -1,39 +1,47 @@
-# Self-hosted EPG (TV guide)
+# Self-hosted EPG (TV guide) — quick reference
 
-A scheduled GitHub Action ([`.github/workflows/epg.yml`](.github/workflows/epg.yml))
-regenerates an XMLTV guide daily from [iptv-org/epg](https://github.com/iptv-org/epg)
-and publishes it as a **GitHub Release asset**. **Free** — GitHub Actions has no minute
-limit on public repositories.
+A scheduled GitHub Action ([`.github/workflows/epg.yml`](.github/workflows/epg.yml)) regenerates a TV
+guide **daily** from [iptv-org/epg](https://github.com/iptv-org/epg) and publishes it as
+**per-country XMLTV gzip files** to the **`gh-pages`** branch. **Free** — public repos have no Actions
+minute limit. For the full technical breakdown see [`WORKFLOWS.md`](WORKFLOWS.md).
 
-## Guide URL (paste into the app → Settings → TV Guide)
+## Base URL (app → Settings → TV Guide)
+
+Leave the field **blank** to use the built-in default, or paste it explicitly:
 
 ```
-https://github.com/MuhammadTalhaBaloch/iptv/releases/download/epg-latest/guide.xml.gz
+https://raw.githubusercontent.com/MuhammadTalhaBaloch/iptv/gh-pages/guide/
 ```
 
-The guide covers **all iptv-org/epg sites** — ~157k channels / ~2.5M programmes, **~120 MB
-gzipped**. It's published as a **Release asset** (≤ 2 GB limit), not gh-pages, because a 120 MB
-file exceeds gh-pages' 100 MB `git push` limit. The URL is stable (fixed `epg-latest` tag, asset
-replaced in place each run). The app decompresses `.xml.gz` and stream-parses it. The channel ids
-(`GeoNews.pk@SD`, `AajTak.in@SD`, …) match the app's playlist tvg-ids, so programmes attach
-automatically. Note: it's a large download and produces a large on-device EPG database.
+This is a **folder base URL**, not a single file. The app appends `<cc>.xml.gz` per country
+(`…/guide/pk.xml.gz`, `…/guide/in.xml.gz`) and reads `…/guide/index.json` for the country list —
+fetching **only the countries you watch, on demand** (12 h TTL, 1 h on failure). Each per-country
+`.gz` is small (well under `gh-pages`' 100 MB `git push` limit).
+
+> You can also point Settings → TV Guide at **any single XMLTV file** instead (`.xml`, `.xml.gz`, or a
+> server-gzipped `.gz` — the app sniffs the gzip magic bytes). It streams and batches a single big
+> file so it won't blow up the write transaction.
+
+Channel ids carry the iptv-org `@SD`/`@HD` feed suffix (`GeoNews.pk@SD`, `AajTak.in@SD`); the app
+normalizes ids (drops `@feed`, punctuation, case) so programmes attach to your playlist channels
+automatically.
 
 ## First run
 
-1. Push this repo to GitHub (`git push`).
-2. GitHub → **Actions** tab → **Generate EPG** → **Run workflow** (or wait for the
-   02:00 PKT / 21:00 UTC schedule). Scheduled workflows only start once the file is on `main`.
-3. After it finishes (~2–3 h; it grabs all sites), the `epg-latest` release asset is live at the
-   URL above. No GitHub Pages configuration or secret required — publishing uses `GITHUB_TOKEN`.
+1. Push this repo to GitHub and add the **`IPTVPAT`** secret (PAT with *Contents: write*).
+2. GitHub → **Actions** → **Generate EPG** → **Run workflow** (or wait for the 21:00 UTC / 02:00 PKT
+   schedule — scheduled workflows only start once the file is on `main`).
+3. After it finishes (≈ the slowest of 20 parallel shards), `guide/<cc>.xml.gz` + `guide/index.json`
+   are live on `gh-pages` and served at the base URL above.
 
 ## Coverage / scope
 
-Grabs **all ~248 iptv-org/epg sites**. The grab runs as **20 parallel shards, one site per
-process** (the grabber buffers everything in memory and a single all-sites process OOMs / blows
-the 6-hour job limit — see [README](README.md#️-how-it-works)); a `merge` job stitches the
-shards and refuses to publish an empty/degraded guide. Actual coverage is whatever the sites
-return from GitHub's US-based runner — many geo-block/anti-bot non-local IPs (403), so regions
-like India come through well while others are partial. Pakistani EPG is thin at the source itself
-(~11 channels across all of iptv-org/epg). To trade coverage for a smaller/faster guide, replace
-the round-robin `ls sites | awk …` in the grab step with a specific `--sites=` list (see
-[SITES.md](https://github.com/iptv-org/epg/blob/master/SITES.md)).
+Grabs **all ~248 iptv-org/epg sites** as **20 parallel shards, one site per process** (the grabber
+buffers everything in memory; a single all-sites process OOMs and blows the 6-hour job limit — see
+[`WORKFLOWS.md`](WORKFLOWS.md#2-epgyml--generate-epg)). A `merge` job dedupes channels, splits them
+per country, and **refuses to publish** an empty/degraded guide (`ABS_FLOOR` / `REL_FLOOR`), so a bad
+run never overwrites the last good guide. Actual coverage is whatever the sites return to GitHub's
+US-based runner — many geo-block non-local IPs (403), so India comes through well while **Pakistani
+EPG is thin at the source itself** (~11 channels across all of iptv-org/epg). For a smaller/faster
+guide, replace the round-robin `ls sites | awk …` in the grab step with a specific `--sites=` list
+(see iptv-org/epg `SITES.md`).

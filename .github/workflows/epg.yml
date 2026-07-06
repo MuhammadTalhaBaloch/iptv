@@ -1,8 +1,10 @@
 name: Generate EPG
 
-# Regenerates the TV guide daily from iptv-org/epg and publishes it to the
-# gh-pages branch, served at:
-#   https://raw.githubusercontent.com/MuhammadTalhaBaloch/iptv/gh-pages/guide.xml.gz
+# Regenerates the TV guide daily from iptv-org/epg and publishes it, split into
+# per-country files, to the gh-pages branch. Served at:
+#   https://raw.githubusercontent.com/MuhammadTalhaBaloch/iptv/gh-pages/guide/<cc>.xml.gz
+#   https://raw.githubusercontent.com/MuhammadTalhaBaloch/iptv/gh-pages/guide/index.json
+# (The app's EPG base URL is .../gh-pages/guide/ ; see WORKFLOWS.md.)
 #
 # Why this is sharded + per-site:
 # The iptv-org/epg grabber BUFFERS the entire result in memory and writes the
