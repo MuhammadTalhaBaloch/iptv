@@ -204,17 +204,31 @@ Output structure:
 {
   "baseUrl": "https://iptv-org.github.io/iptv",
   "note": "auto-generated header",
-  "counts": { "index": 4, "category": 31, "country": 187, "language": 203,
+  "counts": { "index": 4, "category": 30, "country": 187, "language": 203,
               "region": 42, "subdivision": 353, "city": 476 },
+  "excluded": ["category:xxx"],
   "sources": [ { "type": "...", "name": "...", "code": "...", "url": "..." }, … ]
 }
 ```
 
 - **4 fixed index entries** (All Channels / Category / Language / Country index playlists) + one
-  entry per `.m3u`. Current total = **1296** (4 + 31 + 187 + 203 + 42 + 353 + 476).
+  entry per `.m3u`, minus global exclusions.
 - **Validation guard**: aborts if it would emit **< 500** sources (protects against an upstream fetch
   failure producing a near-empty registry — the app also independently re-validates `>= 500` before
   accepting a fetched registry).
+
+### Global exclusions (`exclusions.json`)
+
+Hide browse items **globally** (all users). [`exclusions.json`](exclusions.json) is committed →
+**preserved across every daily run**. Keyed by type → iptv-org codes:
+```json
+{ "category": ["xxx"], "country": [], "language": [], "region": [], "subdivision": [], "city": [] }
+```
+`gen-sources.py` **omits** these from `sources.json` **and** emits an `"excluded": ["type:code", …]`
+array. New app installs never see them (omitted); existing installs hide them on next refresh (the
+app filters the `excluded` list, since its registry apply is additive and never prunes). Edit the
+lists to hide/unhide; removing a code brings the item back on the next run. Keep enough items that the
+output stays **≥ 500** or the run fails the validation guard.
 
 ---
 

@@ -3,13 +3,16 @@
  "note": "Auto-generated from iptv-org playlists + API names. Do not edit by hand.",
  "counts": {
   "index": 4,
-  "category": 31,
-  "city": 476,
+  "category": 30,
+  "city": 477,
   "country": 187,
   "language": 203,
   "region": 42,
   "subdivision": 353
  },
+ "excluded": [
+  "category:xxx"
+ ],
  "sources": [
   {
    "type": "index",
@@ -214,12 +217,6 @@
    "name": "Weather",
    "code": "weather",
    "url": "https://iptv-org.github.io/iptv/categories/weather.m3u"
-  },
-  {
-   "type": "category",
-   "name": "XXX",
-   "code": "xxx",
-   "url": "https://iptv-org.github.io/iptv/categories/xxx.m3u"
   },
   {
    "type": "city",
@@ -1180,6 +1177,12 @@
    "name": "Ioánnina",
    "code": "grioa",
    "url": "https://iptv-org.github.io/iptv/cities/grioa.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Kilkís",
+   "code": "grkkz",
+   "url": "https://iptv-org.github.io/iptv/cities/grkkz.m3u"
   },
   {
    "type": "city",

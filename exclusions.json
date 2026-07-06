@@ -1,0 +1,9 @@
+{
+  "note": "Browse items hidden GLOBALLY from the app, keyed by type -> iptv-org codes. This file is committed, so exclusions persist across every daily workflow run. gen-sources.py omits these from sources.json AND lists them under an \"excluded\" array so already-installed apps hide them on their next refresh too. Edit the lists to hide/unhide; removing a code brings the item back on the next run.",
+  "category": ["xxx"],
+  "country": [],
+  "language": [],
+  "region": [],
+  "subdivision": [],
+  "city": []
+}

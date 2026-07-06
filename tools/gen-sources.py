@@ -10,6 +10,18 @@ TREE = "https://api.github.com/repos/iptv-org/iptv/git/trees/gh-pages?recursive=
 def get(url):
     return urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "sources-gen"}), timeout=90).read()
 
+# Global exclusions (committed → preserved across daily runs). {type: [codes]}; keys other than the
+# known dimension types (e.g. "note") are ignored. Excluded items are omitted from sources.json and
+# also listed under "excluded" so already-installed apps hide them on their next refresh.
+def load_exclusions():
+    try:
+        with open("exclusions.json", encoding="utf-8") as f:
+            data = json.load(f)
+    except FileNotFoundError:
+        return {}
+    return {k: {str(c).lower() for c in v} for k, v in data.items() if isinstance(v, list)}
+EXCLUDE = load_exclusions()
+
 tree = json.loads(get(TREE))
 if tree.get("truncated"):
     print("ERROR: iptv-org tree truncated", file=sys.stderr); sys.exit(1)
@@ -40,14 +52,18 @@ for p in sorted(paths):
     dim, code = m.group(1), m.group(2)
     if dim not in DIM:
         continue
+    if code.lower() in EXCLUDE.get(DIM[dim], set()):
+        continue   # globally hidden (see exclusions.json)
     name = maps[dim].get(code.lower()) or code.upper()
     sources.append({"type": DIM[dim], "name": name, "code": code, "url": f"{BASE}/{p}"})
 
 from collections import Counter
 counts = dict(Counter(s["type"] for s in sources))
+# "type:code" keys the app matches to hide already-seeded items too (see exclusions.json).
+excluded_keys = sorted(f"{typ}:{code}" for typ, codes in EXCLUDE.items() for code in codes)
 out = {"baseUrl": BASE,
        "note": "Auto-generated from iptv-org playlists + API names. Do not edit by hand.",
-       "counts": counts, "sources": sources}
+       "counts": counts, "excluded": excluded_keys, "sources": sources}
 if len(sources) < 500:
     print(f"ERROR: only {len(sources)} sources — refusing", file=sys.stderr); sys.exit(1)
 with open("sources.json", "w", encoding="utf-8") as f:
