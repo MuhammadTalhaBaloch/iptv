@@ -35,10 +35,12 @@ concurrency:
 
 jobs:
   # ── Sharded grab (one site per process) ──────────────────────────────────────
-  # Sites are round-robined across shards by sorted position (NR % 20). This
-  # balances the NUMBER of sites per shard; memory is bounded per-SITE by grabbing
-  # each site in its own process, so an uneven channel distribution can't OOM a
-  # shard. Keep the matrix length and the awk modulus (n=20) in sync.
+  # Sites are distributed across shards by CHANNEL COUNT (greedy bin-pack), so no single
+  # shard inherits a giant site's whole load (round-robin by site count could drop dstv.com
+  # ~3k channels + plex.tv ~1.3k into the same shard). Memory is bounded per-SITE (one site
+  # per process) and each site grab is time-capped (see `timeout` below), so a slow/hung site
+  # can't monopolise a shard or get the runner OOM-killed. Keep N (in the pack script) and the
+  # matrix length in sync.
   grab:
     runs-on: ubuntu-latest
     timeout-minutes: 350      # heaviest shard (contains a giant site) still < 6h cap
@@ -73,16 +75,48 @@ jobs:
           NODE_OPTIONS: --max-old-space-size=13312   # ~13 GB on the 16 GB runner
         run: |
           mkdir -p out
-          # Round-robin the sorted site list into 20 shards (NR % 20 == this shard).
-          sites=$(ls sites | awk -v n=20 -v s=${{ matrix.shard }} 'NR % n == s')
+          # Assign sites to shards by CHANNEL COUNT (greedy longest-processing-time bin-pack),
+          # not site count: otherwise a giant site (e.g. dstv.com ~3k channels across 48 feeds)
+          # piles its whole load onto one shard next to other big ones and blows that shard's
+          # wall-clock. Deterministic — every shard runs the same pack and picks its own bin.
+          # Keep N in sync with the matrix length.
+          SHARD=${{ matrix.shard }} python3 - <<'PY' > shard_sites.txt
+          import os, glob, re
+          N = 20
+          shard = int(os.environ["SHARD"])
+          root = "sites"
+          all_sites = sorted(d for d in os.listdir(root) if os.path.isdir(os.path.join(root, d)))
+          def channels(site):
+              total = 0
+              for f in glob.glob(os.path.join(root, site, "*.channels.xml")):
+                  try:
+                      with open(f, encoding="utf-8", errors="ignore") as fh:
+                          total += len(re.findall(r"<channel\b", fh.read()))
+                  except OSError:
+                      pass
+              return total
+          counts = {s: channels(s) for s in all_sites}
+          load = [0] * N
+          bins = [[] for _ in range(N)]
+          for s in sorted(all_sites, key=lambda x: (-counts[x], x)):   # heaviest first
+              i = min(range(N), key=lambda b: (load[b], b))            # into the lightest bin
+              bins[i].append(s)
+              load[i] += counts[s]
+          print("\n".join(bins[shard]))
+          PY
+          sites=$(cat shard_sites.txt)
           echo "shard ${{ matrix.shard }} sites:"; echo "$sites"
           ok=0; failed=0
           for site in $sites; do
             echo "::group::grab $site"
-            # Run inside an `if` so the default `set -e` does NOT abort the loop when
-            # a single site errors/OOMs. The grabber writes its file only on success,
-            # so a crash leaves no file — we detect that and skip just that site.
-            if npm run grab --- --sites="$site" --maxConnections=20 --days=1 --timeout=20000 --output="out/$site.xml" && [ -s "out/$site.xml" ]; then
+            # Run inside an `if` so `set -e` does NOT abort the loop when a single site
+            # errors / OOMs / times out. `timeout` caps EACH site: a slow/hung/giant site
+            # (e.g. dstv.com) can otherwise grind for hours and get the runner OOM-killed,
+            # taking the whole shard down (exactly the 5h shard-7 failure this replaces). On
+            # timeout it's SIGTERM'd (SIGKILL 60s later) and skipped like any other failure;
+            # merge carries that site's countries forward. The grabber writes its file only on
+            # success, so a kill leaves no file — [ -s ] detects that and we skip just that site.
+            if timeout -k 60s 90m npm run grab --- --sites="$site" --maxConnections=20 --days=1 --timeout=20000 --output="out/$site.xml" && [ -s "out/$site.xml" ]; then
               n=$(grep -c '<programme' "out/$site.xml" 2>/dev/null || echo 0)
               echo "$site: OK ($n programmes)"; ok=$((ok + 1))
             else
