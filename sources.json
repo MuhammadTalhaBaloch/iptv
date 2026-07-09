@@ -4,7 +4,7 @@
  "counts": {
   "index": 4,
   "category": 30,
-  "city": 477,
+  "city": 478,
   "country": 187,
   "language": 203,
   "region": 42,
@@ -1543,6 +1543,12 @@
    "name": "Huanta",
    "code": "pehnt",
    "url": "https://iptv-org.github.io/iptv/cities/pehnt.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Iquitos",
+   "code": "peiqt",
+   "url": "https://iptv-org.github.io/iptv/cities/peiqt.m3u"
   },
   {
    "type": "city",
