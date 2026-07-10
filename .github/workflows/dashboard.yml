@@ -1,0 +1,48 @@
+name: Update dashboard
+
+# Regenerates the "Workflow Dashboard" block in README.md after ANY data workflow finishes, so the
+# README shows each workflow's last-cycle status + metrics. Single writer (concurrency group) — no
+# other workflow touches README, so there are no push races. It reads each workflow's last run via
+# the Actions API + the committed data files / published guide index (see tools/build-dashboard.py).
+
+on:
+  workflow_run:
+    workflows: ["Generate EPG", "Refresh browse registry", "Publish channel availability"]
+    types: [completed]
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  actions: read
+
+concurrency:
+  group: dashboard
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          token: ${{ secrets.IPTVPAT }}   # PAT so the commit counts as activity (keeps schedules alive)
+
+      - name: Build dashboard
+        env:
+          GH_TOKEN: ${{ secrets.IPTVPAT }}
+        run: python3 tools/build-dashboard.py
+
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- README.md; then
+            echo "dashboard unchanged — nothing to commit."
+          else
+            git config user.name "MuhammadTalhaBaloch"
+            git config user.email "MuhammadTalhaBaloch@users.noreply.github.com"
+            git add README.md
+            git commit -m "docs: refresh workflow dashboard"
+            # Rebase in case a data workflow pushed to main while we built (they touch other files).
+            git pull --rebase --autostash origin main
+            git push
+          fi

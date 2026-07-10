@@ -21,6 +21,56 @@ CDN blip only means slightly staler data, never a broken app.
 
 ---
 
+<!-- DASHBOARD:START -->
+## 📊 Workflow Dashboard
+
+_Auto-updated after each workflow run — regenerated 2026-07-10 20:59 UTC._
+
+### 📺 EPG — `Generate EPG`
+
+✅ **success** · last run [#13](https://github.com/MuhammadTalhaBaloch/iptv/actions/runs/29054247667) at 2026-07-09 22:20 UTC
+
+| Metric | Value |
+|---|---|
+| Channels | 148,893 |
+| Programmes | 2,412,431 |
+| Countries | 259 |
+
+### 🗂 Source registry — `Refresh browse registry`
+
+✅ **success** · last run [#6](https://github.com/MuhammadTalhaBaloch/iptv/actions/runs/29114865310) at 2026-07-10 18:31 UTC
+
+| Metric | Value |
+|---|---|
+| Total browse groups | 1,299 |
+| Category | 30 |
+| Country | 187 |
+| Language | 203 |
+| Region | 42 |
+| Subdivision | 353 |
+| City | 480 |
+| Index | 4 |
+| Country→region map | 250 countries |
+
+### 📶 Availability — `Publish channel availability`
+
+✅ **success** · last run [#4](https://github.com/MuhammadTalhaBaloch/iptv/actions/runs/29121454915) at 2026-07-10 20:27 UTC
+
+| Metric | Value |
+|---|---|
+| Catalog probed | 13,289 |
+| ✅ Available (reachable) | 7,311 |
+| ❌ Dead | 1,737 |
+| ⚠️ Unreachable / couldn't reach | 4,241 |
+| Snapshot | 2026-07-11 00:00 UTC · us probe |
+
+### 🧪 Compare sources vs index — `(manual experiment)`
+
+✅ **success** · last run [#1](https://github.com/MuhammadTalhaBaloch/iptv/actions/runs/29115773920) at 2026-07-10 18:47 UTC
+
+_Full diff uploaded as the run artifact `sources-vs-index`._
+<!-- DASHBOARD:END -->
+
 ## 📺 EPG (TV guide)
 
 Regenerated **daily (21:00 UTC / 02:00 PKT)** from [iptv-org/epg](https://github.com/iptv-org/epg)
