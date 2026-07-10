@@ -40,8 +40,10 @@ Grabs **all ~248 iptv-org/epg sites** as **20 parallel shards, one site per proc
 buffers everything in memory; a single all-sites process OOMs and blows the 6-hour job limit — see
 [`WORKFLOWS.md`](WORKFLOWS.md#2-epgyml--generate-epg)). A `merge` job dedupes channels, splits them
 per country, and **refuses to publish** an empty/degraded guide (`ABS_FLOOR` / `REL_FLOOR`), so a bad
-run never overwrites the last good guide. Actual coverage is whatever the sites return to GitHub's
-US-based runner — many geo-block non-local IPs (403), so India comes through well while **Pakistani
-EPG is thin at the source itself** (~11 channels across all of iptv-org/epg). For a smaller/faster
-guide, replace the round-robin `ls sites | awk …` in the grab step with a specific `--sites=` list
-(see iptv-org/epg `SITES.md`).
+run never overwrites the last good guide. Shards are balanced by **channel count** (a greedy bin-pack,
+so no shard inherits a giant site's whole load) and **each site is time-capped** (`timeout 90m`), so a
+slow/hung site is skipped rather than grinding for hours. Actual coverage is whatever the sites return
+to GitHub's US-based runner — many geo-block non-local IPs (403), so India comes through well while
+**Pakistani EPG is thin at the source itself** (~11 channels across all of iptv-org/epg). For a
+smaller/faster guide, replace the site list in the grab step with a specific `--sites=` list (see
+iptv-org/epg `SITES.md`).

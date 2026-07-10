@@ -1,20 +1,27 @@
 # IPTV — runtime data backend (EPG + source registry)
 
 This is the **public data backend** for the private IPTV Android app. It holds no app code — just
-two scheduled GitHub Actions that regenerate the data the app fetches at runtime, and the files they
+scheduled GitHub Actions that regenerate the data the app fetches at runtime, and the files they
 publish. It stays public so Actions run **free** (no minute limit on public repos) and files are
 served over `raw.githubusercontent.com`.
 
-Two independent, self-updating datasets:
+Self-updating datasets:
 
 | Dataset | Workflow | Lives on | Served at |
 |---|---|---|---|
-| **EPG** — per-country TV guides `guide/<cc>.xml.gz` + `guide/index.json` | [`epg.yml`](.github/workflows/epg.yml) | `gh-pages` | `raw.githubusercontent.com/MuhammadTalhaBaloch/iptv/gh-pages/guide/` |
-| **Source registry** — `sources.json` (~1296 browse groups) | [`sources.yml`](.github/workflows/sources.yml) | `main` | `raw.githubusercontent.com/MuhammadTalhaBaloch/iptv/main/sources.json` |
+| **EPG** — per-country TV guides `guide/<cc>.xml.gz` + `guide/index.json` | [`epg.yml`](.github/workflows/epg.yml) | `gh-pages` | `raw…/gh-pages/guide/` |
+| **Source registry** — `sources.json` (~1299 browse groups) | [`sources.yml`](.github/workflows/sources.yml) | `main` | `raw…/main/sources.json` |
+| **Region map** — `country_regions.json` (country→region, for "Play all Regions") | [`sources.yml`](.github/workflows/sources.yml) | `main` | `raw…/main/country_regions.json` |
+| **Availability** — `availability.json` (reachable stream URLs, the "Hide unavailable" baseline) | [`probe-availability.yml`](.github/workflows/probe-availability.yml) | `main` | `raw…/main/availability.json` |
 
-Those two URLs are compiled into the app (`DEFAULT_EPG_BASE_URL`, `DEFAULT_SOURCES_URL`). **The app
-never hard-depends on them** — it caches every fetch and ships bundled fallbacks, so a failed run or
-CDN blip only means slightly staler data, never a broken app.
+Plus two support workflows: [`compare-sources.yml`](.github/workflows/compare-sources.yml) (manual
+sources-vs-index diff experiment) and [`dashboard.yml`](.github/workflows/dashboard.yml) (regenerates
+the dashboard below after any run).
+
+Those URLs are compiled into the app (`DEFAULT_EPG_BASE_URL`, `DEFAULT_SOURCES_URL`,
+`DEFAULT_REGIONS_URL`, `DEFAULT_AVAILABILITY_URL`). **The app never hard-depends on them** — it
+ETag-caches every fetch and ships bundled fallbacks, so a failed run or CDN blip only means slightly
+staler data, never a broken app.
 
 > 📖 **Full technical reference + data-flow diagrams:** [`WORKFLOWS.md`](WORKFLOWS.md).
 > EPG-specific quick reference: [`EPG.md`](EPG.md).
@@ -90,13 +97,26 @@ Regenerated **daily (21:00 UTC / 02:00 PKT)** from [iptv-org/epg](https://github
 > GitHub Release asset. It was split into per-country files on `gh-pages` so the app downloads only
 > what it needs — and each `.gz` stays well under `gh-pages`' 100 MB `git push` limit.
 
-## 🗂 Source registry (`sources.json`)
+## 🗂 Source registry (`sources.json`) + region map (`country_regions.json`)
 
-The app's browse menu (countries, categories, languages, regions, subdivisions, cities + index
-playlists — currently **1296** groups). Regenerated daily (21:15 UTC) by
-[`tools/gen-sources.py`](tools/gen-sources.py) from iptv-org's live playlists + display-name API, and
-committed to `main` only when it changes. The app refreshes it via conditional GET (ETag) and falls
-back to its bundled `iptv_playlist_sources.json`.
+Regenerated daily (21:15 UTC) by [`sources.yml`](.github/workflows/sources.yml), committed to `main`
+only when changed (the app ETag-refreshes both, with bundled fallbacks):
+
+- **`sources.json`** ([`tools/gen-sources.py`](tools/gen-sources.py)) — the browse menu (countries,
+  categories, languages, regions, subdivisions, cities + index playlists, ~**1299** groups).
+- **`country_regions.json`** ([`tools/gen-country-regions.py`](tools/gen-country-regions.py)) —
+  country → iptv-org region membership, for the app's **"Play all Regions"** ordering.
+
+## 📶 Availability (`availability.json`)
+
+Regenerated after each sources run by [`probe-availability.yml`](.github/workflows/probe-availability.yml)
+([`tools/probe-availability.py`](tools/probe-availability.py)) — a faithful replica of the app's
+Deep-Refresh probe run over the whole catalog. Publishes the set of **reachable** stream URLs so the
+app's **"Hide unavailable"** works instantly, with **no full catalog download and no per-user probe**;
+the on-device recheck stays as an on-demand per-user (geo) refinement.
+
+> Probed from GitHub's **US** runner, so it reflects US reachability (~3 % differs by geo — corrected
+> per-user on device). Snapshot only; streams flap between runs.
 
 ---
 
@@ -105,7 +125,7 @@ back to its bundled `iptv_playlist_sources.json`.
 | Requirement | Why |
 |---|---|
 | Repo is **public** | Free unlimited Actions + public `raw.githubusercontent.com` serving. |
-| Secret **`IPTVPAT`** | Personal Access Token, **Contents: write**. Used by both workflows. Deliberately a PAT, not `GITHUB_TOKEN`: a PAT-authored push counts as repo activity, keeping the scheduled workflows alive past GitHub's 60-day inactivity auto-disable. **If it expires, regenerate it and update the secret.** |
+| Secret **`IPTVPAT`** | Personal Access Token, **Contents: write**. Used by every workflow that commits/publishes (EPG, sources, availability, dashboard). Deliberately a PAT, not `GITHUB_TOKEN`: a PAT-authored push counts as repo activity, keeping the scheduled workflows alive past GitHub's 60-day inactivity auto-disable. **If it expires, regenerate it and update the secret.** |
 
 No GitHub Pages setup is needed — the app reads over `raw.githubusercontent.com`, independent of
 Pages. (If Pages happens to be enabled on `gh-pages`, GitHub's built-in *"pages build and
@@ -118,8 +138,11 @@ deployment"* job runs on each publish but the app ignores it — see [`WORKFLOWS
 ## 📄 Repo contents
 
 - [`.github/workflows/epg.yml`](.github/workflows/epg.yml) — daily per-country EPG generator.
-- [`.github/workflows/sources.yml`](.github/workflows/sources.yml) — daily `sources.json` refresh.
-- [`tools/gen-sources.py`](tools/gen-sources.py) — the registry generator.
+- [`.github/workflows/sources.yml`](.github/workflows/sources.yml) — daily `sources.json` + `country_regions.json` refresh.
+- [`.github/workflows/probe-availability.yml`](.github/workflows/probe-availability.yml) — daily `availability.json` (reachable list).
+- [`.github/workflows/compare-sources.yml`](.github/workflows/compare-sources.yml) — manual sources-vs-index diff experiment.
+- [`.github/workflows/dashboard.yml`](.github/workflows/dashboard.yml) — regenerates the dashboard above.
+- [`tools/`](tools/) — `gen-sources.py`, `gen-country-regions.py`, `probe-availability.py`, `compare-sources.py`, `build-dashboard.py`.
 - [`WORKFLOWS.md`](WORKFLOWS.md) — detailed technical reference + flow diagrams.
 - [`EPG.md`](EPG.md) — EPG quick reference.
 - Other `*.md` — unrelated IPTV source-research notes.
