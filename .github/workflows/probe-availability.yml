@@ -1,0 +1,35 @@
+name: Probe availability (US geo)
+
+# One-off experiment (manual only): run the app's Deep-Refresh reachability probe (replicated in
+# tools/probe-availability.py) over the whole catalog index from the GitHub runner's geo (US), and
+# upload the set of REACHABLE ("valid") links. Diff this against the same probe run from Pakistan to
+# see which channels are geo-blocked. Snapshot only — IPTV streams flap, so re-runs will vary.
+
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Probe reachability from the runner (US)
+        env:
+          GEO_LABEL: us
+          PROBE_WORKERS: "64"
+        run: python3 tools/probe-availability.py
+
+      - name: Summary
+        run: python3 -c "import json;d=json.load(open('out/valid-us.json'));print('universe:',d['universe']);print('counts:',d['counts'])"
+
+      - name: Upload valid-us
+        uses: actions/upload-artifact@v7
+        with:
+          name: valid-us
+          path: out/valid-us.json
+          retention-days: 7
