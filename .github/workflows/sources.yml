@@ -1,10 +1,12 @@
-name: Refresh sources.json
+name: Refresh browse registry
 
-# Regenerates sources.json (the app's browse-menu registry: iptv-org countries / categories /
-# languages / regions / subdivisions / cities + index playlists) from iptv-org's current playlists
-# and API display names, and commits it to `main` when it changes. The app fetches this and falls
-# back to its bundled copy if it's missing/broken, so the menu stays current without an app update.
-# Fast (~1 min); independent of the multi-hour EPG guide build.
+# Regenerates the app's browse-registry data from iptv-org and commits it to `main` when it changes.
+# The app fetches these and falls back to its bundled copies if missing/broken, so the browse menu
+# stays current without an app update. Fast (~1 min); independent of the multi-hour EPG guide build.
+#   * sources.json         — the browse menu (countries / categories / languages / regions /
+#                            subdivisions / cities + index playlists).
+#   * country_regions.json — country -> iptv-org region membership, used by "Play all Regions" to
+#                            order the catalog by region priority (the index has no region column).
 
 on:
   schedule:
@@ -32,14 +34,17 @@ jobs:
       - name: Generate sources.json
         run: python3 tools/gen-sources.py
 
+      - name: Generate country_regions.json
+        run: python3 tools/gen-country-regions.py
+
       - name: Commit if changed
         run: |
-          if git diff --quiet -- sources.json; then
-            echo "sources.json unchanged — nothing to commit."
+          if git diff --quiet -- sources.json country_regions.json; then
+            echo "browse registry unchanged — nothing to commit."
           else
             git config user.name "MuhammadTalhaBaloch"
             git config user.email "MuhammadTalhaBaloch@users.noreply.github.com"
-            git add sources.json
-            git commit -m "chore: refresh sources.json (iptv-org browse registry)"
+            git add sources.json country_regions.json
+            git commit -m "chore: refresh browse registry (sources.json + country_regions.json)"
             git push
           fi
