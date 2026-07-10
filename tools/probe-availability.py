@@ -20,6 +20,7 @@ import os
 import ssl
 import urllib.error
 import urllib.request
+from datetime import datetime, timezone
 from urllib.parse import urljoin
 
 UA = "VLC/3.0.20 LibVLC/3.0.20"
@@ -135,7 +136,6 @@ def parse_m3u(text):
 
 
 def main():
-    os.makedirs("out", exist_ok=True)
     with urllib.request.urlopen(urllib.request.Request(INDEX_URL, headers={"User-Agent": UA}), timeout=60) as r:
         items = parse_m3u(r.read().decode("utf-8", "ignore"))
     print(f"[{LABEL}] universe: {len(items)} unique links; probing with {WORKERS} workers...")
@@ -155,11 +155,19 @@ def main():
             if done % 1000 == 0:
                 print(f"[{LABEL}] {done}/{len(items)}  {counts}")
 
-    report = {"label": LABEL, "universe": len(items), "counts": counts, "reachable": sorted(reachable)}
-    path = f"out/valid-{LABEL}.json"
-    with open(path, "w", encoding="utf-8") as f:
-        json.dump(report, f, ensure_ascii=False)
-    print(f"[{LABEL}] DONE {counts} -> {path}")
+    # App-facing format: the app marks a channel available iff its stream URL is in `reachable`.
+    # Extra fields (geo/universe/counts) are informational; the app reads reachable (+ updatedAt).
+    report = {
+        "updatedAt": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "geo": LABEL,
+        "universe": len(items),
+        "counts": counts,
+        "count": len(reachable),
+        "reachable": sorted(reachable),
+    }
+    with open("availability.json", "w", encoding="utf-8") as f:
+        json.dump(report, f, ensure_ascii=False, separators=(",", ":"))
+    print(f"[{LABEL}] DONE {counts} -> availability.json ({len(reachable)} reachable)")
 
 
 if __name__ == "__main__":

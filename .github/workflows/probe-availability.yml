@@ -1,35 +1,55 @@
-name: Probe availability (US geo)
+name: Publish channel availability
 
-# One-off experiment (manual only): run the app's Deep-Refresh reachability probe (replicated in
-# tools/probe-availability.py) over the whole catalog index from the GitHub runner's geo (US), and
-# upload the set of REACHABLE ("valid") links. Diff this against the same probe run from Pakistan to
-# see which channels are geo-blocked. Snapshot only — IPTV streams flap, so re-runs will vary.
+# Runs the app's Deep-Refresh reachability probe (replicated in tools/probe-availability.py) over
+# the whole catalog index and commits availability.json to main:
+#   { updatedAt, geo, count, reachable: ["<stream url>", …] }
+# The app fetches this (ETag-cached) and marks a channel available iff its stream URL is in the set,
+# so users get a working "Hide unavailable" baseline on launch WITHOUT each running a slow on-device
+# Deep Refresh. On-device recheck still refines per-user geo.
+#
+# GEO CAVEAT: probed from the GitHub runner (US), so it reflects US reachability. ~3% of channels
+# differ for other geos (e.g. Pakistan); the app's on-device recheck corrects that per user.
+#
+# Chained to run right AFTER the sources workflow each day (which is scheduled at 21:15 UTC), plus a
+# manual trigger. Snapshot only — IPTV streams flap, so the set shifts run-to-run.
 
 on:
+  workflow_run:
+    workflows: ["Refresh browse registry"]   # sources.yml — run availability right after it
+    types: [completed]
   workflow_dispatch: {}
 
 permissions:
-  contents: read
+  contents: write
+
+concurrency:
+  group: availability
+  cancel-in-progress: true
 
 jobs:
   probe:
     runs-on: ubuntu-latest
     timeout-minutes: 90
     steps:
+      # PAT checkout (not GITHUB_TOKEN) so the commit counts as repo activity + keeps the schedule alive.
       - uses: actions/checkout@v7
+        with:
+          token: ${{ secrets.IPTVPAT }}
 
-      - name: Probe reachability from the runner (US)
+      - name: Probe reachability over the catalog (US runner)
         env:
           GEO_LABEL: us
           PROBE_WORKERS: "64"
         run: python3 tools/probe-availability.py
 
-      - name: Summary
-        run: python3 -c "import json;d=json.load(open('out/valid-us.json'));print('universe:',d['universe']);print('counts:',d['counts'])"
-
-      - name: Upload valid-us
-        uses: actions/upload-artifact@v7
-        with:
-          name: valid-us
-          path: out/valid-us.json
-          retention-days: 7
+      - name: Commit availability.json if changed
+        run: |
+          if git diff --quiet -- availability.json; then
+            echo "availability.json unchanged — nothing to commit."
+          else
+            git config user.name "MuhammadTalhaBaloch"
+            git config user.email "MuhammadTalhaBaloch@users.noreply.github.com"
+            git add availability.json
+            git commit -m "chore: refresh availability.json (reachable channels, US probe)"
+            git push
+          fi
