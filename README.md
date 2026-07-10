@@ -24,7 +24,7 @@ CDN blip only means slightly staler data, never a broken app.
 <!-- DASHBOARD:START -->
 ## 📊 Workflow Dashboard
 
-_Auto-updated after each workflow run — regenerated 2026-07-10 20:59 UTC._
+_Auto-updated after each workflow run — regenerated 2026-07-10 21:00 UTC._
 
 ### 📺 EPG — `Generate EPG`
 
@@ -59,10 +59,10 @@ _Auto-updated after each workflow run — regenerated 2026-07-10 20:59 UTC._
 | Metric | Value |
 |---|---|
 | Catalog probed | 13,289 |
-| ✅ Available (reachable) | 7,311 |
-| ❌ Dead | 1,737 |
-| ⚠️ Unreachable / couldn't reach | 4,241 |
-| Snapshot | 2026-07-11 00:00 UTC · us probe |
+| ✅ Available (reachable) | 7,360 |
+| ❌ Dead | 1,757 |
+| ⚠️ Unreachable / couldn't reach | 4,172 |
+| Snapshot | 2026-07-10 20:32 UTC · us probe |
 
 ### 🧪 Compare sources vs index — `(manual experiment)`
 
