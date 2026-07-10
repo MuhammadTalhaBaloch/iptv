@@ -4,7 +4,7 @@
  "counts": {
   "index": 4,
   "category": 30,
-  "city": 478,
+  "city": 480,
   "country": 187,
   "language": 203,
   "region": 42,
@@ -562,6 +562,12 @@
   },
   {
    "type": "city",
+   "name": "Osasco",
+   "code": "brosa",
+   "url": "https://iptv-org.github.io/iptv/cities/brosa.m3u"
+  },
+  {
+   "type": "city",
    "name": "Passo Fundo",
    "code": "brpfo",
    "url": "https://iptv-org.github.io/iptv/cities/brpfo.m3u"
@@ -859,6 +865,12 @@
    "name": "Neiva",
    "code": "conva",
    "url": "https://iptv-org.github.io/iptv/cities/conva.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Pasto",
+   "code": "copso",
+   "url": "https://iptv-org.github.io/iptv/cities/copso.m3u"
   },
   {
    "type": "city",
