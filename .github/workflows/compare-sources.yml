@@ -1,0 +1,35 @@
+name: Compare sources vs index (experiment)
+
+# One-off experiment (manual only): reconcile the app's two channel paths — the flat catalog
+# index (index.m3u, used by Search / Play-all) vs the union of the per-dimension browse-menu
+# playlists (category / country / language / region / subdivision / city). Fetches every source
+# playlist in sources.json, dedups the stream links, and reports which links are in one path but
+# not the other. Uploads out/sources-vs-index.json as an artifact and prints a summary.
+
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  compare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v7   # for the committed sources.json (the app's registry)
+
+      - name: Fetch all source playlists + diff against the index
+        run: python3 tools/compare-sources.py
+
+      - name: Show the difference
+        run: |
+          echo "----- sources-vs-index.json (counts + diff) -----"
+          python3 -c "import json;d=json.load(open('out/sources-vs-index.json'));print(json.dumps(d['counts'],indent=2));print('browseOnly:');[print(' ',x['url'],x['foundIn']) for x in d['browseOnly']];print('indexOnly:',d['indexOnly'][:20])"
+
+      - name: Upload report
+        uses: actions/upload-artifact@v7
+        with:
+          name: sources-vs-index
+          path: out/sources-vs-index.json
+          retention-days: 7
