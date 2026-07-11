@@ -42,7 +42,15 @@ jobs:
             git config user.email "MuhammadTalhaBaloch@users.noreply.github.com"
             git add README.md
             git commit -m "docs: refresh workflow dashboard"
-            # Rebase in case a data workflow pushed to main while we built (they touch other files).
-            git pull --rebase --autostash origin main
-            git push
+            # A data workflow can push to main while we build (they touch other files). Rebase onto
+            # the latest main and retry so a non-fast-forward push doesn't fail the run; error out
+            # only if it still can't push.
+            pushed=0
+            for attempt in 1 2 3; do
+              git pull --rebase --autostash origin main || true
+              if git push; then pushed=1; break; fi
+              echo "push rejected (attempt $attempt) — retrying after rebase…"
+              sleep $((attempt * 5))
+            done
+            [ "$pushed" = "1" ] || { echo "::error::dashboard push failed after 3 attempts"; exit 1; }
           fi
