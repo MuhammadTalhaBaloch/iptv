@@ -1,0 +1,93 @@
+name: Publish app release manifest
+
+# Manually run (Actions -> "Publish app release manifest" -> Run workflow) after you build a signed
+# APK locally and upload it to this repo's Releases. It regenerates app-release.json — the app's
+# version gate / kill switch. Keeping old versions working is the default: leave
+# minSupportedVersionCode low. To FORCE everyone off older builds, set it = versionCode.
+on:
+  workflow_dispatch:
+    inputs:
+      versionCode:
+        description: "New latest versionCode (integer; must be higher than the last release)"
+        required: true
+        type: string
+      versionName:
+        description: "Version name, e.g. 1.3.0"
+        required: true
+        type: string
+      minSupportedVersionCode:
+        description: "Hard floor. Clients BELOW this are force-updated. Keep low to let old versions work; set = versionCode to force everyone."
+        required: true
+        default: "1"
+        type: string
+      downloadUrl:
+        description: "APK download URL (blank = this repo's Releases page). Paste the direct release asset link to send users straight to the APK."
+        required: false
+        default: ""
+        type: string
+      blockedVersionCodes:
+        description: "Comma-separated versionCodes to block outright (e.g. a bad build). Blank = none."
+        required: false
+        default: ""
+        type: string
+      updateMessage:
+        description: "Message for the optional-update nudge."
+        required: false
+        default: "A new version of the app is available."
+        type: string
+      mandatoryMessage:
+        description: "Message for the blocking update-required screen."
+        required: false
+        default: "This version is no longer supported. Please update to continue."
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: app-release
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate app-release.json
+        env:
+          VERSION_CODE: ${{ inputs.versionCode }}
+          VERSION_NAME: ${{ inputs.versionName }}
+          MIN_SUPPORTED: ${{ inputs.minSupportedVersionCode }}
+          DOWNLOAD_URL: ${{ inputs.downloadUrl }}
+          BLOCKED: ${{ inputs.blockedVersionCodes }}
+          UPDATE_MSG: ${{ inputs.updateMessage }}
+          MANDATORY_MSG: ${{ inputs.mandatoryMessage }}
+        run: python3 tools/gen-app-release.py
+
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- app-release.json; then
+            echo "app-release.json unchanged — nothing to commit."
+          else
+            git config user.name "MuhammadTalhaBaloch"
+            git config user.email "MuhammadTalhaBaloch@users.noreply.github.com"
+            git add app-release.json
+            git commit -m "chore: publish app release ${{ inputs.versionName }} (code ${{ inputs.versionCode }}, min ${{ inputs.minSupportedVersionCode }})"
+            # main can advance while this runs — the dashboard/data workflows push concurrently
+            # (they touch other files). Rebase onto the latest main and retry so a non-fast-forward
+            # push doesn't fail the run; error out only if it still can't push.
+            pushed=0
+            for attempt in 1 2 3; do
+              git pull --rebase --autostash origin main || true
+              if git push; then pushed=1; break; fi
+              echo "push rejected (attempt $attempt) — retrying after rebase…"
+              sleep $((attempt * 5))
+            done
+            [ "$pushed" = "1" ] || { echo "::error::app-release.json push failed after 3 attempts"; exit 1; }
+          fi

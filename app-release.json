@@ -1,0 +1,9 @@
+{
+  "latestVersionCode": 1,
+  "latestVersionName": "1.0",
+  "minSupportedVersionCode": 1,
+  "downloadUrl": "https://github.com/MuhammadTalhaBaloch/iptv/releases",
+  "blockedVersionCodes": [],
+  "updateMessage": "A new version of the app is available.",
+  "mandatoryMessage": "This version is no longer supported. Please update to continue."
+}
