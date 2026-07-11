@@ -1,0 +1,7 @@
+# Python tooling caches (tools/*.py)
+__pycache__/
+*.py[cod]
+
+# OS junk
+.DS_Store
+Thumbs.db

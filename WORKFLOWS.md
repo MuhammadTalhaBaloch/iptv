@@ -4,16 +4,14 @@ This repo is the **runtime data backend** for the private IPTV Android app. It c
 code** — only scheduled GitHub Actions that regenerate the data the app fetches at runtime, plus the
 files they publish. Everything runs **free** (public repos have no Actions minute limit).
 
-**Six workflows** — three produce data the app consumes on a schedule, two are manual/on-demand (a
-source-diff experiment and the app-release publisher), one maintains the README dashboard:
+**Five workflows** — three produce data the app consumes on a schedule, one is a manual/on-demand
+source-diff experiment, one maintains the README dashboard:
 
 | Workflow | Produces | Published to | App reads it from |
 |---|---|---|---|
 | [`epg.yml`](.github/workflows/epg.yml) — *Generate EPG* | Per-country XMLTV guides `guide/<cc>.xml.gz` + `guide/index.json` | **`gh-pages`** | `raw…/gh-pages/guide/` |
 | [`sources.yml`](.github/workflows/sources.yml) — *Refresh browse registry* | `sources.json` (browse menu, ~1299 groups) **and** `country_regions.json` (country→region map) | **`main`** | `raw…/main/sources.json`, `raw…/main/country_regions.json` |
-| [`probe-availability.yml`](.github/workflows/probe-availability.yml) — *Publish channel availability* | `availability.json` (reachable stream URLs) | **`main`** | `raw…/main/availability.json` |
-| [`release-app.yml`](.github/workflows/release-app.yml) — *Publish app version kill-switch* | `app-release.json` (version kill switch) | **`main`** | `raw…/main/app-release.json` |
-| [`compare-sources.yml`](.github/workflows/compare-sources.yml) — *Compare sources vs index* | `sources-vs-index.json` (diff report) — **run artifact only** (manual experiment) | run artifact | — |
+| [`probe-availability.yml`](.github/workflows/probe-availability.yml) — *Publish channel availability* | `availability.json` (reachable stream URLs) | **`main`** | `raw…/main/availability.json` || [`compare-sources.yml`](.github/workflows/compare-sources.yml) — *Compare sources vs index* | `sources-vs-index.json` (diff report) — **run artifact only** (manual experiment) | run artifact | — |
 | [`dashboard.yml`](.github/workflows/dashboard.yml) — *Update dashboard* | The "Workflow Dashboard" block in [`README.md`](README.md) | **`main`** | (humans) |
 
 The three data workflows are **decoupled**: EPG runs for hours; sources runs in ~1 min; availability
@@ -229,33 +227,7 @@ check — expected result is near-identical sets.
 
 ---
 
-## 6. `release-app.yml` — Publish app version kill-switch (manual)
-
-**Manual only** (`workflow_dispatch`). Regenerates [`app-release.json`](app-release.json) — the app's
-**version kill switch**. Deliberately **no auto-update prompt and no APK download URL**: it only
-disables versions. The app fetches it on startup (ETag-cached, **fail-open**) and blocks itself iff
-its own `versionCode` is in `blockedVersionCodes` **or** below `minSupportedVersionCode`; otherwise it
-runs. An unreachable/unparseable manifest never blocks a working app.
-
-Inputs: `minSupportedVersionCode` (the floor), `blockedVersionCodes` (comma-separated, surgical),
-`blockedMessage` (say how to get a newer build). [`tools/gen-app-release.py`](tools/gen-app-release.py)
-writes the file; the commit step uses the same rebase-and-retry push guard as the data workflows.
-
-**Control matrix** — all just inputs to this workflow, no app rebuild:
-
-| Goal | Set |
-|---|---|
-| Leave all versions working | `minSupportedVersionCode` low, `blockedVersionCodes` empty (the seed) |
-| Kill everything older than N | `minSupportedVersionCode` = N |
-| Kill one specific build | add its code to `blockedVersionCodes` |
-
-**Caveat**: the gate is code inside the app, so it only blocks builds that already contain it — never
-a version distributed before the feature shipped. New builds are handed out out-of-band (the app has
-no download link). Not tracked by the dashboard (manual + rare).
-
----
-
-## 7. `dashboard.yml` — Update dashboard
+## 6. `dashboard.yml` — Update dashboard
 
 Keeps the **"📊 Workflow Dashboard"** block in [`README.md`](README.md) current.
 
@@ -279,7 +251,7 @@ step `git pull --rebase` before push in case a data workflow committed meanwhile
 
 ---
 
-## 8. End-to-end flow
+## 7. End-to-end flow
 
 ```
    iptv-org/epg (master)         iptv-org tree API + api/*.json           iptv-org/iptv index.m3u
@@ -305,7 +277,7 @@ step `git pull --rebase` before push in case a data workflow committed meanwhile
 
 ---
 
-## 9. Secrets, keep-alive & requirements
+## 8. Secrets, keep-alive & requirements
 
 | Requirement | Why |
 |---|---|
@@ -316,7 +288,7 @@ No GitHub Pages configuration is required (raw serving is independent).
 
 ---
 
-## 10. Tuning knobs (all in the workflow files)
+## 9. Tuning knobs (all in the workflow files)
 
 - **Shard count** — `matrix.shard` length **and** `N` in the bin-pack script in `epg.yml` (must match).
 - **Per-site cap** — `timeout -k 60s 90m` in the grab loop (bounds one site; raise for a huge site).
