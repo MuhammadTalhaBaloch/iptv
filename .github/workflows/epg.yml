@@ -116,10 +116,13 @@ jobs:
             # timeout it's SIGTERM'd (SIGKILL 60s later) and skipped like any other failure;
             # merge carries that site's countries forward. The grabber writes its file only on
             # success, so a kill leaves no file — [ -s ] detects that and we skip just that site.
-            # --days=2: grab today + tomorrow so the app's guide stays covered through the whole day
-            # (with --days=1 the listings aged out by mid-day, leaving "now" empty). Kept at 2 (not
-            # more) to bound per-site memory — the grabber buffers the whole result (see header).
-            if timeout -k 60s 90m npm run grab --- --sites="$site" --maxConnections=20 --days=2 --timeout=20000 --output="out/$site.xml" && [ -s "out/$site.xml" ]; then
+            # --days=1: grab today only. IMPORTANT — do NOT raise this. --days=2 was tried (commit
+            # 005c9df, to widen the guide horizon) but it doubled the programme volume and inflated
+            # the giant no-country 'other' bucket to ~115 MB, over GitHub's hard 100 MB per-file
+            # limit, so the whole gh-pages push was REJECTED and nothing published (run 29169399065).
+            # The real fix for a too-narrow guide is the app's 48h CLIENT-SIDE window; the grab
+            # horizon must stay at 1 to keep every per-country .gz (esp. 'other') under 100 MB.
+            if timeout -k 60s 90m npm run grab --- --sites="$site" --maxConnections=20 --days=1 --timeout=20000 --output="out/$site.xml" && [ -s "out/$site.xml" ]; then
               n=$(grep -c '<programme' "out/$site.xml" 2>/dev/null || echo 0)
               echo "$site: OK ($n programmes)"; ok=$((ok + 1))
             else
