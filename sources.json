@@ -4,11 +4,11 @@
  "counts": {
   "index": 4,
   "category": 30,
-  "city": 481,
+  "city": 482,
   "country": 187,
-  "language": 203,
+  "language": 204,
   "region": 42,
-  "subdivision": 353
+  "subdivision": 354
  },
  "excluded": [
   "category:xxx"
@@ -1489,6 +1489,12 @@
    "name": "Yeosu",
    "code": "kryos",
    "url": "https://iptv-org.github.io/iptv/cities/kryos.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Ulcinj",
+   "code": "meulc",
+   "url": "https://iptv-org.github.io/iptv/cities/meulc.m3u"
   },
   {
    "type": "city",
@@ -4438,6 +4444,12 @@
   },
   {
    "type": "language",
+   "name": "Montenegrin",
+   "code": "cnr",
+   "url": "https://iptv-org.github.io/iptv/languages/cnr.m3u"
+  },
+  {
+   "type": "language",
    "name": "Welsh",
    "code": "cym",
    "url": "https://iptv-org.github.io/iptv/languages/cym.m3u"
@@ -7039,6 +7051,12 @@
    "name": "Jeju-teukbyeoljachido",
    "code": "kr-49",
    "url": "https://iptv-org.github.io/iptv/subdivisions/kr-49.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Ulcinj",
+   "code": "me-20",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/me-20.m3u"
   },
   {
    "type": "subdivision",
