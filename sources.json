@@ -5,8 +5,8 @@
   "index": 4,
   "category": 30,
   "city": 482,
-  "country": 187,
-  "language": 204,
+  "country": 188,
+  "language": 205,
   "region": 42,
   "subdivision": 354
  },
@@ -4186,6 +4186,12 @@
   },
   {
    "type": "country",
+   "name": "Saint Vincent and the Grenadines",
+   "code": "vc",
+   "url": "https://iptv-org.github.io/iptv/countries/vc.m3u"
+  },
+  {
+   "type": "country",
    "name": "Venezuela",
    "code": "ve",
    "url": "https://iptv-org.github.io/iptv/countries/ve.m3u"
@@ -5245,6 +5251,12 @@
    "name": "Sundanese",
    "code": "sun",
    "url": "https://iptv-org.github.io/iptv/languages/sun.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Vincentian Creole English",
+   "code": "svc",
+   "url": "https://iptv-org.github.io/iptv/languages/svc.m3u"
   },
   {
    "type": "language",
