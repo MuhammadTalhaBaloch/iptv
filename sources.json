@@ -4,7 +4,7 @@
  "counts": {
   "index": 4,
   "category": 30,
-  "city": 482,
+  "city": 481,
   "country": 188,
   "language": 205,
   "region": 42,
@@ -2107,12 +2107,6 @@
    "name": "Glendale",
    "code": "usgda",
    "url": "https://iptv-org.github.io/iptv/cities/usgda.m3u"
-  },
-  {
-   "type": "city",
-   "name": "Garden Grove",
-   "code": "usggr",
-   "url": "https://iptv-org.github.io/iptv/cities/usggr.m3u"
   },
   {
    "type": "city",
