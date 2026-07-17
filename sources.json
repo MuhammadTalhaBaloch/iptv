@@ -6,7 +6,7 @@
   "category": 30,
   "city": 481,
   "country": 188,
-  "language": 205,
+  "language": 206,
   "region": 42,
   "subdivision": 354
  },
@@ -4945,6 +4945,12 @@
    "name": "Malayalam",
    "code": "mal",
    "url": "https://iptv-org.github.io/iptv/languages/mal.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Manding",
+   "code": "man",
+   "url": "https://iptv-org.github.io/iptv/languages/man.m3u"
   },
   {
    "type": "language",
