@@ -6,7 +6,7 @@
   "category": 30,
   "city": 481,
   "country": 188,
-  "language": 206,
+  "language": 207,
   "region": 42,
   "subdivision": 354
  },
@@ -5323,6 +5323,12 @@
    "name": "Thai",
    "code": "tha",
    "url": "https://iptv-org.github.io/iptv/languages/tha.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Rana Tharu",
+   "code": "thr",
+   "url": "https://iptv-org.github.io/iptv/languages/thr.m3u"
   },
   {
    "type": "language",
