@@ -31,21 +31,21 @@ staler data, never a broken app.
 <!-- DASHBOARD:START -->
 ## 📊 Workflow Dashboard
 
-_Auto-updated after each workflow run — regenerated 2026-07-18 23:21 UTC._
+_Auto-updated after each workflow run — regenerated 2026-07-19 22:09 UTC._
 
 ### 📺 EPG — `Generate EPG`
 
-✅ **success** · last run [#24](https://github.com/MuhammadTalhaBaloch/iptv/actions/runs/29662290866) at 2026-07-18 21:48 UTC
+• **in_progress** · last run [#25](https://github.com/MuhammadTalhaBaloch/iptv/actions/runs/29705064030) at 2026-07-19 21:50 UTC
 
 | Metric | Value |
 |---|---|
 | Channels | 148,894 |
-| Programmes | 1,862,795 |
+| Programmes | 1,853,194 |
 | Countries | 259 |
 
 ### 🗂 Source registry — `Refresh browse registry`
 
-✅ **success** · last run [#15](https://github.com/MuhammadTalhaBaloch/iptv/actions/runs/29662870116) at 2026-07-18 22:07 UTC
+✅ **success** · last run [#16](https://github.com/MuhammadTalhaBaloch/iptv/actions/runs/29705630849) at 2026-07-19 22:09 UTC
 
 | Metric | Value |
 |---|---|
@@ -61,7 +61,7 @@ _Auto-updated after each workflow run — regenerated 2026-07-18 23:21 UTC._
 
 ### 📶 Availability — `Publish channel availability`
 
-✅ **success** · last run [#14](https://github.com/MuhammadTalhaBaloch/iptv/actions/runs/29662875130) at 2026-07-18 22:07 UTC
+• **in_progress** · last run [#15](https://github.com/MuhammadTalhaBaloch/iptv/actions/runs/29705637297) at 2026-07-19 22:09 UTC
 
 | Metric | Value |
 |---|---|
