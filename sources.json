@@ -8,7 +8,7 @@
   "country": 188,
   "language": 208,
   "region": 42,
-  "subdivision": 355
+  "subdivision": 356
  },
  "excluded": [
   "category:xxx"
@@ -1366,12 +1366,6 @@
   },
   {
    "type": "city",
-   "name": "Coimbatore",
-   "code": "incjb",
-   "url": "https://iptv-org.github.io/iptv/cities/incjb.m3u"
-  },
-  {
-   "type": "city",
    "name": "Delhi",
    "code": "indel",
    "url": "https://iptv-org.github.io/iptv/cities/indel.m3u"
@@ -1417,6 +1411,12 @@
    "name": "Tiruchirappalli",
    "code": "intri",
    "url": "https://iptv-org.github.io/iptv/cities/intri.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Yamagata",
+   "code": "jpgaj",
+   "url": "https://iptv-org.github.io/iptv/cities/jpgaj.m3u"
   },
   {
    "type": "city",
@@ -7009,6 +7009,12 @@
    "name": "Calabria",
    "code": "it-78",
    "url": "https://iptv-org.github.io/iptv/subdivisions/it-78.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Yamagata",
+   "code": "jp-06",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/jp-06.m3u"
   },
   {
    "type": "subdivision",
