@@ -31,11 +31,11 @@ staler data, never a broken app.
 <!-- DASHBOARD:START -->
 ## 📊 Workflow Dashboard
 
-_Auto-updated after each workflow run — regenerated 2026-07-27 23:36 UTC._
+_Auto-updated after each workflow run — regenerated 2026-07-28 22:16 UTC._
 
 ### 📺 EPG — `Generate EPG`
 
-✅ **success** · last run [#33](https://github.com/MuhammadTalhaBaloch/iptv/actions/runs/30309376174) at 2026-07-27 22:04 UTC
+• **in_progress** · last run [#34](https://github.com/MuhammadTalhaBaloch/iptv/actions/runs/30403068048) at 2026-07-28 22:02 UTC
 
 | Metric | Value |
 |---|---|
@@ -45,23 +45,23 @@ _Auto-updated after each workflow run — regenerated 2026-07-27 23:36 UTC._
 
 ### 🗂 Source registry — `Refresh browse registry`
 
-✅ **success** · last run [#24](https://github.com/MuhammadTalhaBaloch/iptv/actions/runs/30310221989) at 2026-07-27 22:18 UTC
+✅ **success** · last run [#25](https://github.com/MuhammadTalhaBaloch/iptv/actions/runs/30403957088) at 2026-07-28 22:16 UTC
 
 | Metric | Value |
 |---|---|
-| Total browse groups | 1,309 |
+| Total browse groups | 1,310 |
 | Category | 30 |
 | Country | 188 |
 | Language | 208 |
 | Region | 42 |
-| Subdivision | 355 |
+| Subdivision | 356 |
 | City | 482 |
 | Index | 4 |
 | Country→region map | 250 countries |
 
 ### 📶 Availability — `Publish channel availability`
 
-✅ **success** · last run [#23](https://github.com/MuhammadTalhaBaloch/iptv/actions/runs/30310237907) at 2026-07-27 22:18 UTC
+• **in_progress** · last run [#24](https://github.com/MuhammadTalhaBaloch/iptv/actions/runs/30403969978) at 2026-07-28 22:16 UTC
 
 | Metric | Value |
 |---|---|
