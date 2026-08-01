@@ -4,7 +4,7 @@
  "counts": {
   "index": 4,
   "category": 30,
-  "city": 482,
+  "city": 484,
   "country": 188,
   "language": 208,
   "region": 42,
@@ -220,6 +220,12 @@
   },
   {
    "type": "city",
+   "name": "Bahía Blanca",
+   "code": "arbhi",
+   "url": "https://iptv-org.github.io/iptv/cities/arbhi.m3u"
+  },
+  {
+   "type": "city",
    "name": "Buenos Aires",
    "code": "arbue",
    "url": "https://iptv-org.github.io/iptv/cities/arbue.m3u"
@@ -229,6 +235,12 @@
    "name": "Corrientes",
    "code": "arcnq",
    "url": "https://iptv-org.github.io/iptv/cities/arcnq.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Esquel",
+   "code": "areqs",
+   "url": "https://iptv-org.github.io/iptv/cities/areqs.m3u"
   },
   {
    "type": "city",
