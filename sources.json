@@ -4,7 +4,7 @@
  "counts": {
   "index": 4,
   "category": 30,
-  "city": 484,
+  "city": 485,
   "country": 188,
   "language": 208,
   "region": 42,
@@ -2287,6 +2287,12 @@
    "name": "Juneau",
    "code": "usjnu",
    "url": "https://iptv-org.github.io/iptv/cities/usjnu.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Joliet",
+   "code": "usjot",
+   "url": "https://iptv-org.github.io/iptv/cities/usjot.m3u"
   },
   {
    "type": "city",
