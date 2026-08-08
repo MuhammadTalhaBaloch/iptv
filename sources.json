@@ -6,7 +6,7 @@
   "category": 30,
   "city": 485,
   "country": 188,
-  "language": 208,
+  "language": 209,
   "region": 42,
   "subdivision": 356
  },
@@ -5089,6 +5089,12 @@
    "name": "Oriya (macrolanguage)",
    "code": "ori",
    "url": "https://iptv-org.github.io/iptv/languages/ori.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Odia",
+   "code": "ory",
+   "url": "https://iptv-org.github.io/iptv/languages/ory.m3u"
   },
   {
    "type": "language",
