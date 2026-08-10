@@ -4,9 +4,9 @@
  "counts": {
   "index": 4,
   "category": 30,
-  "city": 485,
+  "city": 486,
   "country": 188,
-  "language": 209,
+  "language": 210,
   "region": 42,
   "subdivision": 356
  },
@@ -1405,6 +1405,12 @@
    "name": "Kannur",
    "code": "inknn",
    "url": "https://iptv-org.github.io/iptv/cities/inknn.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Palghat",
+   "code": "inpal",
+   "url": "https://iptv-org.github.io/iptv/cities/inpal.m3u"
   },
   {
    "type": "city",
@@ -4867,6 +4873,12 @@
    "name": "Kongo",
    "code": "kon",
    "url": "https://iptv-org.github.io/iptv/languages/kon.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Konzo",
+   "code": "koo",
+   "url": "https://iptv-org.github.io/iptv/languages/koo.m3u"
   },
   {
    "type": "language",
