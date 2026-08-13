@@ -5,8 +5,8 @@
   "index": 4,
   "category": 30,
   "city": 457,
-  "country": 188,
-  "language": 199,
+  "country": 187,
+  "language": 198,
   "region": 42,
   "subdivision": 346
  },
@@ -3286,12 +3286,6 @@
   },
   {
    "type": "country",
-   "name": "Faroe Islands",
-   "code": "fo",
-   "url": "https://iptv-org.github.io/iptv/countries/fo.m3u"
-  },
-  {
-   "type": "country",
    "name": "France",
    "code": "fr",
    "url": "https://iptv-org.github.io/iptv/countries/fr.m3u"
@@ -4363,12 +4357,6 @@
    "name": "Ewe",
    "code": "ewe",
    "url": "https://iptv-org.github.io/iptv/languages/ewe.m3u"
-  },
-  {
-   "type": "language",
-   "name": "Faroese",
-   "code": "fao",
-   "url": "https://iptv-org.github.io/iptv/languages/fao.m3u"
   },
   {
    "type": "language",
