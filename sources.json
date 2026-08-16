@@ -6,7 +6,7 @@
   "category": 30,
   "city": 457,
   "country": 187,
-  "language": 198,
+  "language": 199,
   "region": 42,
   "subdivision": 346
  },
@@ -4255,6 +4255,12 @@
    "name": "Catalan",
    "code": "cat",
    "url": "https://iptv-org.github.io/iptv/languages/cat.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Cebuano",
+   "code": "ceb",
+   "url": "https://iptv-org.github.io/iptv/languages/ceb.m3u"
   },
   {
    "type": "language",
