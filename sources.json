@@ -8,7 +8,7 @@
   "country": 187,
   "language": 199,
   "region": 42,
-  "subdivision": 346
+  "subdivision": 347
  },
  "excluded": [
   "category:xxx"
@@ -5947,6 +5947,12 @@
    "name": "Libertador General Bernardo O'Higgins",
    "code": "cl-li",
    "url": "https://iptv-org.github.io/iptv/subdivisions/cl-li.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Magallanes",
+   "code": "cl-ma",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/cl-ma.m3u"
   },
   {
    "type": "subdivision",
