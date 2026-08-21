@@ -4,7 +4,7 @@
  "counts": {
   "index": 4,
   "category": 30,
-  "city": 457,
+  "city": 458,
   "country": 187,
   "language": 199,
   "region": 42,
@@ -2911,6 +2911,12 @@
    "name": "Weslaco",
    "code": "uswko",
    "url": "https://iptv-org.github.io/iptv/cities/uswko.m3u"
+  },
+  {
+   "type": "city",
+   "name": "West Monroe",
+   "code": "uswmx",
+   "url": "https://iptv-org.github.io/iptv/cities/uswmx.m3u"
   },
   {
    "type": "city",
