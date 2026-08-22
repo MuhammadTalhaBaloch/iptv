@@ -4,9 +4,9 @@
  "counts": {
   "index": 4,
   "category": 30,
-  "city": 458,
+  "city": 459,
   "country": 187,
-  "language": 199,
+  "language": 200,
   "region": 42,
   "subdivision": 347
  },
@@ -1699,6 +1699,12 @@
    "name": "Brookline",
    "code": "usbma",
    "url": "https://iptv-org.github.io/iptv/cities/usbma.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Billerica",
+   "code": "usbms",
+   "url": "https://iptv-org.github.io/iptv/cities/usbms.m3u"
   },
   {
    "type": "city",
@@ -4453,6 +4459,12 @@
    "name": "Goan Konkani",
    "code": "gom",
    "url": "https://iptv-org.github.io/iptv/languages/gom.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Guarani",
+   "code": "grn",
+   "url": "https://iptv-org.github.io/iptv/languages/grn.m3u"
   },
   {
    "type": "language",
