@@ -31,37 +31,37 @@ staler data, never a broken app.
 <!-- DASHBOARD:START -->
 ## 📊 Workflow Dashboard
 
-_Auto-updated after each workflow run — regenerated 2026-08-21 22:53 UTC._
+_Auto-updated after each workflow run — regenerated 2026-08-22 21:35 UTC._
 
 ### 📺 EPG — `Generate EPG`
 
-✅ **success** · last run [#58](https://github.com/MuhammadTalhaBaloch/iptv/actions/runs/32528102946) at 2026-08-21 21:21 UTC
+• **in_progress** · last run [#59](https://github.com/MuhammadTalhaBaloch/iptv/actions/runs/32599223695) at 2026-08-22 21:18 UTC
 
 | Metric | Value |
 |---|---|
 | Channels | 149,671 |
-| Programmes | 2,408,888 |
+| Programmes | 2,386,006 |
 | Countries | 260 |
 
 ### 🗂 Source registry — `Refresh browse registry`
 
-✅ **success** · last run [#49](https://github.com/MuhammadTalhaBaloch/iptv/actions/runs/32529439771) at 2026-08-21 21:38 UTC
+✅ **success** · last run [#50](https://github.com/MuhammadTalhaBaloch/iptv/actions/runs/32600018676) at 2026-08-22 21:35 UTC
 
 | Metric | Value |
 |---|---|
-| Total browse groups | 1,267 |
+| Total browse groups | 1,269 |
 | Category | 30 |
 | Country | 187 |
-| Language | 199 |
+| Language | 200 |
 | Region | 42 |
 | Subdivision | 347 |
-| City | 458 |
+| City | 459 |
 | Index | 4 |
 | Country→region map | 250 countries |
 
 ### 📶 Availability — `Publish channel availability`
 
-✅ **success** · last run [#48](https://github.com/MuhammadTalhaBaloch/iptv/actions/runs/32529453851) at 2026-08-21 21:38 UTC
+• **in_progress** · last run [#49](https://github.com/MuhammadTalhaBaloch/iptv/actions/runs/32600028961) at 2026-08-22 21:35 UTC
 
 | Metric | Value |
 |---|---|
