@@ -4,7 +4,7 @@
  "counts": {
   "index": 4,
   "category": 30,
-  "city": 459,
+  "city": 458,
   "country": 187,
   "language": 200,
   "region": 42,
@@ -367,12 +367,6 @@
    "name": "Tandil",
    "code": "artdl",
    "url": "https://iptv-org.github.io/iptv/cities/artdl.m3u"
-  },
-  {
-   "type": "city",
-   "name": "San Juan",
-   "code": "aruaq",
-   "url": "https://iptv-org.github.io/iptv/cities/aruaq.m3u"
   },
   {
    "type": "city",
