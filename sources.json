@@ -4,7 +4,7 @@
  "counts": {
   "index": 4,
   "category": 30,
-  "city": 458,
+  "city": 456,
   "country": 187,
   "language": 200,
   "region": 42,
@@ -2062,12 +2062,6 @@
   },
   {
    "type": "city",
-   "name": "Harrisburg",
-   "code": "ushar",
-   "url": "https://iptv-org.github.io/iptv/cities/ushar.m3u"
-  },
-  {
-   "type": "city",
    "name": "Hudson",
    "code": "ushdu",
    "url": "https://iptv-org.github.io/iptv/cities/ushdu.m3u"
@@ -2485,12 +2479,6 @@
    "name": "Orange",
    "code": "usorb",
    "url": "https://iptv-org.github.io/iptv/cities/usorb.m3u"
-  },
-  {
-   "type": "city",
-   "name": "Worcester",
-   "code": "usorh",
-   "url": "https://iptv-org.github.io/iptv/cities/usorh.m3u"
   },
   {
    "type": "city",
