@@ -6,7 +6,7 @@
   "category": 30,
   "city": 456,
   "country": 187,
-  "language": 200,
+  "language": 201,
   "region": 42,
   "subdivision": 347
  },
@@ -4447,6 +4447,12 @@
    "name": "Guarani",
    "code": "grn",
    "url": "https://iptv-org.github.io/iptv/languages/grn.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Paraguayan Guaraní",
+   "code": "gug",
+   "url": "https://iptv-org.github.io/iptv/languages/gug.m3u"
   },
   {
    "type": "language",
