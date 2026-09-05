@@ -4,11 +4,11 @@
  "counts": {
   "index": 4,
   "category": 30,
-  "city": 357,
+  "city": 455,
   "country": 188,
   "language": 202,
   "region": 42,
-  "subdivision": 328
+  "subdivision": 348
  },
  "excluded": [
   "category:xxx"
@@ -622,9 +622,33 @@
   },
   {
    "type": "city",
+   "name": "Calgary",
+   "code": "cacal",
+   "url": "https://iptv-org.github.io/iptv/cities/cacal.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Charlottetown",
+   "code": "cacha",
+   "url": "https://iptv-org.github.io/iptv/cities/cacha.m3u"
+  },
+  {
+   "type": "city",
    "name": "Edmonton",
    "code": "caedm",
    "url": "https://iptv-org.github.io/iptv/cities/caedm.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Fredericton",
+   "code": "cafre",
+   "url": "https://iptv-org.github.io/iptv/cities/cafre.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Halifax",
+   "code": "cahal",
+   "url": "https://iptv-org.github.io/iptv/cities/cahal.m3u"
   },
   {
    "type": "city",
@@ -640,6 +664,12 @@
   },
   {
    "type": "city",
+   "name": "Moncton",
+   "code": "camnt",
+   "url": "https://iptv-org.github.io/iptv/cities/camnt.m3u"
+  },
+  {
+   "type": "city",
    "name": "Montréal",
    "code": "camtr",
    "url": "https://iptv-org.github.io/iptv/cities/camtr.m3u"
@@ -652,15 +682,87 @@
   },
   {
    "type": "city",
+   "name": "Ottawa",
+   "code": "caott",
+   "url": "https://iptv-org.github.io/iptv/cities/caott.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Québec",
+   "code": "caque",
+   "url": "https://iptv-org.github.io/iptv/cities/caque.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Regina",
+   "code": "careg",
+   "url": "https://iptv-org.github.io/iptv/cities/careg.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Rimouski",
+   "code": "carim",
+   "url": "https://iptv-org.github.io/iptv/cities/carim.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Saguenay",
+   "code": "casag",
+   "url": "https://iptv-org.github.io/iptv/cities/casag.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Sherbrooke",
+   "code": "casbr",
+   "url": "https://iptv-org.github.io/iptv/cities/casbr.m3u"
+  },
+  {
+   "type": "city",
+   "name": "St. John's",
+   "code": "casjf",
+   "url": "https://iptv-org.github.io/iptv/cities/casjf.m3u"
+  },
+  {
+   "type": "city",
    "name": "Toronto",
    "code": "cator",
    "url": "https://iptv-org.github.io/iptv/cities/cator.m3u"
   },
   {
    "type": "city",
+   "name": "Trois-Rivières",
+   "code": "catrr",
+   "url": "https://iptv-org.github.io/iptv/cities/catrr.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Vancouver",
+   "code": "cavan",
+   "url": "https://iptv-org.github.io/iptv/cities/cavan.m3u"
+  },
+  {
+   "type": "city",
    "name": "Victoria",
    "code": "cavic",
    "url": "https://iptv-org.github.io/iptv/cities/cavic.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Windsor",
+   "code": "cawnd",
+   "url": "https://iptv-org.github.io/iptv/cities/cawnd.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Winnipeg",
+   "code": "cawnp",
+   "url": "https://iptv-org.github.io/iptv/cities/cawnp.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Yellowknife",
+   "code": "cayzf",
+   "url": "https://iptv-org.github.io/iptv/cities/cayzf.m3u"
   },
   {
    "type": "city",
@@ -1462,9 +1564,39 @@
   },
   {
    "type": "city",
+   "name": "Albuquerque",
+   "code": "usabq",
+   "url": "https://iptv-org.github.io/iptv/cities/usabq.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Waco",
+   "code": "usact",
+   "url": "https://iptv-org.github.io/iptv/cities/usact.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Asheville",
+   "code": "usaev",
+   "url": "https://iptv-org.github.io/iptv/cities/usaev.m3u"
+  },
+  {
+   "type": "city",
    "name": "Athens",
    "code": "usahn",
    "url": "https://iptv-org.github.io/iptv/cities/usahn.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Albany",
+   "code": "usalb",
+   "url": "https://iptv-org.github.io/iptv/cities/usalb.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Annapolis",
+   "code": "usanp",
+   "url": "https://iptv-org.github.io/iptv/cities/usanp.m3u"
   },
   {
    "type": "city",
@@ -1499,8 +1631,26 @@
   {
    "type": "city",
    "name": "Austin",
+   "code": "usaum",
+   "url": "https://iptv-org.github.io/iptv/cities/usaum.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Austin",
    "code": "usaus",
    "url": "https://iptv-org.github.io/iptv/cities/usaus.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Kalamazoo",
+   "code": "usazo",
+   "url": "https://iptv-org.github.io/iptv/cities/usazo.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Baltimore",
+   "code": "usbal",
+   "url": "https://iptv-org.github.io/iptv/cities/usbal.m3u"
   },
   {
    "type": "city",
@@ -1558,6 +1708,12 @@
   },
   {
    "type": "city",
+   "name": "Baton Rouge",
+   "code": "usbtr",
+   "url": "https://iptv-org.github.io/iptv/cities/usbtr.m3u"
+  },
+  {
+   "type": "city",
    "name": "Buena Park",
    "code": "usbun",
    "url": "https://iptv-org.github.io/iptv/cities/usbun.m3u"
@@ -1576,6 +1732,12 @@
   },
   {
    "type": "city",
+   "name": "Cape Coral",
+   "code": "uscc2",
+   "url": "https://iptv-org.github.io/iptv/cities/uscc2.m3u"
+  },
+  {
+   "type": "city",
    "name": "Concord",
    "code": "usccr",
    "url": "https://iptv-org.github.io/iptv/cities/usccr.m3u"
@@ -1588,15 +1750,33 @@
   },
   {
    "type": "city",
+   "name": "Cape Girardeau",
+   "code": "uscgi",
+   "url": "https://iptv-org.github.io/iptv/cities/uscgi.m3u"
+  },
+  {
+   "type": "city",
    "name": "Chino Hills",
    "code": "usch3",
    "url": "https://iptv-org.github.io/iptv/cities/usch3.m3u"
   },
   {
    "type": "city",
+   "name": "Chattanooga",
+   "code": "uscha",
+   "url": "https://iptv-org.github.io/iptv/cities/uscha.m3u"
+  },
+  {
+   "type": "city",
    "name": "Chicago",
    "code": "uschi",
    "url": "https://iptv-org.github.io/iptv/cities/uschi.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Charleston",
+   "code": "uschs",
+   "url": "https://iptv-org.github.io/iptv/cities/uschs.m3u"
   },
   {
    "type": "city",
@@ -1615,6 +1795,12 @@
    "name": "Charlotte",
    "code": "usclt",
    "url": "https://iptv-org.github.io/iptv/cities/usclt.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Columbus",
+   "code": "uscmh",
+   "url": "https://iptv-org.github.io/iptv/cities/uscmh.m3u"
   },
   {
    "type": "city",
@@ -1642,6 +1828,24 @@
   },
   {
    "type": "city",
+   "name": "San Luis Obispo",
+   "code": "uscsl",
+   "url": "https://iptv-org.github.io/iptv/cities/uscsl.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Cincinnati",
+   "code": "uscvg",
+   "url": "https://iptv-org.github.io/iptv/cities/uscvg.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Cloverdale",
+   "code": "uscyi",
+   "url": "https://iptv-org.github.io/iptv/cities/uscyi.m3u"
+  },
+  {
+   "type": "city",
    "name": "Cypress",
    "code": "uscyq",
    "url": "https://iptv-org.github.io/iptv/cities/uscyq.m3u"
@@ -1666,6 +1870,18 @@
   },
   {
    "type": "city",
+   "name": "Dallas",
+   "code": "usdal",
+   "url": "https://iptv-org.github.io/iptv/cities/usdal.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Dayton",
+   "code": "usday",
+   "url": "https://iptv-org.github.io/iptv/cities/usday.m3u"
+  },
+  {
+   "type": "city",
    "name": "Denver",
    "code": "usden",
    "url": "https://iptv-org.github.io/iptv/cities/usden.m3u"
@@ -1678,9 +1894,27 @@
   },
   {
    "type": "city",
+   "name": "Duluth",
+   "code": "usdlh",
+   "url": "https://iptv-org.github.io/iptv/cities/usdlh.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Sedalia",
+   "code": "usdmo",
+   "url": "https://iptv-org.github.io/iptv/cities/usdmo.m3u"
+  },
+  {
+   "type": "city",
    "name": "Derry",
    "code": "usdnp",
    "url": "https://iptv-org.github.io/iptv/cities/usdnp.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Des Moines",
+   "code": "usdsm",
+   "url": "https://iptv-org.github.io/iptv/cities/usdsm.m3u"
   },
   {
    "type": "city",
@@ -1693,6 +1927,12 @@
    "name": "El Paso",
    "code": "uselp",
    "url": "https://iptv-org.github.io/iptv/cities/uselp.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Newark",
+   "code": "usewr",
+   "url": "https://iptv-org.github.io/iptv/cities/usewr.m3u"
   },
   {
    "type": "city",
@@ -1720,6 +1960,12 @@
   },
   {
    "type": "city",
+   "name": "Florence",
+   "code": "usflo",
+   "url": "https://iptv-org.github.io/iptv/cities/usflo.m3u"
+  },
+  {
+   "type": "city",
    "name": "Fort Myers",
    "code": "usfmy",
    "url": "https://iptv-org.github.io/iptv/cities/usfmy.m3u"
@@ -1735,6 +1981,18 @@
    "name": "Fort Pierce",
    "code": "usfpr",
    "url": "https://iptv-org.github.io/iptv/cities/usfpr.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Fort Worth",
+   "code": "usfwt",
+   "url": "https://iptv-org.github.io/iptv/cities/usfwt.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Fredericksburg",
+   "code": "usfxg",
+   "url": "https://iptv-org.github.io/iptv/cities/usfxg.m3u"
   },
   {
    "type": "city",
@@ -1774,6 +2032,24 @@
   },
   {
    "type": "city",
+   "name": "Gulfport",
+   "code": "usgpt",
+   "url": "https://iptv-org.github.io/iptv/cities/usgpt.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Green Bay",
+   "code": "usgrb",
+   "url": "https://iptv-org.github.io/iptv/cities/usgrb.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Garland",
+   "code": "usgrx",
+   "url": "https://iptv-org.github.io/iptv/cities/usgrx.m3u"
+  },
+  {
+   "type": "city",
    "name": "Greenville",
    "code": "usgv9",
    "url": "https://iptv-org.github.io/iptv/cities/usgv9.m3u"
@@ -1792,6 +2068,12 @@
   },
   {
    "type": "city",
+   "name": "Honolulu",
+   "code": "ushnl",
+   "url": "https://iptv-org.github.io/iptv/cities/ushnl.m3u"
+  },
+  {
+   "type": "city",
    "name": "Houston",
    "code": "ushou",
    "url": "https://iptv-org.github.io/iptv/cities/ushou.m3u"
@@ -1801,6 +2083,12 @@
    "name": "Huntington Beach",
    "code": "ushtd",
    "url": "https://iptv-org.github.io/iptv/cities/ushtd.m3u"
+  },
+  {
+   "type": "city",
+   "name": "New Haven",
+   "code": "ushvn",
+   "url": "https://iptv-org.github.io/iptv/cities/ushvn.m3u"
   },
   {
    "type": "city",
@@ -1822,9 +2110,27 @@
   },
   {
    "type": "city",
+   "name": "Wilmington",
+   "code": "usilm",
+   "url": "https://iptv-org.github.io/iptv/cities/usilm.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Winston-Salem",
+   "code": "usint",
+   "url": "https://iptv-org.github.io/iptv/cities/usint.m3u"
+  },
+  {
+   "type": "city",
    "name": "Miami Beach",
    "code": "usiyh",
    "url": "https://iptv-org.github.io/iptv/cities/usiyh.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Jacksonville",
+   "code": "usjax",
+   "url": "https://iptv-org.github.io/iptv/cities/usjax.m3u"
   },
   {
    "type": "city",
@@ -1837,6 +2143,30 @@
    "name": "Glendale",
    "code": "usjgx",
    "url": "https://iptv-org.github.io/iptv/cities/usjgx.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Juneau",
+   "code": "usjnu",
+   "url": "https://iptv-org.github.io/iptv/cities/usjnu.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Joliet",
+   "code": "usjot",
+   "url": "https://iptv-org.github.io/iptv/cities/usjot.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Johnstown",
+   "code": "usjst",
+   "url": "https://iptv-org.github.io/iptv/cities/usjst.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Kansas City",
+   "code": "uskck",
+   "url": "https://iptv-org.github.io/iptv/cities/uskck.m3u"
   },
   {
    "type": "city",
@@ -1870,6 +2200,12 @@
   },
   {
    "type": "city",
+   "name": "Lucerne Valley",
+   "code": "uslcb",
+   "url": "https://iptv-org.github.io/iptv/cities/uslcb.m3u"
+  },
+  {
+   "type": "city",
    "name": "Leesburg",
    "code": "uslee",
    "url": "https://iptv-org.github.io/iptv/cities/uslee.m3u"
@@ -1882,6 +2218,24 @@
   },
   {
    "type": "city",
+   "name": "Lafayette",
+   "code": "uslft",
+   "url": "https://iptv-org.github.io/iptv/cities/uslft.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Lima",
+   "code": "uslia",
+   "url": "https://iptv-org.github.io/iptv/cities/uslia.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Little Rock",
+   "code": "uslit",
+   "url": "https://iptv-org.github.io/iptv/cities/uslit.m3u"
+  },
+  {
+   "type": "city",
    "name": "Lakewood",
    "code": "usljk",
    "url": "https://iptv-org.github.io/iptv/cities/usljk.m3u"
@@ -1891,6 +2245,18 @@
    "name": "Leominster",
    "code": "uslmr",
    "url": "https://iptv-org.github.io/iptv/cities/uslmr.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Lincoln",
+   "code": "uslnk",
+   "url": "https://iptv-org.github.io/iptv/cities/uslnk.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Lancaster",
+   "code": "uslns",
+   "url": "https://iptv-org.github.io/iptv/cities/uslns.m3u"
   },
   {
    "type": "city",
@@ -1918,6 +2284,12 @@
   },
   {
    "type": "city",
+   "name": "Louisville",
+   "code": "uslui",
+   "url": "https://iptv-org.github.io/iptv/cities/uslui.m3u"
+  },
+  {
+   "type": "city",
    "name": "Lexington",
    "code": "uslxi",
    "url": "https://iptv-org.github.io/iptv/cities/uslxi.m3u"
@@ -1930,9 +2302,27 @@
   },
   {
    "type": "city",
+   "name": "Macon",
+   "code": "usmcn",
+   "url": "https://iptv-org.github.io/iptv/cities/usmcn.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Memphis",
+   "code": "usmem",
+   "url": "https://iptv-org.github.io/iptv/cities/usmem.m3u"
+  },
+  {
+   "type": "city",
    "name": "Minneapolis",
    "code": "usmes",
    "url": "https://iptv-org.github.io/iptv/cities/usmes.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Manchester",
+   "code": "usmht",
+   "url": "https://iptv-org.github.io/iptv/cities/usmht.m3u"
   },
   {
    "type": "city",
@@ -1945,6 +2335,24 @@
    "name": "Morro Bay",
    "code": "usmjk",
    "url": "https://iptv-org.github.io/iptv/cities/usmjk.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Kansas City",
+   "code": "usmkc",
+   "url": "https://iptv-org.github.io/iptv/cities/usmkc.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Milwaukee",
+   "code": "usmke",
+   "url": "https://iptv-org.github.io/iptv/cities/usmke.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Jackson",
+   "code": "usmkl",
+   "url": "https://iptv-org.github.io/iptv/cities/usmkl.m3u"
   },
   {
    "type": "city",
@@ -2002,6 +2410,18 @@
   },
   {
    "type": "city",
+   "name": "Newton",
+   "code": "usnwn",
+   "url": "https://iptv-org.github.io/iptv/cities/usnwn.m3u"
+  },
+  {
+   "type": "city",
+   "name": "New Britain",
+   "code": "usnwt",
+   "url": "https://iptv-org.github.io/iptv/cities/usnwt.m3u"
+  },
+  {
+   "type": "city",
    "name": "New York City",
    "code": "usnyc",
    "url": "https://iptv-org.github.io/iptv/cities/usnyc.m3u"
@@ -2011,6 +2431,12 @@
    "name": "Jacksonville",
    "code": "usoaj",
    "url": "https://iptv-org.github.io/iptv/cities/usoaj.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Oakland",
+   "code": "usoak",
+   "url": "https://iptv-org.github.io/iptv/cities/usoak.m3u"
   },
   {
    "type": "city",
@@ -2026,6 +2452,18 @@
   },
   {
    "type": "city",
+   "name": "Oklahoma City",
+   "code": "usokc",
+   "url": "https://iptv-org.github.io/iptv/cities/usokc.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Omaha",
+   "code": "usoma",
+   "url": "https://iptv-org.github.io/iptv/cities/usoma.m3u"
+  },
+  {
+   "type": "city",
    "name": "Ontario",
    "code": "usont",
    "url": "https://iptv-org.github.io/iptv/cities/usont.m3u"
@@ -2035,6 +2473,12 @@
    "name": "Orange",
    "code": "usorb",
    "url": "https://iptv-org.github.io/iptv/cities/usorb.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Orlando",
+   "code": "usorl",
+   "url": "https://iptv-org.github.io/iptv/cities/usorl.m3u"
   },
   {
    "type": "city",
@@ -2050,6 +2494,12 @@
   },
   {
    "type": "city",
+   "name": "Paterson",
+   "code": "uspat",
+   "url": "https://iptv-org.github.io/iptv/cities/uspat.m3u"
+  },
+  {
+   "type": "city",
    "name": "Pine Bluff",
    "code": "uspbf",
    "url": "https://iptv-org.github.io/iptv/cities/uspbf.m3u"
@@ -2059,6 +2509,12 @@
    "name": "West Palm Beach",
    "code": "uspbi",
    "url": "https://iptv-org.github.io/iptv/cities/uspbi.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Portland",
+   "code": "uspdx",
+   "url": "https://iptv-org.github.io/iptv/cities/uspdx.m3u"
   },
   {
    "type": "city",
@@ -2080,6 +2536,12 @@
   },
   {
    "type": "city",
+   "name": "Pittsburgh",
+   "code": "uspit",
+   "url": "https://iptv-org.github.io/iptv/cities/uspit.m3u"
+  },
+  {
+   "type": "city",
    "name": "Pompano Beach",
    "code": "usppm",
    "url": "https://iptv-org.github.io/iptv/cities/usppm.m3u"
@@ -2089,6 +2551,24 @@
    "name": "Pomona",
    "code": "uspqc",
    "url": "https://iptv-org.github.io/iptv/cities/uspqc.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Providence",
+   "code": "uspvd",
+   "url": "https://iptv-org.github.io/iptv/cities/uspvd.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Port Saint Lucie",
+   "code": "uspzl",
+   "url": "https://iptv-org.github.io/iptv/cities/uspzl.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Riverside",
+   "code": "usral",
+   "url": "https://iptv-org.github.io/iptv/cities/usral.m3u"
   },
   {
    "type": "city",
@@ -2104,6 +2584,12 @@
   },
   {
    "type": "city",
+   "name": "Richmond",
+   "code": "usric",
+   "url": "https://iptv-org.github.io/iptv/cities/usric.m3u"
+  },
+  {
+   "type": "city",
    "name": "Rifle",
    "code": "usril",
    "url": "https://iptv-org.github.io/iptv/cities/usril.m3u"
@@ -2113,6 +2599,12 @@
    "name": "Rockville",
    "code": "usrkv",
    "url": "https://iptv-org.github.io/iptv/cities/usrkv.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Rochester",
+   "code": "usroc",
+   "url": "https://iptv-org.github.io/iptv/cities/usroc.m3u"
   },
   {
    "type": "city",
@@ -2140,6 +2632,24 @@
   },
   {
    "type": "city",
+   "name": "South Bend",
+   "code": "ussbn",
+   "url": "https://iptv-org.github.io/iptv/cities/ussbn.m3u"
+  },
+  {
+   "type": "city",
+   "name": "San Bernardino",
+   "code": "ussbt",
+   "url": "https://iptv-org.github.io/iptv/cities/ussbt.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Salisbury",
+   "code": "ussby",
+   "url": "https://iptv-org.github.io/iptv/cities/ussby.m3u"
+  },
+  {
+   "type": "city",
    "name": "Stockton",
    "code": "ussck",
    "url": "https://iptv-org.github.io/iptv/cities/ussck.m3u"
@@ -2149,6 +2659,12 @@
    "name": "Santa Clara",
    "code": "usscz",
    "url": "https://iptv-org.github.io/iptv/cities/usscz.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Seattle",
+   "code": "ussea",
+   "url": "https://iptv-org.github.io/iptv/cities/ussea.m3u"
   },
   {
    "type": "city",
@@ -2176,6 +2692,12 @@
   },
   {
    "type": "city",
+   "name": "Salt Lake City",
+   "code": "usslc",
+   "url": "https://iptv-org.github.io/iptv/cities/usslc.m3u"
+  },
+  {
+   "type": "city",
    "name": "Santa Monica",
    "code": "ussmo",
    "url": "https://iptv-org.github.io/iptv/cities/ussmo.m3u"
@@ -2185,6 +2707,18 @@
    "name": "Santa Maria",
    "code": "ussmx",
    "url": "https://iptv-org.github.io/iptv/cities/ussmx.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Snyder",
+   "code": "ussnk",
+   "url": "https://iptv-org.github.io/iptv/cities/ussnk.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Salinas",
+   "code": "ussns",
+   "url": "https://iptv-org.github.io/iptv/cities/ussns.m3u"
   },
   {
    "type": "city",
@@ -2212,6 +2746,12 @@
   },
   {
    "type": "city",
+   "name": "Saint Paul",
+   "code": "usstp",
+   "url": "https://iptv-org.github.io/iptv/cities/usstp.m3u"
+  },
+  {
+   "type": "city",
    "name": "Scottsdale",
    "code": "usstz",
    "url": "https://iptv-org.github.io/iptv/cities/usstz.m3u"
@@ -2233,6 +2773,12 @@
    "name": "Thornton",
    "code": "ustht",
    "url": "https://iptv-org.github.io/iptv/cities/ustht.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Tacoma",
+   "code": "ustiw",
+   "url": "https://iptv-org.github.io/iptv/cities/ustiw.m3u"
   },
   {
    "type": "city",
@@ -2260,15 +2806,57 @@
   },
   {
    "type": "city",
+   "name": "Trenton",
+   "code": "usttn",
+   "url": "https://iptv-org.github.io/iptv/cities/usttn.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Tulsa",
+   "code": "ustul",
+   "url": "https://iptv-org.github.io/iptv/cities/ustul.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Tucson",
+   "code": "ustuz",
+   "url": "https://iptv-org.github.io/iptv/cities/ustuz.m3u"
+  },
+  {
+   "type": "city",
    "name": "Traverse City",
    "code": "ustvc",
    "url": "https://iptv-org.github.io/iptv/cities/ustvc.m3u"
   },
   {
    "type": "city",
+   "name": "Columbus",
+   "code": "usubs",
+   "url": "https://iptv-org.github.io/iptv/cities/usubs.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Steubenville",
+   "code": "usuyj",
+   "url": "https://iptv-org.github.io/iptv/cities/usuyj.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Secaucus",
+   "code": "usuyk",
+   "url": "https://iptv-org.github.io/iptv/cities/usuyk.m3u"
+  },
+  {
+   "type": "city",
    "name": "Barre",
    "code": "usvbr",
    "url": "https://iptv-org.github.io/iptv/cities/usvbr.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Visalia",
+   "code": "usvis",
+   "url": "https://iptv-org.github.io/iptv/cities/usvis.m3u"
   },
   {
    "type": "city",
@@ -5302,6 +5890,24 @@
   },
   {
    "type": "subdivision",
+   "name": "Newfoundland and Labrador",
+   "code": "ca-nl",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ca-nl.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Nova Scotia",
+   "code": "ca-ns",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ca-ns.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Northwest Territories",
+   "code": "ca-nt",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ca-nt.m3u"
+  },
+  {
+   "type": "subdivision",
    "name": "Nunavut",
    "code": "ca-nu",
    "url": "https://iptv-org.github.io/iptv/subdivisions/ca-nu.m3u"
@@ -5314,9 +5920,21 @@
   },
   {
    "type": "subdivision",
+   "name": "Prince Edward Island",
+   "code": "ca-pe",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ca-pe.m3u"
+  },
+  {
+   "type": "subdivision",
    "name": "Quebec",
    "code": "ca-qc",
    "url": "https://iptv-org.github.io/iptv/subdivisions/ca-qc.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Saskatchewan",
+   "code": "ca-sk",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ca-sk.m3u"
   },
   {
    "type": "subdivision",
@@ -6244,6 +6862,12 @@
   },
   {
    "type": "subdivision",
+   "name": "Aguascalientes",
+   "code": "mx-agu",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/mx-agu.m3u"
+  },
+  {
+   "type": "subdivision",
    "name": "Baja California",
    "code": "mx-bcn",
    "url": "https://iptv-org.github.io/iptv/subdivisions/mx-bcn.m3u"
@@ -6271,6 +6895,12 @@
    "name": "Nuevo Leon",
    "code": "mx-nle",
    "url": "https://iptv-org.github.io/iptv/subdivisions/mx-nle.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Puebla",
+   "code": "mx-pue",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/mx-pue.m3u"
   },
   {
    "type": "subdivision",
@@ -6784,9 +7414,21 @@
   },
   {
    "type": "subdivision",
+   "name": "Iowa",
+   "code": "us-ia",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/us-ia.m3u"
+  },
+  {
+   "type": "subdivision",
    "name": "Illinois",
    "code": "us-il",
    "url": "https://iptv-org.github.io/iptv/subdivisions/us-il.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Indiana",
+   "code": "us-in",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/us-in.m3u"
   },
   {
    "type": "subdivision",
@@ -6832,6 +7474,18 @@
   },
   {
    "type": "subdivision",
+   "name": "Missouri",
+   "code": "us-mo",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/us-mo.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Mississippi",
+   "code": "us-ms",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/us-ms.m3u"
+  },
+  {
+   "type": "subdivision",
    "name": "North Carolina",
    "code": "us-nc",
    "url": "https://iptv-org.github.io/iptv/subdivisions/us-nc.m3u"
@@ -6844,6 +7498,12 @@
   },
   {
    "type": "subdivision",
+   "name": "Nebraska",
+   "code": "us-ne",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/us-ne.m3u"
+  },
+  {
+   "type": "subdivision",
    "name": "New Hampshire",
    "code": "us-nh",
    "url": "https://iptv-org.github.io/iptv/subdivisions/us-nh.m3u"
@@ -6853,6 +7513,12 @@
    "name": "New Jersey",
    "code": "us-nj",
    "url": "https://iptv-org.github.io/iptv/subdivisions/us-nj.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "New Mexico",
+   "code": "us-nm",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/us-nm.m3u"
   },
   {
    "type": "subdivision",
@@ -6874,6 +7540,12 @@
   },
   {
    "type": "subdivision",
+   "name": "Oklahoma",
+   "code": "us-ok",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/us-ok.m3u"
+  },
+  {
+   "type": "subdivision",
    "name": "Oregon",
    "code": "us-or",
    "url": "https://iptv-org.github.io/iptv/subdivisions/us-or.m3u"
@@ -6886,9 +7558,21 @@
   },
   {
    "type": "subdivision",
+   "name": "Rhode Island",
+   "code": "us-ri",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/us-ri.m3u"
+  },
+  {
+   "type": "subdivision",
    "name": "South Carolina",
    "code": "us-sc",
    "url": "https://iptv-org.github.io/iptv/subdivisions/us-sc.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Tennessee",
+   "code": "us-tn",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/us-tn.m3u"
   },
   {
    "type": "subdivision",
@@ -6898,9 +7582,33 @@
   },
   {
    "type": "subdivision",
+   "name": "Utah",
+   "code": "us-ut",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/us-ut.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Virginia",
+   "code": "us-va",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/us-va.m3u"
+  },
+  {
+   "type": "subdivision",
    "name": "Vermont",
    "code": "us-vt",
    "url": "https://iptv-org.github.io/iptv/subdivisions/us-vt.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Washington",
+   "code": "us-wa",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/us-wa.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Wisconsin",
+   "code": "us-wi",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/us-wi.m3u"
   },
   {
    "type": "subdivision",
