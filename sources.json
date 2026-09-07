@@ -4,11 +4,11 @@
  "counts": {
   "index": 4,
   "category": 30,
-  "city": 453,
+  "city": 455,
   "country": 188,
   "language": 202,
   "region": 42,
-  "subdivision": 347
+  "subdivision": 348
  },
  "excluded": [
   "category:xxx"
@@ -295,6 +295,12 @@
    "name": "Resistencia",
    "code": "arres",
    "url": "https://iptv-org.github.io/iptv/cities/arres.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Rosario",
+   "code": "arros",
+   "url": "https://iptv-org.github.io/iptv/cities/arros.m3u"
   },
   {
    "type": "city",
@@ -1321,6 +1327,12 @@
    "name": "Tiruchirappalli",
    "code": "intri",
    "url": "https://iptv-org.github.io/iptv/cities/intri.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Yamagata",
+   "code": "jpgaj",
+   "url": "https://iptv-org.github.io/iptv/cities/jpgaj.m3u"
   },
   {
    "type": "city",
@@ -6763,6 +6775,12 @@
    "name": "Calabria",
    "code": "it-78",
    "url": "https://iptv-org.github.io/iptv/subdivisions/it-78.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Yamagata",
+   "code": "jp-06",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/jp-06.m3u"
   },
   {
    "type": "subdivision",
