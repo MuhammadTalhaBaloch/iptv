@@ -6,7 +6,7 @@
   "category": 30,
   "city": 457,
   "country": 188,
-  "language": 202,
+  "language": 204,
   "region": 42,
   "subdivision": 348
  },
@@ -4516,6 +4516,12 @@
   },
   {
    "type": "language",
+   "name": "Hiri Motu",
+   "code": "hmo",
+   "url": "https://iptv-org.github.io/iptv/languages/hmo.m3u"
+  },
+  {
+   "type": "language",
    "name": "Chhattisgarhi",
    "code": "hne",
    "url": "https://iptv-org.github.io/iptv/languages/hne.m3u"
@@ -5173,6 +5179,12 @@
    "name": "Tamashek",
    "code": "tmh",
    "url": "https://iptv-org.github.io/iptv/languages/tmh.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Tok Pisin",
+   "code": "tpi",
+   "url": "https://iptv-org.github.io/iptv/languages/tpi.m3u"
   },
   {
    "type": "language",
