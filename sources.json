@@ -4,7 +4,7 @@
  "counts": {
   "index": 4,
   "category": 30,
-  "city": 457,
+  "city": 458,
   "country": 188,
   "language": 204,
   "region": 42,
@@ -1279,6 +1279,12 @@
    "name": "Tasikmalaya",
    "code": "idtsy",
    "url": "https://iptv-org.github.io/iptv/cities/idtsy.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Alangulam",
+   "code": "inagu",
+   "url": "https://iptv-org.github.io/iptv/cities/inagu.m3u"
   },
   {
    "type": "city",
