@@ -4,11 +4,11 @@
  "counts": {
   "index": 4,
   "category": 30,
-  "city": 458,
+  "city": 461,
   "country": 188,
   "language": 204,
   "region": 42,
-  "subdivision": 348
+  "subdivision": 349
  },
  "excluded": [
   "category:xxx"
@@ -217,6 +217,12 @@
    "name": "Weather",
    "code": "weather",
    "url": "https://iptv-org.github.io/iptv/categories/weather.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Fier",
+   "code": "alfie",
+   "url": "https://iptv-org.github.io/iptv/cities/alfie.m3u"
   },
   {
    "type": "city",
@@ -1324,6 +1330,12 @@
   },
   {
    "type": "city",
+   "name": "Nagercoil",
+   "code": "inngc",
+   "url": "https://iptv-org.github.io/iptv/cities/inngc.m3u"
+  },
+  {
+   "type": "city",
    "name": "Palghat",
    "code": "inpal",
    "url": "https://iptv-org.github.io/iptv/cities/inpal.m3u"
@@ -1345,6 +1357,12 @@
    "name": "Tiruchirappalli",
    "code": "intri",
    "url": "https://iptv-org.github.io/iptv/cities/intri.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Virudhunagar",
+   "code": "invgh",
+   "url": "https://iptv-org.github.io/iptv/cities/invgh.m3u"
   },
   {
    "type": "city",
@@ -5569,6 +5587,12 @@
    "name": "Worldwide",
    "code": "ww",
    "url": "https://iptv-org.github.io/iptv/regions/ww.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Fier",
+   "code": "al-04",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/al-04.m3u"
   },
   {
    "type": "subdivision",
