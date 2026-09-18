@@ -4,11 +4,11 @@
  "counts": {
   "index": 4,
   "category": 30,
-  "city": 461,
+  "city": 460,
   "country": 188,
   "language": 204,
   "region": 42,
-  "subdivision": 349
+  "subdivision": 348
  },
  "excluded": [
   "category:xxx"
@@ -1363,12 +1363,6 @@
    "name": "Virudhunagar",
    "code": "invgh",
    "url": "https://iptv-org.github.io/iptv/cities/invgh.m3u"
-  },
-  {
-   "type": "city",
-   "name": "Yamagata",
-   "code": "jpgaj",
-   "url": "https://iptv-org.github.io/iptv/cities/jpgaj.m3u"
   },
   {
    "type": "city",
@@ -6829,12 +6823,6 @@
    "name": "Calabria",
    "code": "it-78",
    "url": "https://iptv-org.github.io/iptv/subdivisions/it-78.m3u"
-  },
-  {
-   "type": "subdivision",
-   "name": "Yamagata",
-   "code": "jp-06",
-   "url": "https://iptv-org.github.io/iptv/subdivisions/jp-06.m3u"
   },
   {
    "type": "subdivision",
