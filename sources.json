@@ -6,7 +6,7 @@
   "category": 30,
   "city": 460,
   "country": 188,
-  "language": 204,
+  "language": 203,
   "region": 42,
   "subdivision": 348
  },
@@ -4231,12 +4231,6 @@
    "name": "Bengali",
    "code": "ben",
    "url": "https://iptv-org.github.io/iptv/languages/ben.m3u"
-  },
-  {
-   "type": "language",
-   "name": "Haryanvi",
-   "code": "bgc",
-   "url": "https://iptv-org.github.io/iptv/languages/bgc.m3u"
   },
   {
    "type": "language",
