@@ -4,7 +4,7 @@
  "counts": {
   "index": 4,
   "category": 30,
-  "city": 460,
+  "city": 457,
   "country": 188,
   "language": 203,
   "region": 42,
@@ -2146,12 +2146,6 @@
   },
   {
    "type": "city",
-   "name": "Winston-Salem",
-   "code": "usint",
-   "url": "https://iptv-org.github.io/iptv/cities/usint.m3u"
-  },
-  {
-   "type": "city",
    "name": "Miami Beach",
    "code": "usiyh",
    "url": "https://iptv-org.github.io/iptv/cities/usiyh.m3u"
@@ -2464,12 +2458,6 @@
   },
   {
    "type": "city",
-   "name": "Oakland",
-   "code": "usoak",
-   "url": "https://iptv-org.github.io/iptv/cities/usoak.m3u"
-  },
-  {
-   "type": "city",
    "name": "Oceanside",
    "code": "usocn",
    "url": "https://iptv-org.github.io/iptv/cities/usocn.m3u"
@@ -2539,12 +2527,6 @@
    "name": "West Palm Beach",
    "code": "uspbi",
    "url": "https://iptv-org.github.io/iptv/cities/uspbi.m3u"
-  },
-  {
-   "type": "city",
-   "name": "Portland",
-   "code": "uspdx",
-   "url": "https://iptv-org.github.io/iptv/cities/uspdx.m3u"
   },
   {
    "type": "city",
