@@ -6,7 +6,7 @@
   "category": 30,
   "city": 457,
   "country": 188,
-  "language": 203,
+  "language": 204,
   "region": 42,
   "subdivision": 348
  },
@@ -4771,6 +4771,12 @@
    "name": "Maithili",
    "code": "mai",
    "url": "https://iptv-org.github.io/iptv/languages/mai.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Makasar",
+   "code": "mak",
+   "url": "https://iptv-org.github.io/iptv/languages/mak.m3u"
   },
   {
    "type": "language",
