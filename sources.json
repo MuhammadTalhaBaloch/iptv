@@ -4,11 +4,11 @@
  "counts": {
   "index": 4,
   "category": 30,
-  "city": 457,
+  "city": 455,
   "country": 188,
-  "language": 204,
+  "language": 206,
   "region": 42,
-  "subdivision": 348
+  "subdivision": 349
  },
  "excluded": [
   "category:xxx"
@@ -2242,12 +2242,6 @@
   },
   {
    "type": "city",
-   "name": "Lafayette",
-   "code": "uslft",
-   "url": "https://iptv-org.github.io/iptv/cities/uslft.m3u"
-  },
-  {
-   "type": "city",
    "name": "Lima",
    "code": "uslia",
    "url": "https://iptv-org.github.io/iptv/cities/uslia.m3u"
@@ -2575,12 +2569,6 @@
    "name": "Port Saint Lucie",
    "code": "uspzl",
    "url": "https://iptv-org.github.io/iptv/cities/uspzl.m3u"
-  },
-  {
-   "type": "city",
-   "name": "Riverside",
-   "code": "usral",
-   "url": "https://iptv-org.github.io/iptv/cities/usral.m3u"
   },
   {
    "type": "city",
@@ -4288,6 +4276,12 @@
   },
   {
    "type": "language",
+   "name": "Chenoua",
+   "code": "cnu",
+   "url": "https://iptv-org.github.io/iptv/languages/cnu.m3u"
+  },
+  {
+   "type": "language",
    "name": "Welsh",
    "code": "cym",
    "url": "https://iptv-org.github.io/iptv/languages/cym.m3u"
@@ -4849,6 +4843,12 @@
    "name": "Burmese",
    "code": "mya",
    "url": "https://iptv-org.github.io/iptv/languages/mya.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Tumzabt",
+   "code": "mzb",
+   "url": "https://iptv-org.github.io/iptv/languages/mzb.m3u"
   },
   {
    "type": "language",
@@ -6883,6 +6883,12 @@
    "name": "Ulcinj",
    "code": "me-20",
    "url": "https://iptv-org.github.io/iptv/subdivisions/me-20.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "West Nouakchott",
+   "code": "mr-13",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/mr-13.m3u"
   },
   {
    "type": "subdivision",
