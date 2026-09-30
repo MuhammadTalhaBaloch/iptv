@@ -4,7 +4,7 @@
  "counts": {
   "index": 4,
   "category": 30,
-  "city": 455,
+  "city": 456,
   "country": 188,
   "language": 206,
   "region": 42,
@@ -2119,6 +2119,12 @@
    "name": "New Haven",
    "code": "ushvn",
    "url": "https://iptv-org.github.io/iptv/cities/ushvn.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Hollywood",
+   "code": "ushwo",
+   "url": "https://iptv-org.github.io/iptv/cities/ushwo.m3u"
   },
   {
    "type": "city",
