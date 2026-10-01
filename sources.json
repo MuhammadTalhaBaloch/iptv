@@ -8,7 +8,7 @@
   "country": 188,
   "language": 206,
   "region": 42,
-  "subdivision": 349
+  "subdivision": 350
  },
  "excluded": [
   "category:xxx"
@@ -7177,6 +7177,12 @@
    "name": "Kaluzhskaya oblast'",
    "code": "ru-klu",
    "url": "https://iptv-org.github.io/iptv/subdivisions/ru-klu.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Kostromskaya oblast'",
+   "code": "ru-kos",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/ru-kos.m3u"
   },
   {
    "type": "subdivision",
