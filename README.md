@@ -31,16 +31,16 @@ staler data, never a broken app.
 <!-- DASHBOARD:START -->
 ## 📊 Workflow Dashboard
 
-_Auto-updated after each workflow run — regenerated 2026-10-03 23:51 UTC._
+_Auto-updated after each workflow run — regenerated 2026-10-04 01:02 UTC._
 
 ### 📺 EPG — `Generate EPG`
 
-• **in_progress** · last run [#101](https://github.com/MuhammadTalhaBaloch/iptv/actions/runs/37161986963) at 2026-10-03 23:30 UTC
+✅ **success** · last run [#101](https://github.com/MuhammadTalhaBaloch/iptv/actions/runs/37161986963) at 2026-10-03 23:30 UTC
 
 | Metric | Value |
 |---|---|
-| Channels | 149,671 |
-| Programmes | 2,340,807 |
+| Channels | 132,496 |
+| Programmes | 1,786,113 |
 | Countries | 260 |
 
 ### 🗂 Source registry — `Refresh browse registry`
