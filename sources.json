@@ -5,7 +5,7 @@
   "index": 4,
   "category": 30,
   "city": 456,
-  "country": 188,
+  "country": 189,
   "language": 206,
   "region": 42,
   "subdivision": 350
@@ -3685,6 +3685,12 @@
    "name": "Namibia",
    "code": "na",
    "url": "https://iptv-org.github.io/iptv/countries/na.m3u"
+  },
+  {
+   "type": "country",
+   "name": "New Caledonia",
+   "code": "nc",
+   "url": "https://iptv-org.github.io/iptv/countries/nc.m3u"
   },
   {
    "type": "country",
