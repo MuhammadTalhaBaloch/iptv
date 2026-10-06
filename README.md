@@ -31,11 +31,11 @@ staler data, never a broken app.
 <!-- DASHBOARD:START -->
 ## 📊 Workflow Dashboard
 
-_Auto-updated after each workflow run — regenerated 2026-10-06 01:49 UTC._
+_Auto-updated after each workflow run — regenerated 2026-10-06 03:11 UTC._
 
 ### 📺 EPG — `Generate EPG`
 
-• **in_progress** · last run [#103](https://github.com/MuhammadTalhaBaloch/iptv/actions/runs/37400260227) at 2026-10-06 01:39 UTC
+✅ **success** · last run [#103](https://github.com/MuhammadTalhaBaloch/iptv/actions/runs/37400260227) at 2026-10-06 01:39 UTC
 
 | Metric | Value |
 |---|---|
