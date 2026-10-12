@@ -436,12 +436,6 @@
   },
   {
    "type": "city",
-   "name": "Santa Cruz de la Sierra",
-   "code": "boscs",
-   "url": "https://iptv-org.github.io/iptv/cities/boscs.m3u"
-  },
-  {
-   "type": "city",
    "name": "Araçatuba",
    "code": "braru",
    "url": "https://iptv-org.github.io/iptv/cities/braru.m3u"
@@ -2953,6 +2947,12 @@
    "name": "Maracay",
    "code": "vemyc",
    "url": "https://iptv-org.github.io/iptv/cities/vemyc.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Ho Chi Minh City",
+   "code": "vnsgn",
+   "url": "https://iptv-org.github.io/iptv/cities/vnsgn.m3u"
   },
   {
    "type": "country",
@@ -5794,12 +5794,6 @@
   },
   {
    "type": "subdivision",
-   "name": "Santa Cruz",
-   "code": "bo-s",
-   "url": "https://iptv-org.github.io/iptv/subdivisions/bo-s.m3u"
-  },
-  {
-   "type": "subdivision",
    "name": "Amazonas",
    "code": "br-am",
    "url": "https://iptv-org.github.io/iptv/subdivisions/br-am.m3u"
@@ -7669,6 +7663,12 @@
    "name": "Lara",
    "code": "ve-k",
    "url": "https://iptv-org.github.io/iptv/subdivisions/ve-k.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Ho Chi Minh",
+   "code": "vn-sg",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/vn-sg.m3u"
   }
  ]
 }
