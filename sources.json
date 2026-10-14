@@ -4,7 +4,7 @@
  "counts": {
   "index": 4,
   "category": 30,
-  "city": 456,
+  "city": 457,
   "country": 189,
   "language": 206,
   "region": 42,
@@ -2485,6 +2485,12 @@
    "name": "Orange",
    "code": "usorb",
    "url": "https://iptv-org.github.io/iptv/cities/usorb.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Oregon City",
+   "code": "usorc",
+   "url": "https://iptv-org.github.io/iptv/cities/usorc.m3u"
   },
   {
    "type": "city",
