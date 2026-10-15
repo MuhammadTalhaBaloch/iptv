@@ -5,8 +5,8 @@
   "index": 4,
   "category": 30,
   "city": 457,
-  "country": 189,
-  "language": 206,
+  "country": 190,
+  "language": 207,
   "region": 42,
   "subdivision": 350
  },
@@ -3076,6 +3076,12 @@
   },
   {
    "type": "country",
+   "name": "Burundi",
+   "code": "bi",
+   "url": "https://iptv-org.github.io/iptv/countries/bi.m3u"
+  },
+  {
+   "type": "country",
    "name": "Benin",
    "code": "bj",
    "url": "https://iptv-org.github.io/iptv/countries/bj.m3u"
@@ -4993,6 +4999,12 @@
    "name": "Romanian",
    "code": "ron",
    "url": "https://iptv-org.github.io/iptv/languages/ron.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Rundi",
+   "code": "run",
+   "url": "https://iptv-org.github.io/iptv/languages/run.m3u"
   },
   {
    "type": "language",
