@@ -31,11 +31,11 @@ staler data, never a broken app.
 <!-- DASHBOARD:START -->
 ## 📊 Workflow Dashboard
 
-_Auto-updated after each workflow run — regenerated 2026-10-20 01:38 UTC._
+_Auto-updated after each workflow run — regenerated 2026-10-20 23:52 UTC._
 
 ### 📺 EPG — `Generate EPG`
 
-✅ **success** · last run [#117](https://github.com/MuhammadTalhaBaloch/iptv/actions/runs/39345598680) at 2026-10-20 00:06 UTC
+• **in_progress** · last run [#118](https://github.com/MuhammadTalhaBaloch/iptv/actions/runs/39516144042) at 2026-10-20 23:36 UTC
 
 | Metric | Value |
 |---|---|
@@ -45,7 +45,7 @@ _Auto-updated after each workflow run — regenerated 2026-10-20 01:38 UTC._
 
 ### 🗂 Source registry — `Refresh browse registry`
 
-✅ **success** · last run [#108](https://github.com/MuhammadTalhaBaloch/iptv/actions/runs/39347012668) at 2026-10-20 00:20 UTC
+✅ **success** · last run [#109](https://github.com/MuhammadTalhaBaloch/iptv/actions/runs/39517809115) at 2026-10-20 23:52 UTC
 
 | Metric | Value |
 |---|---|
@@ -61,7 +61,7 @@ _Auto-updated after each workflow run — regenerated 2026-10-20 01:38 UTC._
 
 ### 📶 Availability — `Publish channel availability`
 
-✅ **success** · last run [#107](https://github.com/MuhammadTalhaBaloch/iptv/actions/runs/39347030247) at 2026-10-20 00:20 UTC
+• **in_progress** · last run [#108](https://github.com/MuhammadTalhaBaloch/iptv/actions/runs/39517825311) at 2026-10-20 23:52 UTC
 
 | Metric | Value |
 |---|---|
