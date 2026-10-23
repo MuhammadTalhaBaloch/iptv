@@ -4,9 +4,9 @@
  "counts": {
   "index": 4,
   "category": 30,
-  "city": 457,
+  "city": 455,
   "country": 190,
-  "language": 207,
+  "language": 206,
   "region": 42,
   "subdivision": 350
  },
@@ -2428,12 +2428,6 @@
   },
   {
    "type": "city",
-   "name": "Newton",
-   "code": "usnwn",
-   "url": "https://iptv-org.github.io/iptv/cities/usnwn.m3u"
-  },
-  {
-   "type": "city",
    "name": "New Britain",
    "code": "usnwt",
    "url": "https://iptv-org.github.io/iptv/cities/usnwt.m3u"
@@ -2845,12 +2839,6 @@
    "name": "Steubenville",
    "code": "usuyj",
    "url": "https://iptv-org.github.io/iptv/cities/usuyj.m3u"
-  },
-  {
-   "type": "city",
-   "name": "Secaucus",
-   "code": "usuyk",
-   "url": "https://iptv-org.github.io/iptv/cities/usuyk.m3u"
   },
   {
    "type": "city",
@@ -4801,12 +4789,6 @@
    "name": "Malayalam",
    "code": "mal",
    "url": "https://iptv-org.github.io/iptv/languages/mal.m3u"
-  },
-  {
-   "type": "language",
-   "name": "Manding",
-   "code": "man",
-   "url": "https://iptv-org.github.io/iptv/languages/man.m3u"
   },
   {
    "type": "language",
