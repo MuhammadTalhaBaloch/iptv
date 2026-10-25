@@ -8,7 +8,7 @@
   "country": 190,
   "language": 206,
   "region": 42,
-  "subdivision": 350
+  "subdivision": 351
  },
  "excluded": [
   "category:xxx"
@@ -6805,6 +6805,12 @@
    "name": "Trentino-Alto Adige",
    "code": "it-32",
    "url": "https://iptv-org.github.io/iptv/subdivisions/it-32.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Friuli Venezia Giulia",
+   "code": "it-36",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/it-36.m3u"
   },
   {
    "type": "subdivision",
