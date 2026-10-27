@@ -4,11 +4,11 @@
  "counts": {
   "index": 4,
   "category": 30,
-  "city": 455,
+  "city": 454,
   "country": 190,
   "language": 206,
   "region": 42,
-  "subdivision": 351
+  "subdivision": 350
  },
  "excluded": [
   "category:xxx"
@@ -2941,12 +2941,6 @@
    "name": "Maracay",
    "code": "vemyc",
    "url": "https://iptv-org.github.io/iptv/cities/vemyc.m3u"
-  },
-  {
-   "type": "city",
-   "name": "Ho Chi Minh City",
-   "code": "vnsgn",
-   "url": "https://iptv-org.github.io/iptv/cities/vnsgn.m3u"
   },
   {
    "type": "country",
@@ -7675,12 +7669,6 @@
    "name": "Lara",
    "code": "ve-k",
    "url": "https://iptv-org.github.io/iptv/subdivisions/ve-k.m3u"
-  },
-  {
-   "type": "subdivision",
-   "name": "Ho Chi Minh",
-   "code": "vn-sg",
-   "url": "https://iptv-org.github.io/iptv/subdivisions/vn-sg.m3u"
   }
  ]
 }
