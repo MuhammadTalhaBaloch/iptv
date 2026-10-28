@@ -4,11 +4,11 @@
  "counts": {
   "index": 4,
   "category": 30,
-  "city": 454,
+  "city": 456,
   "country": 190,
   "language": 206,
   "region": 42,
-  "subdivision": 350
+  "subdivision": 351
  },
  "excluded": [
   "category:xxx"
@@ -1357,6 +1357,12 @@
    "name": "Virudhunagar",
    "code": "invgh",
    "url": "https://iptv-org.github.io/iptv/cities/invgh.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Yamagata",
+   "code": "jpgaj",
+   "url": "https://iptv-org.github.io/iptv/cities/jpgaj.m3u"
   },
   {
    "type": "city",
@@ -2923,6 +2929,12 @@
    "name": "Maple Grove",
    "code": "usxmg",
    "url": "https://iptv-org.github.io/iptv/cities/usxmg.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Shaker Heights",
+   "code": "usxsk",
+   "url": "https://iptv-org.github.io/iptv/cities/usxsk.m3u"
   },
   {
    "type": "city",
@@ -6811,6 +6823,12 @@
    "name": "Calabria",
    "code": "it-78",
    "url": "https://iptv-org.github.io/iptv/subdivisions/it-78.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Yamagata",
+   "code": "jp-06",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/jp-06.m3u"
   },
   {
    "type": "subdivision",
