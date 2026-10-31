@@ -4,11 +4,11 @@
  "counts": {
   "index": 4,
   "category": 30,
-  "city": 457,
+  "city": 456,
   "country": 190,
   "language": 206,
   "region": 42,
-  "subdivision": 351
+  "subdivision": 350
  },
  "excluded": [
   "category:xxx"
@@ -769,12 +769,6 @@
    "name": "Caldera",
    "code": "clcld",
    "url": "https://iptv-org.github.io/iptv/cities/clcld.m3u"
-  },
-  {
-   "type": "city",
-   "name": "Curicó",
-   "code": "clcur",
-   "url": "https://iptv-org.github.io/iptv/cities/clcur.m3u"
   },
   {
    "type": "city",
@@ -6013,12 +6007,6 @@
    "name": "Magallanes",
    "code": "cl-ma",
    "url": "https://iptv-org.github.io/iptv/subdivisions/cl-ma.m3u"
-  },
-  {
-   "type": "subdivision",
-   "name": "Maule",
-   "code": "cl-ml",
-   "url": "https://iptv-org.github.io/iptv/subdivisions/cl-ml.m3u"
   },
   {
    "type": "subdivision",
