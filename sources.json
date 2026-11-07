@@ -5,7 +5,7 @@
   "index": 4,
   "category": 30,
   "city": 456,
-  "country": 190,
+  "country": 188,
   "language": 206,
   "region": 42,
   "subdivision": 350
@@ -3490,12 +3490,6 @@
   },
   {
    "type": "country",
-   "name": "Comoros",
-   "code": "km",
-   "url": "https://iptv-org.github.io/iptv/countries/km.m3u"
-  },
-  {
-   "type": "country",
    "name": "Saint Kitts and Nevis",
    "code": "kn",
    "url": "https://iptv-org.github.io/iptv/countries/kn.m3u"
@@ -3601,12 +3595,6 @@
    "name": "Montenegro",
    "code": "me",
    "url": "https://iptv-org.github.io/iptv/countries/me.m3u"
-  },
-  {
-   "type": "country",
-   "name": "Madagascar",
-   "code": "mg",
-   "url": "https://iptv-org.github.io/iptv/countries/mg.m3u"
   },
   {
    "type": "country",
