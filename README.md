@@ -31,7 +31,7 @@ staler data, never a broken app.
 <!-- DASHBOARD:START -->
 ## 📊 Workflow Dashboard
 
-_Auto-updated after each workflow run — regenerated 2026-11-10 03:34 UTC._
+_Auto-updated after each workflow run — regenerated 2026-11-10 03:39 UTC._
 
 ### 📺 EPG — `Generate EPG`
 
@@ -61,15 +61,15 @@ _Auto-updated after each workflow run — regenerated 2026-11-10 03:34 UTC._
 
 ### 📶 Availability — `Publish channel availability`
 
-• **in_progress** · last run [#128](https://github.com/MuhammadTalhaBaloch/iptv/actions/runs/42750309477) at 2026-11-10 03:34 UTC
+✅ **success** · last run [#128](https://github.com/MuhammadTalhaBaloch/iptv/actions/runs/42750309477) at 2026-11-10 03:34 UTC
 
 | Metric | Value |
 |---|---|
-| Catalog probed | 11,466 |
-| ✅ Available (reachable) | 6,744 |
-| ❌ Dead | 1,082 |
-| ⚠️ Unreachable / couldn't reach | 3,640 |
-| Snapshot | 2026-11-09 00:59 UTC · us probe |
+| Catalog probed | 11,470 |
+| ✅ Available (reachable) | 6,801 |
+| ❌ Dead | 1,095 |
+| ⚠️ Unreachable / couldn't reach | 3,574 |
+| Snapshot | 2026-11-10 03:38 UTC · us probe |
 
 ### 🧪 Compare sources vs index — `(manual experiment)`
 
