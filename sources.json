@@ -4,11 +4,11 @@
  "counts": {
   "index": 4,
   "category": 30,
-  "city": 456,
+  "city": 457,
   "country": 188,
   "language": 206,
   "region": 42,
-  "subdivision": 350
+  "subdivision": 351
  },
  "excluded": [
   "category:xxx"
@@ -289,6 +289,12 @@
    "name": "Posadas",
    "code": "arpss",
    "url": "https://iptv-org.github.io/iptv/cities/arpss.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Río Cuarto",
+   "code": "arrcu",
+   "url": "https://iptv-org.github.io/iptv/cities/arrcu.m3u"
   },
   {
    "type": "city",
@@ -6985,6 +6991,12 @@
    "name": "Ayacucho",
    "code": "pe-aya",
    "url": "https://iptv-org.github.io/iptv/subdivisions/pe-aya.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "El Callao",
+   "code": "pe-cal",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/pe-cal.m3u"
   },
   {
    "type": "subdivision",
