@@ -4,8 +4,8 @@
  "counts": {
   "index": 4,
   "category": 30,
-  "city": 457,
-  "country": 188,
+  "city": 456,
+  "country": 189,
   "language": 206,
   "region": 42,
   "subdivision": 351
@@ -2128,12 +2128,6 @@
   },
   {
    "type": "city",
-   "name": "Hollywood",
-   "code": "ushwo",
-   "url": "https://iptv-org.github.io/iptv/cities/ushwo.m3u"
-  },
-  {
-   "type": "city",
    "name": "Wichita",
    "code": "usict",
    "url": "https://iptv-org.github.io/iptv/cities/usict.m3u"
@@ -3295,6 +3289,12 @@
    "name": "Finland",
    "code": "fi",
    "url": "https://iptv-org.github.io/iptv/countries/fi.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Fiji",
+   "code": "fj",
+   "url": "https://iptv-org.github.io/iptv/countries/fj.m3u"
   },
   {
    "type": "country",
