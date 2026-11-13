@@ -4,7 +4,7 @@
  "counts": {
   "index": 4,
   "category": 30,
-  "city": 456,
+  "city": 455,
   "country": 189,
   "language": 206,
   "region": 42,
@@ -913,12 +913,6 @@
    "name": "Higuey",
    "code": "dohig",
    "url": "https://iptv-org.github.io/iptv/cities/dohig.m3u"
-  },
-  {
-   "type": "city",
-   "name": "Constanza",
-   "code": "dolvc",
-   "url": "https://iptv-org.github.io/iptv/cities/dolvc.m3u"
   },
   {
    "type": "city",
