@@ -4,8 +4,8 @@
  "counts": {
   "index": 4,
   "category": 30,
-  "city": 455,
-  "country": 189,
+  "city": 456,
+  "country": 191,
   "language": 206,
   "region": 42,
   "subdivision": 351
@@ -913,6 +913,12 @@
    "name": "Higuey",
    "code": "dohig",
    "url": "https://iptv-org.github.io/iptv/cities/dohig.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Constanza",
+   "code": "dolvc",
+   "url": "https://iptv-org.github.io/iptv/cities/dolvc.m3u"
   },
   {
    "type": "city",
@@ -3490,6 +3496,12 @@
   },
   {
    "type": "country",
+   "name": "Comoros",
+   "code": "km",
+   "url": "https://iptv-org.github.io/iptv/countries/km.m3u"
+  },
+  {
+   "type": "country",
    "name": "Saint Kitts and Nevis",
    "code": "kn",
    "url": "https://iptv-org.github.io/iptv/countries/kn.m3u"
@@ -3595,6 +3607,12 @@
    "name": "Montenegro",
    "code": "me",
    "url": "https://iptv-org.github.io/iptv/countries/me.m3u"
+  },
+  {
+   "type": "country",
+   "name": "Madagascar",
+   "code": "mg",
+   "url": "https://iptv-org.github.io/iptv/countries/mg.m3u"
   },
   {
    "type": "country",
