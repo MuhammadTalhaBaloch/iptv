@@ -4,11 +4,11 @@
  "counts": {
   "index": 4,
   "category": 31,
-  "city": 478,
-  "country": 191,
-  "language": 209,
+  "city": 475,
+  "country": 190,
+  "language": 208,
   "region": 42,
-  "subdivision": 353
+  "subdivision": 350
  },
  "excluded": [
   "category:xxx"
@@ -838,6 +838,12 @@
   },
   {
    "type": "city",
+   "name": "Valledupar",
+   "code": "covup",
+   "url": "https://iptv-org.github.io/iptv/cities/covup.m3u"
+  },
+  {
+   "type": "city",
    "name": "San Marcos de Tarrazú",
    "code": "crmtz",
    "url": "https://iptv-org.github.io/iptv/cities/crmtz.m3u"
@@ -994,12 +1000,6 @@
   },
   {
    "type": "city",
-   "name": "El Vendrell",
-   "code": "esdre",
-   "url": "https://iptv-org.github.io/iptv/cities/esdre.m3u"
-  },
-  {
-   "type": "city",
    "name": "Fuengirola",
    "code": "esfgl",
    "url": "https://iptv-org.github.io/iptv/cities/esfgl.m3u"
@@ -1009,12 +1009,6 @@
    "name": "Granada",
    "code": "esgrx",
    "url": "https://iptv-org.github.io/iptv/cities/esgrx.m3u"
-  },
-  {
-   "type": "city",
-   "name": "Huelva",
-   "code": "eshuv",
-   "url": "https://iptv-org.github.io/iptv/cities/eshuv.m3u"
   },
   {
    "type": "city",
@@ -1042,12 +1036,6 @@
   },
   {
    "type": "city",
-   "name": "La Seu d'Urgell",
-   "code": "eslsl",
-   "url": "https://iptv-org.github.io/iptv/cities/eslsl.m3u"
-  },
-  {
-   "type": "city",
    "name": "Marbella",
    "code": "esmqe",
    "url": "https://iptv-org.github.io/iptv/cities/esmqe.m3u"
@@ -1066,21 +1054,9 @@
   },
   {
    "type": "city",
-   "name": "Olot",
-   "code": "esooe",
-   "url": "https://iptv-org.github.io/iptv/cities/esooe.m3u"
-  },
-  {
-   "type": "city",
    "name": "Palafrugell",
    "code": "espfl",
    "url": "https://iptv-org.github.io/iptv/cities/espfl.m3u"
-  },
-  {
-   "type": "city",
-   "name": "Pamplona",
-   "code": "espna",
-   "url": "https://iptv-org.github.io/iptv/cities/espna.m3u"
   },
   {
    "type": "city",
@@ -1333,6 +1309,12 @@
    "name": "Kanchipuram",
    "code": "inkcp",
    "url": "https://iptv-org.github.io/iptv/cities/inkcp.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Kannur",
+   "code": "inknn",
+   "url": "https://iptv-org.github.io/iptv/cities/inknn.m3u"
   },
   {
    "type": "city",
@@ -3250,12 +3232,6 @@
   },
   {
    "type": "country",
-   "name": "Bhutan",
-   "code": "bt",
-   "url": "https://iptv-org.github.io/iptv/countries/bt.m3u"
-  },
-  {
-   "type": "country",
    "name": "Belarus",
    "code": "by",
    "url": "https://iptv-org.github.io/iptv/countries/by.m3u"
@@ -4369,12 +4345,6 @@
    "name": "Bengali",
    "code": "ben",
    "url": "https://iptv-org.github.io/iptv/languages/ben.m3u"
-  },
-  {
-   "type": "language",
-   "name": "Haryanvi",
-   "code": "bgc",
-   "url": "https://iptv-org.github.io/iptv/languages/bgc.m3u"
   },
   {
    "type": "language",
@@ -6190,6 +6160,12 @@
   },
   {
    "type": "subdivision",
+   "name": "Cesar",
+   "code": "co-ces",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/co-ces.m3u"
+  },
+  {
+   "type": "subdivision",
    "name": "Choco",
    "code": "co-cho",
    "url": "https://iptv-org.github.io/iptv/subdivisions/co-cho.m3u"
@@ -6490,12 +6466,6 @@
   },
   {
    "type": "subdivision",
-   "name": "Huelva",
-   "code": "es-h",
-   "url": "https://iptv-org.github.io/iptv/subdivisions/es-h.m3u"
-  },
-  {
-   "type": "subdivision",
    "name": "Huesca",
    "code": "es-hu",
    "url": "https://iptv-org.github.io/iptv/subdivisions/es-hu.m3u"
@@ -6538,18 +6508,6 @@
   },
   {
    "type": "subdivision",
-   "name": "Navarra",
-   "code": "es-na",
-   "url": "https://iptv-org.github.io/iptv/subdivisions/es-na.m3u"
-  },
-  {
-   "type": "subdivision",
-   "name": "Navarra",
-   "code": "es-nc",
-   "url": "https://iptv-org.github.io/iptv/subdivisions/es-nc.m3u"
-  },
-  {
-   "type": "subdivision",
    "name": "País Vasco",
    "code": "es-pv",
    "url": "https://iptv-org.github.io/iptv/subdivisions/es-pv.m3u"
@@ -6559,12 +6517,6 @@
    "name": "La Rioja",
    "code": "es-ri",
    "url": "https://iptv-org.github.io/iptv/subdivisions/es-ri.m3u"
-  },
-  {
-   "type": "subdivision",
-   "name": "Tarragona",
-   "code": "es-t",
-   "url": "https://iptv-org.github.io/iptv/subdivisions/es-t.m3u"
   },
   {
    "type": "subdivision",
