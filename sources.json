@@ -4,11 +4,11 @@
  "counts": {
   "index": 4,
   "category": 31,
-  "city": 475,
+  "city": 469,
   "country": 190,
-  "language": 208,
+  "language": 209,
   "region": 42,
-  "subdivision": 350
+  "subdivision": 349
  },
  "excluded": [
   "category:xxx"
@@ -1300,6 +1300,12 @@
   },
   {
    "type": "city",
+   "name": "Idukki",
+   "code": "inidu",
+   "url": "https://iptv-org.github.io/iptv/cities/inidu.m3u"
+  },
+  {
+   "type": "city",
    "name": "Karur",
    "code": "inkar",
    "url": "https://iptv-org.github.io/iptv/cities/inkar.m3u"
@@ -1588,21 +1594,9 @@
   },
   {
    "type": "city",
-   "name": "Albuquerque",
-   "code": "usabq",
-   "url": "https://iptv-org.github.io/iptv/cities/usabq.m3u"
-  },
-  {
-   "type": "city",
    "name": "Waco",
    "code": "usact",
    "url": "https://iptv-org.github.io/iptv/cities/usact.m3u"
-  },
-  {
-   "type": "city",
-   "name": "Asheville",
-   "code": "usaev",
-   "url": "https://iptv-org.github.io/iptv/cities/usaev.m3u"
   },
   {
    "type": "city",
@@ -1852,12 +1846,6 @@
   },
   {
    "type": "city",
-   "name": "Columbus",
-   "code": "uscmh",
-   "url": "https://iptv-org.github.io/iptv/cities/uscmh.m3u"
-  },
-  {
-   "type": "city",
    "name": "Champaign",
    "code": "uscmi",
    "url": "https://iptv-org.github.io/iptv/cities/uscmi.m3u"
@@ -2014,12 +2002,6 @@
   },
   {
    "type": "city",
-   "name": "Florence",
-   "code": "usflo",
-   "url": "https://iptv-org.github.io/iptv/cities/usflo.m3u"
-  },
-  {
-   "type": "city",
    "name": "Fort Myers",
    "code": "usfmy",
    "url": "https://iptv-org.github.io/iptv/cities/usfmy.m3u"
@@ -2173,12 +2155,6 @@
    "name": "Hutchinson",
    "code": "ushtk",
    "url": "https://iptv-org.github.io/iptv/cities/ushtk.m3u"
-  },
-  {
-   "type": "city",
-   "name": "New Haven",
-   "code": "ushvn",
-   "url": "https://iptv-org.github.io/iptv/cities/ushvn.m3u"
   },
   {
    "type": "city",
@@ -2404,12 +2380,6 @@
   },
   {
    "type": "city",
-   "name": "Manchester",
-   "code": "usmht",
-   "url": "https://iptv-org.github.io/iptv/cities/usmht.m3u"
-  },
-  {
-   "type": "city",
    "name": "Miami",
    "code": "usmia",
    "url": "https://iptv-org.github.io/iptv/cities/usmia.m3u"
@@ -2431,12 +2401,6 @@
    "name": "Milwaukee",
    "code": "usmke",
    "url": "https://iptv-org.github.io/iptv/cities/usmke.m3u"
-  },
-  {
-   "type": "city",
-   "name": "Jackson",
-   "code": "usmkl",
-   "url": "https://iptv-org.github.io/iptv/cities/usmkl.m3u"
   },
   {
    "type": "city",
@@ -4405,6 +4369,12 @@
    "name": "Chiga",
    "code": "cgg",
    "url": "https://iptv-org.github.io/iptv/languages/cgg.m3u"
+  },
+  {
+   "type": "language",
+   "name": "Central Kurdish",
+   "code": "ckb",
+   "url": "https://iptv-org.github.io/iptv/languages/ckb.m3u"
   },
   {
    "type": "language",
@@ -7699,12 +7669,6 @@
    "name": "New Jersey",
    "code": "us-nj",
    "url": "https://iptv-org.github.io/iptv/subdivisions/us-nj.m3u"
-  },
-  {
-   "type": "subdivision",
-   "name": "New Mexico",
-   "code": "us-nm",
-   "url": "https://iptv-org.github.io/iptv/subdivisions/us-nm.m3u"
   },
   {
    "type": "subdivision",
