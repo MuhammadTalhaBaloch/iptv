@@ -4,11 +4,11 @@
  "counts": {
   "index": 4,
   "category": 31,
-  "city": 469,
+  "city": 470,
   "country": 190,
-  "language": 209,
+  "language": 210,
   "region": 42,
-  "subdivision": 349
+  "subdivision": 350
  },
  "excluded": [
   "category:xxx"
@@ -1135,6 +1135,12 @@
    "name": "Barberena",
    "code": "gtbab",
    "url": "https://iptv-org.github.io/iptv/cities/gtbab.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Chiquimula",
+   "code": "gtciq",
+   "url": "https://iptv-org.github.io/iptv/cities/gtciq.m3u"
   },
   {
    "type": "city",
@@ -5350,6 +5356,12 @@
   },
   {
    "type": "language",
+   "name": "Undetermined",
+   "code": "und",
+   "url": "https://iptv-org.github.io/iptv/languages/und.m3u"
+  },
+  {
+   "type": "language",
    "name": "UNDEFINED",
    "code": "undefined",
    "url": "https://iptv-org.github.io/iptv/languages/undefined.m3u"
@@ -6625,6 +6637,12 @@
    "name": "Quiche",
    "code": "gt-14",
    "url": "https://iptv-org.github.io/iptv/subdivisions/gt-14.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "Chiquimula",
+   "code": "gt-20",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/gt-20.m3u"
   },
   {
    "type": "subdivision",
