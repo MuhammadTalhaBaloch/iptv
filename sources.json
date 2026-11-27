@@ -4,11 +4,11 @@
  "counts": {
   "index": 4,
   "category": 31,
-  "city": 470,
+  "city": 460,
   "country": 190,
   "language": 210,
   "region": 42,
-  "subdivision": 350
+  "subdivision": 349
  },
  "excluded": [
   "category:xxx"
@@ -1666,12 +1666,6 @@
   },
   {
    "type": "city",
-   "name": "Kalamazoo",
-   "code": "usazo",
-   "url": "https://iptv-org.github.io/iptv/cities/usazo.m3u"
-  },
-  {
-   "type": "city",
    "name": "Baltimore",
    "code": "usbal",
    "url": "https://iptv-org.github.io/iptv/cities/usbal.m3u"
@@ -1822,12 +1816,6 @@
   },
   {
    "type": "city",
-   "name": "Charleston",
-   "code": "uschs",
-   "url": "https://iptv-org.github.io/iptv/cities/uschs.m3u"
-  },
-  {
-   "type": "city",
    "name": "Clinton",
    "code": "usclb",
    "url": "https://iptv-org.github.io/iptv/cities/usclb.m3u"
@@ -1957,12 +1945,6 @@
    "name": "Derry",
    "code": "usdnp",
    "url": "https://iptv-org.github.io/iptv/cities/usdnp.m3u"
-  },
-  {
-   "type": "city",
-   "name": "Des Moines",
-   "code": "usdsm",
-   "url": "https://iptv-org.github.io/iptv/cities/usdsm.m3u"
   },
   {
    "type": "city",
@@ -2224,12 +2206,6 @@
   },
   {
    "type": "city",
-   "name": "Johnstown",
-   "code": "usjst",
-   "url": "https://iptv-org.github.io/iptv/cities/usjst.m3u"
-  },
-  {
-   "type": "city",
    "name": "Kansas City",
    "code": "uskck",
    "url": "https://iptv-org.github.io/iptv/cities/uskck.m3u"
@@ -2290,12 +2266,6 @@
   },
   {
    "type": "city",
-   "name": "Lima",
-   "code": "uslia",
-   "url": "https://iptv-org.github.io/iptv/cities/uslia.m3u"
-  },
-  {
-   "type": "city",
    "name": "Little Rock",
    "code": "uslit",
    "url": "https://iptv-org.github.io/iptv/cities/uslit.m3u"
@@ -2317,12 +2287,6 @@
    "name": "Lincoln",
    "code": "uslnk",
    "url": "https://iptv-org.github.io/iptv/cities/uslnk.m3u"
-  },
-  {
-   "type": "city",
-   "name": "Lancaster",
-   "code": "uslns",
-   "url": "https://iptv-org.github.io/iptv/cities/uslns.m3u"
   },
   {
    "type": "city",
@@ -2722,12 +2686,6 @@
   },
   {
    "type": "city",
-   "name": "Salisbury",
-   "code": "ussby",
-   "url": "https://iptv-org.github.io/iptv/cities/ussby.m3u"
-  },
-  {
-   "type": "city",
    "name": "Stockton",
    "code": "ussck",
    "url": "https://iptv-org.github.io/iptv/cities/ussck.m3u"
@@ -2791,12 +2749,6 @@
    "name": "Snyder",
    "code": "ussnk",
    "url": "https://iptv-org.github.io/iptv/cities/ussnk.m3u"
-  },
-  {
-   "type": "city",
-   "name": "Salinas",
-   "code": "ussns",
-   "url": "https://iptv-org.github.io/iptv/cities/ussns.m3u"
   },
   {
    "type": "city",
@@ -2920,21 +2872,9 @@
   },
   {
    "type": "city",
-   "name": "Steubenville",
-   "code": "usuyj",
-   "url": "https://iptv-org.github.io/iptv/cities/usuyj.m3u"
-  },
-  {
-   "type": "city",
    "name": "Barre",
    "code": "usvbr",
    "url": "https://iptv-org.github.io/iptv/cities/usvbr.m3u"
-  },
-  {
-   "type": "city",
-   "name": "Visalia",
-   "code": "usvis",
-   "url": "https://iptv-org.github.io/iptv/cities/usvis.m3u"
   },
   {
    "type": "city",
@@ -7573,12 +7513,6 @@
    "name": "Hawaii",
    "code": "us-hi",
    "url": "https://iptv-org.github.io/iptv/subdivisions/us-hi.m3u"
-  },
-  {
-   "type": "subdivision",
-   "name": "Iowa",
-   "code": "us-ia",
-   "url": "https://iptv-org.github.io/iptv/subdivisions/us-ia.m3u"
   },
   {
    "type": "subdivision",
