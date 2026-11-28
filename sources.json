@@ -4,11 +4,11 @@
  "counts": {
   "index": 4,
   "category": 31,
-  "city": 460,
+  "city": 461,
   "country": 190,
   "language": 210,
   "region": 42,
-  "subdivision": 349
+  "subdivision": 350
  },
  "excluded": [
   "category:xxx"
@@ -1063,6 +1063,12 @@
    "name": "Sabadell",
    "code": "essbp",
    "url": "https://iptv-org.github.io/iptv/cities/essbp.m3u"
+  },
+  {
+   "type": "city",
+   "name": "Santiago de Compostela",
+   "code": "esscq",
+   "url": "https://iptv-org.github.io/iptv/cities/esscq.m3u"
   },
   {
    "type": "city",
@@ -6337,6 +6343,12 @@
    "name": "Bizkaia",
    "code": "es-bi",
    "url": "https://iptv-org.github.io/iptv/subdivisions/es-bi.m3u"
+  },
+  {
+   "type": "subdivision",
+   "name": "A Coruña",
+   "code": "es-c",
+   "url": "https://iptv-org.github.io/iptv/subdivisions/es-c.m3u"
   },
   {
    "type": "subdivision",
